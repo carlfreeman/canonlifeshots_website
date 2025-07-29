@@ -398,57 +398,67 @@ body {
         right: -30px;
     }
 
-    .portfolio-item__overlay {
-        display: none; /* Скрываем оверлей на мобильных */
-    }
+    .portfolio-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+  }
 
-    .portfolio-caption {
-        display: block; /* Показываем подпись под изображением */
-        padding: 12px;
-    }
+  .portfolio-item {
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Важно! */
+  }
 
-    .portfolio-caption__title {
-        font-size: 14px;
-        color: #fff;
-        margin-bottom: 6px;
-        font-weight: 500;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
 
-    .portfolio-caption__categories {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6px;
-    }
+  .portfolio-item__overlay {
+    display: none; /* Скрываем оверлей */
+  }
 
-    .portfolio-caption__category {
-        font-size: 12px;
-        color: var(--accent-color);
-        padding: 2px 8px;
-        background: rgba(199, 161, 122, 0.1);
-        border-radius: 12px;
-    }
+  /* Новый контейнер для подписи */
+  .portfolio-mobile-caption {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 8px;
+    background: rgba(18, 18, 18, 0.9);
+    flex-grow: 1; /* Занимает оставшееся пространство */
+  }
 
-    .portfolio-item {
-<<<<<<< HEAD
-        display: flex;
-=======
-        display: inline-block !important;
->>>>>>> parent of b0874ae (Update main.css)
-        flex-direction: column;
-        border-radius: 8px;
-        overflow: hidden;
-        background: rgba(18, 18, 18, 0.8);
-    }
+  .portfolio-mobile-caption__title {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
-    .portfolio-item img {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 1;
-        object-fit: cover;
-    }
+  .portfolio-mobile-caption__categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: auto; /* Прижимаем категории к низу */
+  }
+
+  .portfolio-mobile-caption__category {
+    font-size: 11px;
+    color: var(--accent-color);
+    padding: 2px 6px;
+    background: rgba(199, 161, 122, 0.2);
+    border-radius: 12px;
+  }
+}
+
+/* Десктопная версия */
+@media (min-width: 769px) {
+  .portfolio-mobile-caption {
+    display: none; /* Скрываем мобильную подпись */
+  }
 }
 
 /* Оптимизация для очень маленьких экранов */
