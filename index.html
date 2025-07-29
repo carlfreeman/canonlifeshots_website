@@ -3,18 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Основные мета-теги -->
+    <meta name="description" content="Фотопортфолио М.Литвак: концептуальная и стрит-фотография, чёрно-белые работы и визуальные эксперименты">
+    <meta name="keywords" content="фотопортфолио, концептуальная фотография, стрит-фотография, чёрно-белая фотография, визуальное искусство">
+    <meta name="author" content="М.Литвак">
+
+    <!-- Open Graph / Социальные сети -->
+    <meta property="og:title" content="Little Can | Фотопортфолио М.Литвак">
+    <meta property="og:description" content="Исследование визуального повествования через фотографию">
+    <meta property="og:image" content="https://little-can.vercel.app/images/optimized/busstopprincess.avif">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://little-can.vercel.app">
+
     <title>LC | М.Литвак</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VisualArtGallery",
+      "name": "Little Can",
+      "description": "Фотопортфолио концептуальной и стрит-фотографии",
+      "author": {
+        "@type": "Person",
+        "name": "М.Литвак"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://little-can.vercel.app/images/optimized/busstopprincess.avif",
+        "width": "1200",
+        "height": "630"
+      }
+    }
+    </script>
 </head>
 <body>
     <header class="header">
         <nav class="nav">
             <a href="#home" class="nav__link active" data-section="home">Главная</a>
-            <a href="#portfolio" class="nav__link" data-section="portfolio">Портфолио</a>
+            <a href="/portfolio" class="nav__link" data-section="portfolio">Портфолио</a>
             <!-- <a href="#blog" class="nav__link" data-section="blog">Блог</a> -->
             <a href="#home" class="nav__link" data-section="portfolio">...</a>
         </nav>
