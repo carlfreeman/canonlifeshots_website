@@ -172,7 +172,7 @@ async function loadPortfolio() {
                 });
 
                 // Observe remaining items with viewport proximity priority
-                const remainingItems = items.slice(6);
+                const remainingItems = items.slice(3);
                 remainingItems.forEach((item, index) => {
                     // Add slight delay based on position to avoid congestion
                     setTimeout(() => {
@@ -181,7 +181,7 @@ async function loadPortfolio() {
                             this.observer.observe(item);
                             this.pending.add(img);
                         }
-                    }, Math.min(index * 50, 1000)); // Max 1s delay spread
+                    }, Math.min(index * 50, 100)); // Max 1s delay spread
                 });
             }
         };
