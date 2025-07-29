@@ -3,7 +3,7 @@
     --ui-light: #f8f8f8;
     --ui-light-transparent: rgba(248, 248, 248, 0.8);
     --accent-color: #c7a17a;
-    --transition: all 0.3s ease;
+    --transition: all 0.2s ease;
 }
 
 * {
@@ -467,15 +467,15 @@ body {
 }
 
 .delay-1 {
-    animation-delay: 0.2s;
+    animation-delay: 0.1s;
 }
 
 .delay-2 {
-    animation-delay: 0.3s;
+    animation-delay: 0.2s;
 }
 
 .delay-3 {
-    animation-delay: 0.4s;
+    animation-delay: 0.3s;
 }
 
 /* Responsive */
