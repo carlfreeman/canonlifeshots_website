@@ -155,6 +155,39 @@ body {
     transform: translateY(20px);
 }
 
+.hero-contacts {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--ui-light-transparent);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 300;
+    transition: var(--transition);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.contact-link:hover {
+    color: var(--accent-color);
+    background: rgba(199, 161, 122, 0.1);
+}
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+
 /* Portfolio section */
 .portfolio-header {
     text-align: center;
@@ -429,6 +462,21 @@ body {
 
     .hero-collage {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    .hero-contacts {
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+    
+    .contact-link {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .contact-icon {
+        width: 18px;
+        height: 18px;
     }
     
     .portfolio-grid {
