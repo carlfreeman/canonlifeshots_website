@@ -39,7 +39,7 @@ for item in portfolio_data:
     images_tags = []
     
     # Оригинальное изображение
-    original_img = f"{SITE_URL}/images/original/{item['id']}.jpg"
+    original_img = f"{SITE_URL}/images/original/{item['id']}.webp"
     images_tags.append(image_template.format(
         image_url=original_img,
         title=item['title'],
@@ -47,7 +47,7 @@ for item in portfolio_data:
     ))
     
     # Оптимизированная версия (AVIF)
-    optimized_img = f"{SITE_URL}/images/optimized/{item['id']}_thumb.avif"
+    optimized_img = f"{SITE_URL}/images/optimized/{item['id']}.avif"
     images_tags.append(image_template.format(
         image_url=optimized_img,
         title=f"Миниатюра: {item['title']}",

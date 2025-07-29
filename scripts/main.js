@@ -159,7 +159,7 @@ function openLightbox(item, allItems) {
     lightboxContent.style.flexDirection = 'column';
     lightboxContent.style.alignItems = 'center';
     
-    const fullSizeSrc = `images/original/${item.id}.jpg`;
+    const fullSizeSrc = `images/original/${item.id}.webp`;
     
     lightboxImg.src = '';
     lightboxImg.style.display = 'none';
