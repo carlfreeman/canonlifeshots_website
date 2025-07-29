@@ -217,6 +217,14 @@ body {
     transform: translateY(20px);
 }
 
+.portfolio-empty-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+    color: var(--ui-light-transparent);
+    font-style: italic;
+}
+
 .filter-btn {
     background: none;
     border: 1px solid var(--ui-light-transparent);
@@ -248,7 +256,7 @@ body {
     aspect-ratio: 1 / 1;
     opacity: 0;
     transform: translateY(20px);
-    transition: var(--transition);
+    transition: transform 0.3s ease;
 }
 
 .portfolio-item img {
@@ -288,10 +296,26 @@ body {
     font-size: 0.9rem;
 }
 
+.image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: rgba(255, 255, 255, 0.03);
+    overflow: hidden;
+}
+
+.image-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
 
 
 /* Blog section */
-.blog-title {
+/*.blog-title {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
     text-align: center;
@@ -335,7 +359,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-}
+}*/
 
 /* Lightbox */
 .lightbox {
@@ -506,6 +530,7 @@ body {
     height: auto;
     aspect-ratio: unset; /* Убираем фиксированное соотношение */
   }
+
 
   .portfolio-item img {
     width: 100%;
