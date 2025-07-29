@@ -144,58 +144,6 @@ async function loadPortfolio() {
     }
 }
 
-// async function loadBlog() {
-//     const blogPostsContainer = document.querySelector('.blog-posts');
-//     if (blogPostsContainer.innerHTML !== '') return;
-    
-//     try {
-//         // In a real implementation, you would fetch this from a JSON file or API
-//         const blogData = [
-//             {
-//                 id: 1,
-//                 title: "Искусство видеть",
-//                 date: "15 мая 2023",
-//                 excerpt: "Размышления о том, как научиться видеть необычное в обычном и замечать моменты, которые становятся искусством.",
-//                 content: "Полное содержание поста..."
-//             },
-//             {
-//                 id: 2,
-//                 title: "Чёрно-белое восприятие",
-//                 date: "2 апреля 2023",
-//                 excerpt: "Почему чёрно-белая фотография часто оказывается более выразительной, чем цветная?",
-//                 content: "Полное содержание поста..."
-//             }
-//         ];
-        
-//         blogPostsContainer.innerHTML = '';
-        
-//         blogData.forEach((post, index) => {
-//             const postElement = document.createElement('article');
-//             postElement.className = 'blog-post';
-//             postElement.style.animationDelay = `${index * 0.1}s`;
-//             postElement.classList.add('fade-in');
-            
-//             postElement.innerHTML = `
-//                 <h3 class="blog-post__title">${post.title}</h3>
-//                 <p class="blog-post__date">${post.date}</p>
-//                 <p class="blog-post__excerpt">${post.excerpt}</p>
-//                 <a href="#" class="blog-post__link" data-post-id="${post.id}">Читать далее</a>
-//             `;
-            
-//             blogPostsContainer.appendChild(postElement);
-//         });
-        
-//         // Animate blog title
-//         const blogTitle = document.querySelector('.blog-title');
-//         setTimeout(() => {
-//             blogTitle.classList.add('fade-in');
-//         }, 300);
-        
-//     } catch (error) {
-//         console.error('Error loading blog:', error);
-//         blogPostsContainer.innerHTML = '<p>Не удалось загрузить блог. Пожалуйста, попробуйте позже.</p>';
-//     }
-// }
 
 function openLightbox(item, allItems) {
     const lightbox = document.querySelector('.lightbox');
