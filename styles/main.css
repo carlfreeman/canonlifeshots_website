@@ -432,9 +432,8 @@ body {
     }
 
     .portfolio-item {
-        display: inline-block !important;
+        display: flex;
         flex-direction: column;
-
         border-radius: 8px;
         overflow: hidden;
         background: rgba(18, 18, 18, 0.8);
