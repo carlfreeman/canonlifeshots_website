@@ -432,7 +432,7 @@ body {
     }
 
     .portfolio-item {
-        display: inline-block !important;
+        display: flex !important;
         flex-direction: column;
 
         border-radius: 8px;
@@ -443,7 +443,7 @@ body {
     .portfolio-item img {
         width: 100%;
         height: auto;
-        aspect-ratio: 1;
+        aspect-ratio: auto;
         object-fit: cover;
     }
 }
