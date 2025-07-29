@@ -82,12 +82,10 @@ async function loadPortfolio() {
             const thumbSrc = `images/optimized/${item.id}.${imageExt}`;
             
             portfolioItem.innerHTML = `
-              <div class="portfolio-image-container">
-                <img src="${thumbSrc}" alt="${item.title}" loading="lazy">
-                <div class="portfolio-item__overlay">
-                  <h3 class="portfolio-item__title">${item.title}</h3>
-                  <p class="portfolio-item__category">${item.categories.map(cat => getCategoryName(cat)).join(', ')}</p>
-                </div>
+              <img src="${thumbSrc}" alt="${item.title}" loading="lazy">
+              <div class="portfolio-item__overlay">
+                <h3 class="portfolio-item__title">${item.title}</h3>
+                <p class="portfolio-item__category">${item.categories.map(cat => getCategoryName(cat)).join(', ')}</p>
               </div>
               <div class="portfolio-mobile-caption">
                 <div class="portfolio-mobile-caption__title">${item.title}</div>

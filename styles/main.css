@@ -406,7 +406,8 @@ body {
   .portfolio-item {
     display: flex;
     flex-direction: column;
-    height: auto; /* Важно! */
+    height: auto;
+    aspect-ratio: unset; /* Убираем фиксированное соотношение */
   }
 
   .portfolio-item img {
@@ -417,16 +418,18 @@ body {
   }
 
   .portfolio-item__overlay {
-    display: none; /* Скрываем оверлей */
+    display: none;
   }
 
-  /* Новый контейнер для подписи */
+  /* Стили для мобильной подписи */
   .portfolio-mobile-caption {
     display: flex;
     flex-direction: column;
     padding: 10px 8px;
-    background: rgba(18, 18, 18, 0.9);
-    flex-grow: 1; /* Занимает оставшееся пространство */
+    background: rgba(18, 18, 18, 0.95);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 2px solid red !important; /* Для отладки */
   }
 
   .portfolio-mobile-caption__title {
@@ -442,7 +445,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
-    margin-top: auto; /* Прижимаем категории к низу */
   }
 
   .portfolio-mobile-caption__category {
@@ -457,7 +459,11 @@ body {
 /* Десктопная версия */
 @media (min-width: 769px) {
   .portfolio-mobile-caption {
-    display: none; /* Скрываем мобильную подпись */
+    display: none;
+  }
+  
+  .portfolio-item {
+    aspect-ratio: 1 / 1;
   }
 }
 
