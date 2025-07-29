@@ -300,11 +300,11 @@ async function loadPortfolio() {
         
         setTimeout(() => {
             portfolioTitle.classList.add('fade-in');
-        }, 300);
+        }, 50);
         
         setTimeout(() => {
             portfolioFilters.classList.add('fade-in', 'delay-1');
-        }, 600);
+        }, 150);
 
     } catch (error) {
         console.error('Error loading portfolio:', error);
