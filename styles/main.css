@@ -205,10 +205,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* Общие стили для подписи (скрыта на десктопе) */
-.portfolio-caption {
-  display: none;
-}
 
 
 /* Blog section */
