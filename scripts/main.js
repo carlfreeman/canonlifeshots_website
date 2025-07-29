@@ -70,14 +70,14 @@ async function loadPortfolio() {
         // Clear existing content
         portfolioGrid.innerHTML = '';
 
-        // Extract unique years from portfolio data
+        // Extract unique years from portfolio data (sorted descending)
         const years = [...new Set(portfolioData.map(item => item.year))].sort((a, b) => b - a);
         const yearFiltersContainer = document.querySelector('.portfolio-year-filters');
 
         // Clear existing year filters (except "all")
         document.querySelectorAll('.year-filter-btn:not([data-year="all"])').forEach(btn => btn.remove());
 
-        // Add year filter buttons dynamically
+        // Add year filter buttons dynamically (newest first)
         years.forEach(year => {
             const yearBtn = document.createElement('button');
             yearBtn.className = 'year-filter-btn';
@@ -172,14 +172,14 @@ async function loadPortfolio() {
             // Process all items for filtering and sorting
             const processedItems = portfolioItems.map(item => {
                 const itemCategories = item.getAttribute('data-categories').split(' ');
-                const itemYear = item.getAttribute('data-year');
+                const itemYear = parseInt(item.getAttribute('data-year'));
                 
                 // Calculate matches for sorting
                 const categoryMatches = activeCategoryFilters.length > 0 ? 
                     itemCategories.filter(cat => activeCategoryFilters.includes(cat)).length : 0;
                 
                 const yearMatch = activeYearFilters.length === 0 || 
-                    activeYearFilters.includes(itemYear);
+                    activeYearFilters.includes(itemYear.toString());
                 
                 return {
                     element: item,
@@ -233,35 +233,42 @@ async function loadPortfolio() {
             initLazyLoading(filtered);
         }
 
-        // Initial load
-        updateGrid();
-
-        // Set up filter event listeners
-        document.querySelectorAll('.filter-btn, .year-filter-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                // Toggle active state
-                this.classList.toggle('active');
-                
-                // Handle "all" button behavior
-                if (this.getAttribute('data-category') === 'all' || 
-                    this.getAttribute('data-year') === 'all') {
-                    // Deactivate other buttons in same group
-                    const group = this.classList.contains('filter-btn') ? 
-                        '.filter-btn' : '.year-filter-btn';
-                    document.querySelectorAll(group).forEach(btn => {
-                        if (btn !== this) btn.classList.remove('active');
-                    });
-                } else {
-                    // Deactivate "all" button in same group
-                    const group = this.classList.contains('filter-btn') ? 
-                        '.filter-btn[data-category="all"]' : '.year-filter-btn[data-year="all"]';
-                    document.querySelector(group)?.classList.remove('active');
-                }
-                
-                // Update the grid
-                updateGrid();
+        // Set up filter event listeners with automatic toggle logic
+        function setupFilterButtons() {
+            document.querySelectorAll('.filter-btn, .year-filter-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const isYearFilter = this.classList.contains('year-filter-btn');
+                    const isAllButton = this.getAttribute(isYearFilter ? 'data-year' : 'data-category') === 'all';
+                    
+                    // For year filters: automatically toggle "all" when selecting specific years
+                    if (isYearFilter && !isAllButton) {
+                        const allYearButton = document.querySelector('.year-filter-btn[data-year="all"]');
+                        if (allYearButton.classList.contains('active')) {
+                            allYearButton.classList.remove('active');
+                        }
+                    }
+                    
+                    // Toggle clicked button
+                    this.classList.toggle('active');
+                    
+                    // If "all" is selected, deselect other filters in same group
+                    if (isAllButton && this.classList.contains('active')) {
+                        const group = isYearFilter ? '.year-filter-btn:not([data-year="all"])' : 
+                            '.filter-btn:not([data-category="all"])';
+                        document.querySelectorAll(group).forEach(btn => {
+                            btn.classList.remove('active');
+                        });
+                    }
+                    
+                    // Update the grid
+                    updateGrid();
+                });
             });
-        });
+        }
+
+        // Initial setup
+        updateGrid();
+        setupFilterButtons();
 
         // Animate portfolio title and filters
         const portfolioTitle = document.querySelector('.portfolio-title');
