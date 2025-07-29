@@ -432,7 +432,11 @@ body {
     }
 
     .portfolio-item {
+<<<<<<< HEAD
         display: flex;
+=======
+        display: inline-block !important;
+>>>>>>> parent of b0874ae (Update main.css)
         flex-direction: column;
         border-radius: 8px;
         overflow: hidden;
