@@ -118,7 +118,7 @@ async function loadPortfolio() {
                 </div>
             `;
 
-            portfolioItem.style.animationDelay = `${index * 0.03}s`;
+            portfolioItem.style.animationDelay = `${index * 0.05}s`;
             portfolioItem.classList.add('fade-in');
 
             portfolioItem.addEventListener('click', () => openLightbox(item, portfolioData));
@@ -151,21 +151,8 @@ async function loadPortfolio() {
                 signal: lazyLoadController.signal
             });
 
-            // Sort items by priority before observing
-            const prioritizedItems = [...items].sort((a, b) => {
-                // Primary: number of matching categories (descending)
-                const aCatMatches = a.getAttribute('data-categories').split(' ').length;
-                const bCatMatches = b.getAttribute('data-categories').split(' ').length;
-                if (bCatMatches !== aCatMatches) return bCatMatches - aCatMatches;
-                
-                // Secondary: year (newest first)
-                const aYear = parseInt(a.getAttribute('data-year'));
-                const bYear = parseInt(b.getAttribute('data-year'));
-                return bYear - aYear;
-            });
-
-            // Observe items in priority order
-            prioritizedItems.forEach(item => {
+            // Observe items in order (priority to higher matches)
+            items.forEach(item => {
                 const img = item.querySelector('img');
                 if (img && img.hasAttribute('data-src')) {
                     observer.observe(item);
@@ -242,37 +229,45 @@ async function loadPortfolio() {
                 }
             });
             
-            // Initialize lazy loading for visible items with priority
+            // Initialize lazy loading for visible items
             initLazyLoading(filtered);
         }
 
-        // Set up filter event listeners with automatic toggle logic
+        // Set up filter event listeners with improved toggle logic
         function setupFilterButtons() {
             document.querySelectorAll('.filter-btn, .year-filter-btn').forEach(btn => {
                 btn.addEventListener('click', function() {
                     const isYearFilter = this.classList.contains('year-filter-btn');
-                    const isAllButton = this.getAttribute(isYearFilter ? 'data-year' : 'data-category') === 'all';
-                    
-                    // For year filters: automatically toggle "all" when selecting specific years
-                    if (isYearFilter && !isAllButton) {
-                        const allYearButton = document.querySelector('.year-filter-btn[data-year="all"]');
-                        if (allYearButton.classList.contains('active')) {
-                            allYearButton.classList.remove('active');
-                        }
-                    }
-                    
+                    const group = isYearFilter ? '.year-filter-btn' : '.filter-btn';
+                    const allButton = document.querySelector(`${group}[data-${isYearFilter ? 'year' : 'category'}="all"]`);
+                    const isAllButton = this === allButton;
+
                     // Toggle clicked button
                     this.classList.toggle('active');
-                    
-                    // If "all" is selected, deselect other filters in same group
-                    if (isAllButton && this.classList.contains('active')) {
-                        const group = isYearFilter ? '.year-filter-btn:not([data-year="all"])' : 
-                            '.filter-btn:not([data-category="all"])';
-                        document.querySelectorAll(group).forEach(btn => {
+
+                    if (isAllButton) {
+                        // If "all" was clicked, deactivate all other buttons in group
+                        document.querySelectorAll(`${group}:not([data-${isYearFilter ? 'year' : 'category'}="all"])`).forEach(btn => {
                             btn.classList.remove('active');
                         });
+                    } else {
+                        // If specific filter was clicked
+                        // Deactivate "all" button if it was active
+                        if (allButton.classList.contains('active')) {
+                            allButton.classList.remove('active');
+                        }
+
+                        // Check if all specific filters are now selected
+                        const specificButtons = document.querySelectorAll(`${group}:not([data-${isYearFilter ? 'year' : 'category'}="all"])`);
+                        const allSpecificActive = Array.from(specificButtons).every(btn => btn.classList.contains('active'));
+
+                        if (allSpecificActive) {
+                            // If all specific filters are selected, activate "all" and deactivate others
+                            specificButtons.forEach(btn => btn.classList.remove('active'));
+                            allButton.classList.add('active');
+                        }
                     }
-                    
+
                     // Update the grid
                     updateGrid();
                 });
