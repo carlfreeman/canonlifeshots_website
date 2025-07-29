@@ -429,7 +429,6 @@ body {
     background: rgba(18, 18, 18, 0.95);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    border: 2px solid red !important; /* Для отладки */
   }
 
   .portfolio-mobile-caption__title {

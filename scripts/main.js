@@ -203,24 +203,16 @@ function openLightbox(item, allItems) {
     const lightboxImg = document.querySelector('.lightbox__image');
     const lightboxCaption = document.querySelector('.lightbox__caption');
     
-    // Очищаем предыдущие обработчики
     const closeBtn = document.querySelector('.lightbox__close');
-    // const prevBtn = document.querySelector('.lightbox__prev');
-    // const nextBtn = document.querySelector('.lightbox__next');
     
     closeBtn.replaceWith(closeBtn.cloneNode(true));
-    // prevBtn.replaceWith(prevBtn.cloneNode(true));
-    // nextBtn.replaceWith(nextBtn.cloneNode(true));
     
-    // Центрируем контент
     lightboxContent.style.display = 'flex';
     lightboxContent.style.flexDirection = 'column';
     lightboxContent.style.alignItems = 'center';
     
-    // Load full-size image
     const fullSizeSrc = `images/original/${item.id}.jpg`;
     
-    // Show loading state
     lightboxImg.src = '';
     lightboxImg.style.display = 'none';
     lightboxCaption.textContent = 'Загрузка...';
@@ -232,13 +224,12 @@ function openLightbox(item, allItems) {
     img.onload = function() {
         lightboxImg.src = fullSizeSrc;
         lightboxImg.style.display = 'block';
-        lightboxCaption.textContent = `${item.title} - ${item.categories.map(cat => getCategoryName(cat)).join(', ')}`;
+        lightboxCaption.textContent = `${item.title}`;
         
         if (item.description) {
             lightboxCaption.textContent += `: ${item.description}`;
         }
         
-        // Центрирование после загрузки
         centerImage(lightboxImg);
     };
     
@@ -246,41 +237,26 @@ function openLightbox(item, allItems) {
         lightboxCaption.textContent = 'Не удалось загрузить изображение';
     };
 
-    // Navigation between images
     const currentIndex = allItems.findIndex(i => i.id === item.id);
-    
-    // function showPrev() {
-    //     const prevIndex = (currentIndex - 1 + allItems.length) % allItems.length;
-    //     openLightbox(allItems[prevIndex], allItems);
-    // }
-    
-    // function showNext() {
-    //     const nextIndex = (currentIndex + 1) % allItems.length;
-    //     openLightbox(allItems[nextIndex], allItems);
-    // }
     
     function closeLightbox() {
         lightbox.classList.remove('active');
         document.removeEventListener('keydown', handleKeyDown);
     }
     
-    
-    // Функция центрирования
+
     function centerImage(imgElement) {
         const container = lightboxContent;
         const img = imgElement;
         
-        // Сброс стилей
         img.style.maxWidth = 'none';
         img.style.maxHeight = 'none';
         img.style.width = 'auto';
         img.style.height = 'auto';
         
-        // Получаем реальные размеры после загрузки
         const imgWidth = img.naturalWidth;
         const imgHeight = img.naturalHeight;
         
-        // Рассчитываем пропорции
         const containerWidth = container.clientWidth;
         const containerHeight = container.clientHeight;
         
@@ -292,7 +268,6 @@ function openLightbox(item, allItems) {
         img.style.height = `${imgHeight * scale}px`;
     }
     
-    // Обработчик изменения размера окна
     window.addEventListener('resize', () => {
         if (lightbox.classList.contains('active') && lightboxImg.src) {
             centerImage(lightboxImg);
@@ -300,13 +275,8 @@ function openLightbox(item, allItems) {
     });
 
     
-
-    // Добавляем новые обработчики
     document.querySelector('.lightbox__close').addEventListener('click', closeLightbox);
-    // document.querySelector('.lightbox__prev').addEventListener('click', showPrev);
-    // document.querySelector('.lightbox__next').addEventListener('click', showNext);
-    
-    // Keyboard navigation
+   
     function handleKeyDown(e) {
         if (!lightbox.classList.contains('active')) return;
         
@@ -314,12 +284,6 @@ function openLightbox(item, allItems) {
             case 'Escape':
                 closeLightbox();
                 break;
-            // case 'ArrowLeft':
-            //     showPrev();
-            //     break;
-            // case 'ArrowRight':
-            //     showNext();
-            //     break;
         }
     }
     
