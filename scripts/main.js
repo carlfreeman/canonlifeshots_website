@@ -141,7 +141,7 @@ async function processLoadingQueue() {
     // Проверяем видимость элемента перед загрузкой
     if (isElementInViewport(item)) {
         const imageContainer = item.querySelector('.image-container');
-        const imageExt = supportsAVIF() ? 'avif' : 'avif';
+        const imageExt = supportsAVIF() ? 'avif' : 'jpg';
         const img = new Image();
         
         img.src = `images/optimized/${itemId}.${imageExt}`;
