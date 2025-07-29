@@ -81,29 +81,21 @@ async function loadPortfolio() {
             const imageExt = supportsAVIF() ? 'avif' : 'avif';
             const thumbSrc = `images/optimized/${item.id}.${imageExt}`;
             
-            const isMobile = window.matchMedia('(max-width: 768px)').matches;
-
-            if (isMobile) {
-              portfolioItem.innerHTML = `
-                <img src="${thumbSrc}" alt="${item.title}" loading="lazy">
-                <div class="portfolio-caption">
-                  <div class="portfolio-caption__title">${item.title}</div>
-                  <div class="portfolio-caption__categories">
-                    ${item.categories.map(cat => `
-                      <span class="portfolio-caption__category">${getCategoryName(cat)}</span>
-                    `).join('')}
-                  </div>
+            portfolioItem.innerHTML = `
+              <img src="${thumbSrc}" alt="${item.title}" loading="lazy">
+              <div class="portfolio-item__overlay">
+                <h3 class="portfolio-item__title">${item.title}</h3>
+                <p class="portfolio-item__category">${item.categories.map(cat => getCategoryName(cat)).join(', ')}</p>
+              </div>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption__title">${item.title}</div>
+                <div class="portfolio-caption__categories">
+                  ${item.categories.map(cat => `
+                    <span class="portfolio-caption__category">${getCategoryName(cat)}</span>
+                  `).join('')}
                 </div>
-              `;
-            } else {
-              portfolioItem.innerHTML = `
-                <img src="${thumbSrc}" alt="${item.title}" loading="lazy">
-                <div class="portfolio-item__overlay">
-                  <h3 class="portfolio-item__title">${item.title}</h3>
-                  <p class="portfolio-item__category">${item.categories.map(cat => getCategoryName(cat)).join(', ')}</p>
-                </div>
-              `;
-            }
+              </div>
+            `;
             
             portfolioItem.style.animationDelay = `${index * 0.05}s`;
             portfolioItem.classList.add('fade-in');
