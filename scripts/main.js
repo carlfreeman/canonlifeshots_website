@@ -128,22 +128,26 @@ async function loadPortfolio() {
         
         filterButtons.forEach(button => {
             button.addEventListener('click', function() {
-                // Toggle active state for category/year buttons
-                if (this.getAttribute('data-category') === 'all' || 
-                    this.getAttribute('data-year') === 'all') {
-                    // If "all" is clicked, deactivate others in its group
-                    const group = this.classList.contains('filter-btn') ? 
-                        '.filter-btn' : '.year-filter-btn';
-                    document.querySelectorAll(group).forEach(btn => 
-                        btn.classList.remove('active'));
-                } else {
-                    // For other buttons, toggle active state and deactivate "all"
-                    const group = this.classList.contains('filter-btn') ? 
-                        '.filter-btn' : '.year-filter-btn';
-                    document.querySelector(`${group}[data-all="all"]`)
-                        .classList.remove('active');
+                // Determine if this is a category or year filter
+                const isCategoryFilter = this.classList.contains('filter-btn');
+                const isYearFilter = this.classList.contains('year-filter-btn');
+                
+                // Get the appropriate group selector and "all" button
+                const group = isCategoryFilter ? '.filter-btn' : '.year-filter-btn';
+                const allButton = document.querySelector(`${group}[data-${isCategoryFilter ? 'category' : 'year'}="all"]`);
+                
+                // If "all" is clicked, deactivate others in its group
+                if (this.getAttribute(isCategoryFilter ? 'data-category' : 'data-year') === 'all') {
+                    document.querySelectorAll(group).forEach(btn => {
+                        if (btn !== this) btn.classList.remove('active');
+                    });
+                } 
+                // For other buttons, deactivate "all" in its group
+                else {
+                    if (allButton) allButton.classList.remove('active');
                 }
                 
+                // Toggle active state for the clicked button
                 this.classList.toggle('active');
                 
                 // Check if any filters are active in each group
