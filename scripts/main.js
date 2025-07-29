@@ -144,7 +144,7 @@ async function processLoadingQueue() {
         const imageExt = supportsAVIF() ? 'avif' : 'jpg';
         const img = new Image();
         
-        img.src = `images/optimized/${itemId}_thumb.${imageExt}`;
+        img.src = `images/optimized/${itemId}.${imageExt}`;
         img.alt = item.querySelector('.portfolio-item__title').textContent;
         img.loading = 'lazy';
         img.classList.add('fade-in');
@@ -157,11 +157,11 @@ async function processLoadingQueue() {
             }, 100);
         };
         
-        img.onerror = () => {
-            if (imageExt === 'avif') {
-                img.src = `images/optimized/${itemId}_thumb.jpg`;
-            }
-        };
+        // img.onerror = () => {
+        //     if (imageExt === 'avif') {
+        //         img.src = `images/optimized/${itemId}_thumb.jpg`;
+        //     }
+        // };
     }
     
     // Обрабатываем следующее изображение с небольшой задержкой
