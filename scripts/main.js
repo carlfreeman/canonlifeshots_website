@@ -292,6 +292,7 @@ function openLightbox(item, allItems) {
 
 function getCategoryName(category) {
     const categories = {
+        'best': 'Лучшее',
         'street': 'Стрит',
         'concept': 'Концепт',
         'mono': 'Моно-ЧБ',
