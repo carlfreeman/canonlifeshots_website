@@ -11,6 +11,7 @@
         "id": "atthewall",
         "title": "У стены",
         "categories": [
+            "best",
             "street",
             "mono"
         ],
@@ -57,6 +58,7 @@
         "id": "construct2",
         "title": "Рождение технологией",
         "categories": [
+            "best",
             "street"
         ],
         "description": ""
@@ -172,6 +174,7 @@
         "id": "his3",
         "title": "Кружит, кружит...",
         "categories": [
+            "best",
             "street"
         ],
         "description": ""
@@ -206,6 +209,7 @@
         "id": "history4",
         "title": "Удалой!",
         "categories": [
+            "best",
             "street"
         ],
         "description": ""
@@ -260,6 +264,7 @@
         "id": "hustle6",
         "title": "Портрет",
         "categories": [
+            "best",
             "street",
             "mono"
         ],
@@ -278,6 +283,7 @@
         "id": "print_glove_cig",
         "title": "Отпечатки. Перчатка. Окурок.",
         "categories": [
+            "best",
             "street",
             "concept",
             "experiments"
@@ -350,6 +356,7 @@
         "id": "wall2",
         "title": "Диптих. Простота и тень #2",
         "categories": [
+            "best",
             "street",
             "concept"
         ],
@@ -457,6 +464,7 @@
         "id": "_MG_1100",
         "title": "Перехват!.. Очко...",
         "categories": [
+            "best",
             "street",
             "mono"
         ],
@@ -617,6 +625,7 @@
         "id": "heart",
         "title": "Сердце атмосферы",
         "categories": [
+            "best",
             "concept",
             "mono",
             "philosophy"
@@ -645,6 +654,7 @@
         "id": "phoner",
         "title": "Затормозил",
         "categories": [
+            "best",
             "street",
             "mono"
         ],
@@ -908,6 +918,7 @@
         "id": "bulbs_bridge",
         "title": "Треугольники",
         "categories": [
+            "best",
             "street",
             "concept",
             "mono"
