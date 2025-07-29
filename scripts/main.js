@@ -307,3 +307,59 @@ function supportsAVIF() {
     // Simple feature detection for AVIF support
     return document.createElement('canvas').toDataURL('image/avif').indexOf('data:image/avif') === 0;
 }
+
+// Функция для создания коллажа
+async function createHeroCollage() {
+    const collageContainer = document.querySelector('.hero-collage');
+    
+    try {
+        // Загружаем данные портфолио
+        const response = await fetch('data/portfolio.json');
+        const portfolioData = await response.json();
+        
+        // Фильтруем изображения из папки optimized
+        const optimizedImages = portfolioData.map(item => ({
+            url: `images/optimized/${item.id}.avif`,
+            title: item.title
+        }));
+        
+        // Очищаем контейнер
+        collageContainer.innerHTML = '';
+        
+        // Создаем 12 случайных элементов коллажа
+        const shuffledImages = [...optimizedImages].sort(() => 0.5 - Math.random());
+        const selectedImages = shuffledImages.slice(0, 12);
+        
+        selectedImages.forEach((image, index) => {
+            const img = document.createElement('img');
+            img.src = image.url;
+            img.alt = image.title;
+            img.loading = 'lazy';
+            img.style.opacity = 0;
+            
+            // Плавное появление с задержкой
+            setTimeout(() => {
+                img.style.opacity = 1;
+            }, index * 100);
+            
+            
+            collageContainer.appendChild(img);
+        });
+        
+    } catch (error) {
+        console.error('Error creating collage:', error);
+        collageContainer.innerHTML = '';
+    }
+}
+
+// Вызываем при загрузке страницы
+document.addEventListener('DOMContentLoaded', function() {
+    createHeroCollage();
+    
+    // Обновляем при изменении размера окна
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            createHeroCollage();
+        }
+    });
+});
