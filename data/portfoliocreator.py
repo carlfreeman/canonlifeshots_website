@@ -6,7 +6,9 @@ from PIL import Image, ImageTk
 
 # Категории
 categories = {
+    'best': 'Лучшее',
     'street': 'Стрит',
+    'nature': 'Природа',
     'concept': 'Концепт',
     'mono': 'Моно-ЧБ',
     'experiments': 'Эксперименты',
@@ -16,7 +18,7 @@ categories = {
 class ImageMetadataEditor:
     def __init__(self, root):
         self.root = root
-        self.root.title("Редактор метаданных изображений")
+        self.root.title("Редактор метаданных")
         
         # Список файлов для обработки
         self.files = []
@@ -49,22 +51,28 @@ class ImageMetadataEditor:
         ttk.Label(self.form_frame, text="Заголовок:").grid(row=1, column=0, sticky="w")
         self.title_entry = ttk.Entry(self.form_frame, width=40)
         self.title_entry.grid(row=1, column=1, pady=5)
+
+        ttk.Label(self.form_frame, text="Год:").grid(row=2, column=0, sticky="w")
+        self.year_entry = ttk.Entry(self.form_frame, width=40)
+        self.year_entry.grid(row=2, column=1, pady=5)
         
-        ttk.Label(self.form_frame, text="Категории:").grid(row=2, column=0, sticky="nw")
+        ttk.Label(self.form_frame, text="Категории:").grid(row=3, column=0, sticky="nw")
         self.category_vars = []
         self.category_checks = []
         
         for i, (key, value) in enumerate(categories.items()):
             var = tk.BooleanVar()
             cb = ttk.Checkbutton(self.form_frame, text=f"{value} ({key})", variable=var)
-            cb.grid(row=2+i, column=1, sticky="w")
+            cb.grid(row=3+i, column=1, sticky="w")
             self.category_vars.append(var)
             self.category_checks.append(cb)
         
-        ttk.Label(self.form_frame, text="Описание:").grid(row=2+len(categories), column=0, sticky="nw")
+        ttk.Label(self.form_frame, text="Описание:").grid(row=3+len(categories), column=0, sticky="nw")
         self.description_text = tk.Text(self.form_frame, width=40, height=5)
-        self.description_text.grid(row=2+len(categories), column=1, pady=5)
+        self.description_text.grid(row=3+len(categories), column=1, pady=5)
         
+        
+
         # Кнопки навигации
         self.nav_frame = ttk.Frame(self.root)
         self.nav_frame.grid(row=1, column=0, columnspan=2, pady=10)
@@ -126,6 +134,7 @@ class ImageMetadataEditor:
         file = self.files[self.current_file_index]
         file_id = os.path.splitext(file)[0]
         title = self.title_entry.get()
+        year = self.year_entry.get()
         
         selected_categories = []
         for i, var in enumerate(self.category_vars):
@@ -137,6 +146,7 @@ class ImageMetadataEditor:
         return {
             "id": file_id,
             "title": title,
+            "year": year,
             "categories": selected_categories,
             "description": description
         }

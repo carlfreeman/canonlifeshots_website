@@ -234,6 +234,37 @@ body {
     color: var(--accent-color);
 }
 
+/* Add to your main.css */
+.portfolio-year-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.year-filter-btn {
+    padding: 6px 12px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.year-filter-btn:hover,
+.year-filter-btn.active {
+    background: #333;
+    color: white;
+    border-color: #333;
+}
+
+.filter-btn.active {
+    background: #333;
+    color: white;
+    border-color: #333;
+}
+
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

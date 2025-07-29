@@ -1,15 +1,70 @@
 [
     {
+        "id": "3",
+        "title": "Диптих. Дорога домой #1",
+        "year": "2025",
+        "categories": [
+            "best",
+            "concept",
+            "mono"
+        ],
+        "description": "3 окна чердака как дома в пустоте"
+    },
+    {
+        "id": "3birds",
+        "title": "Диптих. Дорога домой #2",
+        "year": "2025",
+        "categories": [
+            "best",
+            "nature",
+            "concept",
+            "mono"
+        ],
+        "description": "3 птицы несутся вперед, огибая тьму"
+    },
+    {
         "id": "41",
         "title": "41",
+        "year": "2025",
         "categories": [
+            "street",
+            "concept",
+            "experiments"
+        ],
+        "description": "Отражения фонарей, яркий буй и маячок"
+    },
+    {
+        "id": "adjika",
+        "title": "Аджика",
+        "year": "2025",
+        "categories": [
+            "street"
+        ],
+        "description": "Завтрак 'Old Style'"
+    },
+    {
+        "id": "art",
+        "title": "ИСКуство",
+        "year": "2025",
+        "categories": [
+            "street",
             "concept"
         ],
-        "description": ""
+        "description": "Работа идет, городские инсталляции больше радуют в таком виде"
+    },
+    {
+        "id": "arts",
+        "title": "Творцы",
+        "year": "2025",
+        "categories": [
+            "street"
+        ],
+        "description": "Золотые фигурки и чувствующий ударник"
     },
     {
         "id": "atthewall",
-        "title": "У стены",
+        "title": "Точка равновесия",
+        "year": "2025",
         "categories": [
             "best",
             "street",
@@ -18,16 +73,80 @@
         "description": ""
     },
     {
-        "id": "border",
-        "title": "Зрители",
+        "id": "bereza1",
+        "title": "Березка #1",
+        "year": "2025",
         "categories": [
             "street"
         ],
         "description": ""
     },
     {
+        "id": "bereza2",
+        "title": "Березка #2",
+        "year": "2025",
+        "categories": [
+            "street"
+        ],
+        "description": "Милейший дуэт на Старом Арбате"
+    },
+    {
+        "id": "bluestars",
+        "title": "Вспышки земли",
+        "year": "2025",
+        "categories": [
+            "best",
+            "nature",
+            "concept",
+            "experiments"
+        ],
+        "description": "Тени создают магию"
+    },
+    {
+        "id": "border",
+        "title": "Публика",
+        "year": "2025",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "bridge",
+        "title": "Мосты",
+        "year": "2025",
+        "categories": [
+            "concept",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "bug",
+        "title": "ЧБ. Крылья",
+        "year": "2025",
+        "categories": [
+            "nature",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "bulbs_bridge",
+        "title": "Треугольность",
+        "year": "2025",
+        "categories": [
+            "best",
+            "street",
+            "concept",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
         "id": "busstopprincess",
         "title": "Многомерное восприятие",
+        "year": "2025",
         "categories": [
             "best",
             "street",
@@ -35,100 +154,268 @@
             "experiments",
             "philosophy"
         ],
-        "description": "2 дня, 2 кадра. Смешение и наложения создают пеструю картину множества точек зрения на мир."
+        "description": "2 дня, одно место, разные точки зрения. Кто-то оставляет яркий след"
     },
     {
         "id": "b_plus_w_is_dalmatin",
         "title": "Д=Ч+Б",
+        "year": "2025",
         "categories": [
-            "street"
+            "street",
+            "concept",
+            "mono"
         ],
-        "description": "Далматин у кафе возле театра Шиловского."
+        "description": "Далматин у кафе возле театра Шиловского"
     },
     {
-        "id": "construct1",
-        "title": "Железное небо",
+        "id": "candle",
+        "title": "Свеча",
+        "year": "2025",
         "categories": [
             "best",
+            "nature",
+            "concept"
+        ],
+        "description": "Свет будто раздувает облака"
+    },
+    {
+        "id": "construct",
+        "title": "Стройка",
+        "year": "2025",
+        "categories": [
+            "street",
             "concept"
         ],
         "description": ""
     },
     {
-        "id": "construct2",
-        "title": "Рождение технологией",
+        "id": "construct1",
+        "title": "Стальное небо",
+        "year": "2025",
         "categories": [
             "best",
-            "street"
+            "street",
+            "concept"
+        ],
+        "description": "Безопасный проход на Пречистенке"
+    },
+    {
+        "id": "construct2",
+        "title": "Рождение технологией",
+        "year": "2025",
+        "categories": [
+            "best",
+            "street",
+            "concept"
         ],
         "description": ""
     },
     {
         "id": "construct3",
-        "title": "Сетка",
+        "title": "Сетка. Бетон",
+        "year": "2025",
         "categories": [
+            "street",
             "concept"
         ],
         "description": ""
     },
     {
         "id": "construct4",
-        "title": "Поддержка",
+        "title": "Краны",
+        "year": "2025",
         "categories": [
+            "best",
+            "street",
+            "concept"
+        ],
+        "description": "Стрелы будто поддерживают друг друга, тянут город ввысь"
+    },
+    {
+        "id": "dog",
+        "title": "Друзья",
+        "year": "2025",
+        "categories": [
+            "street",
+            "nature"
+        ],
+        "description": ""
+    },
+    {
+        "id": "edge",
+        "title": "На грани",
+        "year": "2025",
+        "categories": [
+            "best",
+            "street",
+            "concept",
+            "mono"
+        ],
+        "description": "Изрисовано, разбито, но все еще стоит на месте"
+    },
+    {
+        "id": "exit",
+        "title": "ВЫХОД",
+        "year": "2025",
+        "categories": [
+            "best",
+            "concept",
+            "experiments"
+        ],
+        "description": "Отражения создают новые миры"
+    },
+    {
+        "id": "face",
+        "title": "Плоскости",
+        "year": "2025",
+        "categories": [
+            "best",
+            "concept",
+            "mono",
+            "philosophy"
+        ],
+        "description": "Столько граней... И только на одну опора"
+    },
+    {
+        "id": "fire",
+        "title": "Костерок",
+        "year": "2025",
+        "categories": [
+            "concept",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "flags",
+        "title": "Мир!",
+        "year": "2025",
+        "categories": [
+            "best",
+            "street",
             "concept",
             "philosophy"
         ],
-        "description": "Стрелы кранов будто тянут друг друга и город вверх."
+        "description": "Солнечное тепло объединяет стороны света"
+    },
+    {
+        "id": "floodfire",
+        "title": "Уставшие листья",
+        "year": "2025",
+        "categories": [
+            "street",
+            "nature",
+            "concept"
+        ],
+        "description": "Сильная жара после наводнения"
     },
     {
         "id": "flow1",
-        "title": "Поток",
+        "title": "Течение",
+        "year": "2025",
         "categories": [
+            "best",
+            "nature",
             "concept",
             "experiments"
         ],
-        "description": ""
+        "description": "Дань Takehiro Misaka (~) и его манере"
+    },
+    {
+        "id": "flow11",
+        "title": "Течение пространства",
+        "year": "2025",
+        "categories": [
+            "nature",
+            "concept",
+            "mono",
+            "experiments"
+        ],
+        "description": "Дань Takehiro Misaka (~) и его манере"
     },
     {
         "id": "flow2",
-        "title": "Поток",
+        "title": "Дрожь деревьев",
+        "year": "2025",
         "categories": [
+            "nature",
+            "concept",
+            "experiments"
+        ],
+        "description": "Дань Takehiro Misaka (~) и его манере"
+    },
+    {
+        "id": "flow21",
+        "title": "Застывшие",
+        "year": "2025",
+        "categories": [
+            "best",
+            "nature",
+            "concept",
+            "mono"
+        ],
+        "description": "Фактурная текстура"
+    },
+    {
+        "id": "flow3",
+        "title": "Дрожь воздуха",
+        "year": "2025",
+        "categories": [
+            "best",
+            "nature",
             "concept",
             "experiments"
         ],
         "description": ""
     },
     {
-        "id": "flow3",
-        "title": "Поток",
+        "id": "flow31",
+        "title": "Просветы",
+        "year": "2025",
         "categories": [
+            "nature",
             "concept",
-            "experiments"
+            "mono"
         ],
         "description": ""
     },
     {
         "id": "flow4",
-        "title": "Поток ",
+        "title": "Мираж бульвара",
+        "year": "2025",
         "categories": [
+            "street",
+            "nature",
             "concept",
             "experiments"
         ],
-        "description": ""
+        "description": "Дань Takehiro Misaka (~) и его манере"
     },
     {
         "id": "flow5",
         "title": "Мираж",
+        "year": "2025",
         "categories": [
             "best",
+            "street",
             "concept",
             "experiments"
         ],
-        "description": "Ночное разложение витрины и уличных огней в отражениях и выдержке."
+        "description": "Дань Takehiro Misaka (~) и его манере"
+    },
+    {
+        "id": "freckels",
+        "title": "Углеватость",
+        "year": "2025",
+        "categories": [
+            "street"
+        ],
+        "description": ""
     },
     {
         "id": "glass",
-        "title": "Отпечаток",
+        "title": "Пятна света",
+        "year": "2025",
         "categories": [
             "street",
             "concept"
@@ -136,35 +423,82 @@
         "description": ""
     },
     {
+        "id": "glass1",
+        "title": "Ночь",
+        "year": "2025",
+        "categories": [
+            "street",
+            "concept",
+            "experiments"
+        ],
+        "description": "Отражения"
+    },
+    {
         "id": "glassed",
         "title": "В голубом",
+        "year": "2025",
         "categories": [
             "best",
             "street",
             "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "guitar",
+        "title": "Гитара. Цветы.",
+        "year": "2025",
+        "categories": [
+            "street",
+            "mono"
         ],
         "description": ""
     },
     {
         "id": "half",
-        "title": "Половинка",
+        "title": "Полухвоя",
+        "year": "2025",
         "categories": [
+            "nature",
             "concept"
         ],
         "description": ""
     },
     {
-        "id": "his1",
-        "title": "Танец",
+        "id": "halved",
+        "title": "Лучшая часть",
+        "year": "2025",
         "categories": [
-            "street",
-            "experiments"
+            "nature",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "heart",
+        "title": "Сердце атмосферы",
+        "year": "2025",
+        "categories": [
+            "best",
+            "nature",
+            "concept",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "his1",
+        "title": "Кружение",
+        "year": "2025",
+        "categories": [
+            "street"
         ],
         "description": ""
     },
     {
         "id": "his2",
         "title": "Коллега",
+        "year": "2025",
         "categories": [
             "street"
         ],
@@ -172,7 +506,8 @@
     },
     {
         "id": "his3",
-        "title": "Кружит, кружит...",
+        "title": "Кружение",
+        "year": "2025",
         "categories": [
             "best",
             "street"
@@ -182,7 +517,9 @@
     {
         "id": "history1",
         "title": "Всем возрастам...",
+        "year": "2025",
         "categories": [
+            "best",
             "street",
             "mono"
         ],
@@ -191,6 +528,7 @@
     {
         "id": "history2",
         "title": "Всем возрастам...",
+        "year": "2025",
         "categories": [
             "street",
             "mono"
@@ -200,6 +538,7 @@
     {
         "id": "history3",
         "title": "Окошко",
+        "year": "2025",
         "categories": [
             "street"
         ],
@@ -207,452 +546,147 @@
     },
     {
         "id": "history4",
-        "title": "Удалой!",
+        "title": "Молодец-удалец",
+        "year": "2025",
         "categories": [
             "best",
             "street"
-        ],
-        "description": ""
-    },
-    {
-        "id": "hustle1",
-        "title": "Ожидание",
-        "categories": [
-            "street",
-            "mono"
-        ],
-        "description": "Хастл опен-эйр"
-    },
-    {
-        "id": "hustle2",
-        "title": "Всем возрастам...",
-        "categories": [
-            "street",
-            "mono"
-        ],
-        "description": "Хастл опен-эйр"
-    },
-    {
-        "id": "hustle3",
-        "title": "В потоке света",
-        "categories": [
-            "street",
-            "mono",
-            "experiments"
-        ],
-        "description": "Хастл опен-эйр"
-    },
-    {
-        "id": "hustle4",
-        "title": "В горошек",
-        "categories": [
-            "street",
-            "mono"
-        ],
-        "description": "Хастл опен-эйр"
-    },
-    {
-        "id": "hustle5",
-        "title": "Всем возрастам...",
-        "categories": [
-            "street",
-            "mono"
-        ],
-        "description": "Хастл опен-эйр"
-    },
-    {
-        "id": "hustle6",
-        "title": "Портрет",
-        "categories": [
-            "best",
-            "street",
-            "mono"
-        ],
-        "description": "Хастл опен-эйр"
-    },
-    {
-        "id": "hustle7",
-        "title": "Точка",
-        "categories": [
-            "street",
-            "mono"
-        ],
-        "description": "Хастл опен-эйр"
-    },
-    {
-        "id": "print_glove_cig",
-        "title": "Отпечатки. Перчатка. Окурок.",
-        "categories": [
-            "best",
-            "street",
-            "concept",
-            "experiments"
-        ],
-        "description": ""
-    },
-    {
-        "id": "roof",
-        "title": "Жар",
-        "categories": [
-            "street"
-        ],
-        "description": ""
-    },
-    {
-        "id": "rose",
-        "title": "Роза не на своем кусте",
-        "categories": [
-            "concept"
-        ],
-        "description": ""
-    },
-    {
-        "id": "scooter",
-        "title": "В лучах заката",
-        "categories": [
-            "street",
-            "experiments"
-        ],
-        "description": ""
-    },
-    {
-        "id": "smoke",
-        "title": "Размышление. Облачко дыма.",
-        "categories": [
-            "best",
-            "street",
-            "concept",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "sunny1",
-        "title": "Солнечное счастье",
-        "categories": [
-            "street"
-        ],
-        "description": ""
-    },
-    {
-        "id": "sunny2",
-        "title": "Солнечное счастье",
-        "categories": [
-            "street"
-        ],
-        "description": ""
-    },
-    {
-        "id": "wall1",
-        "title": "Диптих. Простота и тень #1",
-        "categories": [
-            "best",
-            "street",
-            "concept"
-        ],
-        "description": ""
-    },
-    {
-        "id": "wall2",
-        "title": "Диптих. Простота и тень #2",
-        "categories": [
-            "best",
-            "street",
-            "concept"
-        ],
-        "description": ""
-    },
-    {
-        "id": "web",
-        "title": "Сверкают нити на столбе",
-        "categories": [
-            "concept",
-            "experiments"
-        ],
-        "description": ""
-    },
-    {
-        "id": "whiter",
-        "title": "В белом",
-        "categories": [
-            "street"
-        ],
-        "description": ""
-    },
-        {
-        "id": "_MG_0755",
-        "title": "Кольцо",
-        "categories": [
-            "concept"
-        ],
-        "description": ""
-    },
-    {
-        "id": "_MG_0762",
-        "title": "Листок",
-        "categories": [
-            "concept",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "_MG_0837",
-        "title": "Команда мечты",
-        "categories": [
-            "best",
-            "street",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "_MG_0933",
-        "title": "Борьба",
-        "categories": [
-            "street",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "_MG_0978",
-        "title": "Наведение",
-        "categories": [
-            "street",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "_MG_1003",
-        "title": "Погоня",
-        "categories": [
-            "street",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "_MG_1012",
-        "title": "Передышка",
-        "categories": [
-            "street",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "_MG_1016",
-        "title": "Борьба",
-        "categories": [
-            "street",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "_MG_1035",
-        "title": "Бегом за ним!",
-        "categories": [
-            "street",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "_MG_1100",
-        "title": "Перехват!.. Очко...",
-        "categories": [
-            "best",
-            "street",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "_MG_1128",
-        "title": "Напряженный момент",
-        "categories": [
-            "street",
-            "mono"
-        ],
-        "description": "Когда мяч приближается к кольцу по хорошей траектории, все замирает."
-    },
-    {
-        "id": "_MG_1156",
-        "title": "Обводка",
-        "categories": [
-            "best",
-            "street",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "3",
-        "title": "3 домика",
-        "categories": [
-            "best",
-            "concept",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "3birds",
-        "title": "Тройка",
-        "categories": [
-            "best",
-            "concept",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "arts",
-        "title": "Диковинки",
-        "categories": [
-            "street",
-            "experiments"
-        ],
-        "description": "Золотые фигурки и музыканты на улице"
-    },
-    {
-        "id": "bereza1",
-        "title": "Березка",
-        "categories": [
-            "street"
-        ],
-        "description": ""
-    },
-    {
-        "id": "bereza2",
-        "title": "Березка",
-        "categories": [
-            "street"
-        ],
-        "description": ""
-    },
-    {
-        "id": "bluestars",
-        "title": "Вспышки",
-        "categories": [
-            "concept",
-            "experiments"
-        ],
-        "description": "Цветы на лужайке"
-    },
-    {
-        "id": "bridge",
-        "title": "Мост",
-        "categories": [
-            "street",
-            "concept",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "edge",
-        "title": "На грани...",
-        "categories": [
-            "street",
-            "concept",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "face",
-        "title": "Плоскости",
-        "categories": [
-            "street",
-            "concept",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "fire",
-        "title": "Огонь",
-        "categories": [
-            "concept",
-            "experiments"
-        ],
-        "description": ""
-    },
-    {
-        "id": "flow11",
-        "title": "Поток",
-        "categories": [
-            "concept",
-            "mono",
-            "experiments"
-        ],
-        "description": ""
-    },
-    {
-        "id": "flow21",
-        "title": "Поток",
-        "categories": [
-            "concept",
-            "mono",
-            "experiments"
-        ],
-        "description": ""
-    },
-    {
-        "id": "flow31",
-        "title": "Дрожь",
-        "categories": [
-            "concept",
-            "mono",
-            "experiments"
-        ],
-        "description": ""
-    },
-    {
-        "id": "guitar",
-        "title": "Гитара и цветок",
-        "categories": [
-            "street",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "heart",
-        "title": "Сердце атмосферы",
-        "categories": [
-            "best",
-            "concept",
-            "mono",
-            "philosophy"
         ],
         "description": ""
     },
     {
         "id": "holeabstract",
-        "title": "Абстракция",
+        "title": "Достроим город-сад",
+        "year": "2025",
         "categories": [
+            "best",
+            "nature",
+            "concept",
+            "philosophy"
+        ],
+        "description": ""
+    },
+    {
+        "id": "hustle1",
+        "title": "Поиски",
+        "year": "2025",
+        "categories": [
+            "best",
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "hustle2",
+        "title": "Всем возрастам...",
+        "year": "2025",
+        "categories": [
+            "best",
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "hustle3",
+        "title": "Световой всплеск",
+        "year": "2025",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "hustle4",
+        "title": "Горошковая нежность",
+        "year": "2025",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "hustle5",
+        "title": "Всем возрастам...",
+        "year": "2025",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "hustle6",
+        "title": "Проходя мимо",
+        "year": "2025",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "hustle7",
+        "title": "Точка",
+        "year": "2025",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "in_mirror",
+        "title": "Отражение?",
+        "year": "2025",
+        "categories": [
+            "best",
+            "nature",
+            "concept",
+            "experiments"
+        ],
+        "description": "Гладь пруда в Нескучном"
+    },
+    {
+        "id": "net",
+        "title": "Сетка",
+        "year": "2025",
+        "categories": [
+            "nature",
+            "concept",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "notarobot",
+        "title": "Я не робот!",
+        "year": "2025",
+        "categories": [
+            "best",
             "street",
             "concept"
         ],
         "description": ""
     },
     {
-        "id": "net",
-        "title": "Сеть",
+        "id": "on_the_wall",
+        "title": "Ожидание",
+        "year": "2025",
         "categories": [
-            "concept",
+            "best",
+            "street",
             "mono"
         ],
         "description": ""
     },
     {
         "id": "phoner",
-        "title": "Затормозил",
+        "title": "На связи",
+        "year": "2025",
         "categories": [
             "best",
             "street",
@@ -661,12 +695,22 @@
         "description": ""
     },
     {
+        "id": "photograph",
+        "title": "Коллега",
+        "year": "2025",
+        "categories": [
+            "best",
+            "street"
+        ],
+        "description": ""
+    },
+    {
         "id": "pianist",
         "title": "Маленькая Италия",
+        "year": "2025",
         "categories": [
             "best",
             "street",
-            "concept",
             "mono"
         ],
         "description": ""
@@ -674,6 +718,7 @@
     {
         "id": "pigeons",
         "title": "Голуби!",
+        "year": "2025",
         "categories": [
             "street",
             "mono"
@@ -681,76 +726,9 @@
         "description": ""
     },
     {
-        "id": "reader",
-        "title": "Пусть все подождут!",
-        "categories": [
-            "street",
-            "mono",
-            "philosophy"
-        ],
-        "description": ""
-    },
-    {
-        "id": "up",
-        "title": "Зеркало неба",
-        "categories": [
-            "street",
-            "concept",
-            "mono",
-            "experiments"
-        ],
-        "description": ""
-    },
-    {
-        "id": "worldtwist",
-        "title": "Открой окно",
-        "categories": [
-            "street",
-            "concept",
-            "mono",
-            "experiments"
-        ],
-        "description": "Переверни лучше всю землю!"
-    },
-    {
-        "id": "art",
-        "title": "Искусство",
-        "categories": [
-            "street"
-        ],
-        "description": ""
-    },
-    {
-        "id": "candle",
-        "title": "Свеча",
-        "categories": [
-            "concept",
-            "experiments"
-        ],
-        "description": "Солнце будто сдуло облака"
-    },
-    {
-        "id": "dog",
-        "title": "Пес",
-        "categories": [
-            "street"
-        ],
-        "description": ""
-    },
-    {
-        "id": "flags",
-        "title": "Мир во всем мире!",
-        "categories": [
-            "street",
-            "concept",
-            "experiments",
-            "philosophy"
-        ],
-        "description": "Запад и Восток связаны одним солнцем"
-    },
-    {
-        "id": "floodfire",
-        "title": "Уставшие листья",
+        "id": "posters",
+        "title": "Скоро на сцене!",
+        "year": "2025",
         "categories": [
             "street",
             "concept"
@@ -758,24 +736,9 @@
         "description": ""
     },
     {
-        "id": "freckels",
-        "title": "Загорела стена",
-        "categories": [
-            "street"
-        ],
-        "description": ""
-    },
-    {
-        "id": "halved",
-        "title": "Половинка",
-        "categories": [
-            "concept"
-        ],
-        "description": ""
-    },
-    {
-        "id": "notarobot",
-        "title": "Я не такой и робот!..",
+        "id": "print_glove_cig",
+        "title": "Следы, перчатка, сигарета",
+        "year": "2025",
         "categories": [
             "best",
             "street",
@@ -786,16 +749,7 @@
     {
         "id": "razorblades",
         "title": "Бритвы",
-        "categories": [
-            "street",
-            "concept",
-            "experiments"
-        ],
-        "description": ""
-    },
-    {
-        "id": "rewrite",
-        "title": "Переделай... Переделай...",
+        "year": "2025",
         "categories": [
             "street",
             "concept"
@@ -803,9 +757,52 @@
         "description": ""
     },
     {
+        "id": "reader",
+        "title": "И мир остановился...",
+        "year": "2025",
+        "categories": [
+            "street",
+            "mono",
+            "philosophy"
+        ],
+        "description": ""
+    },
+    {
+        "id": "rewrite",
+        "title": "Еще... Еще... Еще...",
+        "year": "2025",
+        "categories": [
+            "best",
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "roof",
+        "title": "Жар",
+        "year": "2025",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "rose",
+        "title": "Не на месте!",
+        "year": "2025",
+        "categories": [
+            "nature",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
         "id": "rustedembassy",
         "title": "Ржавое",
+        "year": "2025",
         "categories": [
+            "best",
             "street",
             "concept"
         ],
@@ -814,10 +811,43 @@
     {
         "id": "RW",
         "title": "К+Б",
+        "year": "2025",
+        "categories": [
+            "best",
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "scooter",
+        "title": "В лучах заката",
+        "year": "2025",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "smoke",
+        "title": "Вода и дым",
+        "year": "2025",
+        "categories": [
+            "best",
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "sparkles",
+        "title": "Искры",
+        "year": "2025",
         "categories": [
             "best",
             "street",
             "concept",
+            "mono",
             "experiments"
         ],
         "description": ""
@@ -825,16 +855,7 @@
     {
         "id": "spectators",
         "title": "Наблюдатели",
-        "categories": [
-            "street",
-            "concept",
-            "experiments"
-        ],
-        "description": ""
-    },
-    {
-        "id": "stairwayhammer",
-        "title": "Стремянка. Молоток.",
+        "year": "2025",
         "categories": [
             "street",
             "concept"
@@ -842,10 +863,39 @@
         "description": ""
     },
     {
-        "id": "sunnylantern",
-        "title": "Фонарь",
+        "id": "stairwayhammer",
+        "title": "Лестница в воздух",
+        "year": "2025",
         "categories": [
             "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "sunny1",
+        "title": "Солнечное счастье",
+        "year": "2025",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "sunny2",
+        "title": "Солнечное счастье",
+        "year": "2025",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "sunnylantern",
+        "title": "Фонарь или шляпа",
+        "year": "2025",
+        "categories": [
+            "best",
             "concept",
             "experiments"
         ],
@@ -854,30 +904,110 @@
     {
         "id": "swan1",
         "title": "Лебединая семья",
+        "year": "2025",
         "categories": [
-            "street"
+            "nature"
         ],
         "description": ""
     },
     {
         "id": "swan2",
         "title": "Лебединая семья",
+        "year": "2025",
         "categories": [
-            "street"
+            "nature"
         ],
         "description": ""
     },
     {
         "id": "swan3",
         "title": "Лебединая семья",
+        "year": "2025",
         "categories": [
-            "street"
+            "street",
+            "nature"
         ],
-        "description": "На Патриках пополнение!"
+        "description": "На Патриках пополнение"
+    },
+    {
+        "id": "touch",
+        "title": "Касание",
+        "year": "2025",
+        "categories": [
+            "nature",
+            "concept",
+            "mono"
+        ],
+        "description": ""
     },
     {
         "id": "triangle",
-        "title": "Треугольники",
+        "title": "Пещера",
+        "year": "2025",
+        "categories": [
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "twisted",
+        "title": "Лестницы",
+        "year": "2025",
+        "categories": [
+            "best",
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "up",
+        "title": "Зеркала",
+        "year": "2025",
+        "categories": [
+            "best",
+            "street",
+            "concept",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "wall1",
+        "title": "Диптих. Простота и солнце #1",
+        "year": "2025",
+        "categories": [
+            "best",
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "wall2",
+        "title": "Диптих. Простота и солнце #2",
+        "year": "2025",
+        "categories": [
+            "best",
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "web",
+        "title": "Паутина",
+        "year": "2025",
+        "categories": [
+            "concept",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "whiter",
+        "title": "В белом на черном",
+        "year": "2025",
         "categories": [
             "street",
             "concept"
@@ -885,21 +1015,33 @@
         "description": ""
     },
     {
-        "id": "twisted",
-        "title": "Тени",
+        "id": "whites",
+        "title": "Скоро лето...",
+        "year": "2025",
         "categories": [
             "best",
-            "street",
+            "nature",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "worldtwist",
+        "title": "Вращаем Землю",
+        "year": "2025",
+        "categories": [
+            "best",
             "concept",
-            "experiments"
+            "mono"
         ],
         "description": ""
     },
     {
         "id": "writings",
-        "title": "Послания",
+        "title": "Письмена",
+        "year": "2025",
         "categories": [
-            "street",
+            "nature",
             "concept"
         ],
         "description": ""
@@ -907,6 +1049,7 @@
     {
         "id": "yellow_selfie",
         "title": "Желтое зеркало",
+        "year": "2025",
         "categories": [
             "best",
             "street",
@@ -915,87 +1058,129 @@
         "description": ""
     },
     {
-        "id": "bulbs_bridge",
-        "title": "Треугольники",
-        "categories": [
-            "best",
-            "street",
-            "concept",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "in_mirror",
-        "title": "Зеркало?",
-        "categories": [
-            "best",
-            "concept",
-            "experiments"
-        ],
-        "description": "Водная гладь в Нескучном саду"
-    },
-    {
-        "id": "on_the_wall",
-        "title": "Стена",
-        "categories": [
-            "street",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "sparkles",
-        "title": "Свечение",
-        "categories": [
-            "street",
-            "concept",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "touch",
-        "title": "Касание",
-        "categories": [
-            "concept",
-            "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "bug",
-        "title": "Мушка",
+        "id": "_MG_0755",
+        "title": "В кольцо",
+        "year": "2025",
         "categories": [
             "concept"
         ],
         "description": ""
     },
     {
-        "id": "exit",
-        "title": "ВЫХОД",
+        "id": "_MG_0762",
+        "title": "Спорт и жизнь",
+        "year": "2025",
         "categories": [
-            "best",
             "concept",
-            "experiments"
+            "mono"
         ],
         "description": ""
     },
     {
-        "id": "glass1",
-        "title": "Ночь",
+        "id": "_MG_0837",
+        "title": "Команда мечты",
+        "year": "2025",
         "categories": [
-            "concept",
-            "experiments"
+            "best",
+            "street",
+            "mono"
         ],
         "description": ""
     },
     {
-        "id": "whites",
-        "title": "Лето скоро",
+        "id": "_MG_0933",
+        "title": "Борьба",
+        "year": "2025",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "_MG_0978",
+        "title": "Цель",
+        "year": "2025",
+        "categories": [
+            "street",
+            "concept",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "_MG_1003",
+        "title": "Погоня",
+        "year": "2025",
         "categories": [
             "best",
-            "concept"
+            "street",
+            "concept",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "_MG_1012",
+        "title": "Передышка",
+        "year": "2025",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "_MG_1016",
+        "title": "Обход",
+        "year": "2025",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "_MG_1035",
+        "title": "Бег",
+        "year": "2025",
+        "categories": [
+            "best",
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "_MG_1100",
+        "title": "Схватка до последнего",
+        "year": "2025",
+        "categories": [
+            "best",
+            "concept",
+            "mono"
+        ],
+        "description": "Сплелись в прыжке. Очко было взято"
+    },
+    {
+        "id": "_MG_1128",
+        "title": "Решающий момент",
+        "year": "2025",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": "Перед кольцом время растягивается"
+    },
+    {
+        "id": "_MG_1156",
+        "title": "Преследование",
+        "year": "2025",
+        "categories": [
+            "best",
+            "street",
+            "concept",
+            "mono"
         ],
         "description": ""
     }

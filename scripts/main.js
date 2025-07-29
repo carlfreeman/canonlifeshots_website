@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Load content if needed
             if (sectionId === 'portfolio') {
                 loadPortfolio();
-            } else if (sectionId === 'blog') {
-                loadBlog();
+            // } else if (sectionId === 'blog') {
+            //     loadBlog();
             }
         });
     });
@@ -69,10 +69,28 @@ async function loadPortfolio() {
         
         portfolioGrid.innerHTML = '';
         
+        // Extract unique years from portfolio data
+        const years = [...new Set(portfolioData.map(item => item.year))].sort((a, b) => b - a);
+        const yearFiltersContainer = document.querySelector('.portfolio-year-filters');
+        
+        // Clear existing year filters (except "all")
+        document.querySelectorAll('.year-filter-btn:not([data-year="all"])').forEach(btn => btn.remove());
+        
+        // Add year filter buttons dynamically
+        years.forEach(year => {
+            const yearBtn = document.createElement('button');
+            yearBtn.className = 'year-filter-btn';
+            yearBtn.setAttribute('data-year', year);
+            yearBtn.textContent = year;
+            yearFiltersContainer.insertBefore(yearBtn, yearFiltersContainer.lastElementChild);
+        });
+        
         portfolioData.forEach((item, index) => {
             const portfolioItem = document.createElement('div');
             portfolioItem.className = 'portfolio-item';
             portfolioItem.setAttribute('data-categories', item.categories.join(' '));
+            portfolioItem.setAttribute('data-year', item.year);
+            
             item.categories.forEach(cat => {
                 portfolioItem.classList.add(cat);
             });
@@ -105,23 +123,55 @@ async function loadPortfolio() {
             portfolioGrid.appendChild(portfolioItem);
         });
         
-        // Фильтрация - исправленная часть:
-        const filterButtons = document.querySelectorAll('.filter-btn');
+        // New multiple filter implementation
+        const filterButtons = document.querySelectorAll('.filter-btn, .year-filter-btn');
+        
         filterButtons.forEach(button => {
             button.addEventListener('click', function() {
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                this.classList.add('active');
+                // Toggle active state for category/year buttons
+                if (this.getAttribute('data-category') === 'all' || 
+                    this.getAttribute('data-year') === 'all') {
+                    // If "all" is clicked, deactivate others in its group
+                    const group = this.classList.contains('filter-btn') ? 
+                        '.filter-btn' : '.year-filter-btn';
+                    document.querySelectorAll(group).forEach(btn => 
+                        btn.classList.remove('active'));
+                } else {
+                    // For other buttons, toggle active state and deactivate "all"
+                    const group = this.classList.contains('filter-btn') ? 
+                        '.filter-btn' : '.year-filter-btn';
+                    document.querySelector(`${group}[data-all="all"]`)
+                        .classList.remove('active');
+                }
                 
-                const category = this.getAttribute('data-category');
+                this.classList.toggle('active');
+                
+                // Check if any filters are active in each group
+                const activeCategories = document.querySelectorAll('.filter-btn.active');
+                const activeYears = document.querySelectorAll('.year-filter-btn.active');
+                
                 const items = document.querySelectorAll('.portfolio-item');
                 
                 items.forEach(item => {
                     const itemCategories = item.getAttribute('data-categories').split(' ');
-                    if (category === 'all' || itemCategories.includes(category)) {
-                        item.style.display = 'block';
-                    } else {
-                        item.style.display = 'none';
-                    }
+                    const itemYear = item.getAttribute('data-year');
+                    
+                    // Check category filters
+                    let categoryMatch = activeCategories.length === 0 || 
+                        Array.from(activeCategories).some(btn => {
+                            const category = btn.getAttribute('data-category');
+                            return category === 'all' || itemCategories.includes(category);
+                        });
+                    
+                    // Check year filters
+                    let yearMatch = activeYears.length === 0 || 
+                        Array.from(activeYears).some(btn => {
+                            const year = btn.getAttribute('data-year');
+                            return year === 'all' || itemYear === year;
+                        });
+                    
+                    // Show item only if it matches both category and year filters
+                    item.style.display = (categoryMatch && yearMatch) ? 'block' : 'none';
                 });
             });
         });
@@ -167,9 +217,13 @@ function openLightbox(item, allItems) {
     lightbox.classList.add('active');
     
     // Load image
+    const placeholder = document.createElement('div');
+    placeholder.className = 'image-placeholder';
+    lightboxContent.appendChild(placeholder);
     const img = new Image();
     img.src = fullSizeSrc;
     img.onload = function() {
+        lightboxContent.removeChild(placeholder);
         lightboxImg.src = fullSizeSrc;
         lightboxImg.style.display = 'block';
         lightboxCaption.textContent = `${item.title}`;
@@ -242,6 +296,7 @@ function getCategoryName(category) {
     const categories = {
         'best': 'Лучшее',
         'street': 'Стрит',
+        'nature': 'Природа',
         'concept': 'Концепт',
         'mono': 'Моно-ЧБ',
         'experiments': 'Эксперименты',
