@@ -62,20 +62,21 @@ function animateHero() {
 async function loadPortfolio() {
     const portfolioGrid = document.querySelector('.portfolio-grid');
     if (portfolioGrid.innerHTML !== '') return;
-    
+
     try {
         const response = await fetch('data/portfolio.json');
         const portfolioData = await response.json();
-        
+
+        // Clear existing content
         portfolioGrid.innerHTML = '';
-        
+
         // Extract unique years from portfolio data
         const years = [...new Set(portfolioData.map(item => item.year))].sort((a, b) => b - a);
         const yearFiltersContainer = document.querySelector('.portfolio-year-filters');
-        
+
         // Clear existing year filters (except "all")
         document.querySelectorAll('.year-filter-btn:not([data-year="all"])').forEach(btn => btn.remove());
-        
+
         // Add year filter buttons dynamically
         years.forEach(year => {
             const yearBtn = document.createElement('button');
@@ -84,114 +85,184 @@ async function loadPortfolio() {
             yearBtn.textContent = year;
             yearFiltersContainer.insertBefore(yearBtn, yearFiltersContainer.lastElementChild);
         });
-        
-        portfolioData.forEach((item, index) => {
+
+        // Create portfolio items
+        const portfolioItems = portfolioData.map((item, index) => {
             const portfolioItem = document.createElement('div');
             portfolioItem.className = 'portfolio-item';
             portfolioItem.setAttribute('data-categories', item.categories.join(' '));
             portfolioItem.setAttribute('data-year', item.year);
-            
+            portfolioItem.dataset.id = item.id;
+
             item.categories.forEach(cat => {
                 portfolioItem.classList.add(cat);
             });
-            
+
             // Use AVIF if supported, otherwise fallback to JPG
             const imageExt = supportsAVIF() ? 'avif' : 'avif';
             const thumbSrc = `images/optimized/${item.id}.${imageExt}`;
-            
+
             portfolioItem.innerHTML = `
-              <img src="${thumbSrc}" alt="${item.title}" loading="lazy">
-              <div class="portfolio-item__overlay">
-                <h3 class="portfolio-item__title">${item.title}</h3>
-                <p class="portfolio-item__category">${item.categories.map(cat => getCategoryName(cat)).join(', ')}</p>
-              </div>
-              <div class="portfolio-mobile-caption">
-                <div class="portfolio-mobile-caption__title">${item.title}</div>
-                <div class="portfolio-mobile-caption__categories">
-                  ${item.categories.map(cat => `
-                    <span class="portfolio-mobile-caption__category">${getCategoryName(cat)}</span>
-                  `).join('')}
+                <img data-src="${thumbSrc}" alt="${item.title}" loading="lazy">
+                <div class="portfolio-item__overlay">
+                    <h3 class="portfolio-item__title">${item.title}</h3>
+                    <p class="portfolio-item__category">${item.categories.map(cat => getCategoryName(cat)).join(', ')}</p>
                 </div>
-              </div>
+                <div class="portfolio-mobile-caption">
+                    <div class="portfolio-mobile-caption__title">${item.title}</div>
+                    <div class="portfolio-mobile-caption__categories">
+                        ${item.categories.map(cat => `
+                            <span class="portfolio-mobile-caption__category">${getCategoryName(cat)}</span>
+                        `).join('')}
+                    </div>
+                </div>
             `;
-            
+
             portfolioItem.style.animationDelay = `${index * 0.05}s`;
             portfolioItem.classList.add('fade-in');
-            
+
             portfolioItem.addEventListener('click', () => openLightbox(item, portfolioData));
-            
-            portfolioGrid.appendChild(portfolioItem);
+            return portfolioItem;
         });
-        
-        // New multiple filter implementation
-        const filterButtons = document.querySelectorAll('.filter-btn, .year-filter-btn');
-        
-        filterButtons.forEach(button => {
-            button.addEventListener('click', function() {
+
+        // Add all items to DOM initially
+        portfolioItems.forEach(item => portfolioGrid.appendChild(item));
+
+        // Lazy loading controller
+        const lazyLoadController = new AbortController();
+
+        function initLazyLoading(items) {
+            // Cancel any pending lazy loads
+            lazyLoadController.abort();
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target.querySelector('img') || entry.target;
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                            img.removeAttribute('data-src');
+                        }
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                rootMargin: '200px',
+                signal: lazyLoadController.signal
+            });
+
+            // Observe items in order (priority to higher matches)
+            items.forEach(item => {
+                const img = item.querySelector('img');
+                if (img && img.hasAttribute('data-src')) {
+                    observer.observe(item);
+                }
+            });
+        }
+
+        function applyFiltersAndSort() {
+            const activeCategoryFilters = Array.from(document.querySelectorAll('.filter-btn.active'))
+                .map(btn => btn.getAttribute('data-category'))
+                .filter(cat => cat !== 'all');
+
+            const activeYearFilters = Array.from(document.querySelectorAll('.year-filter-btn.active'))
+                .map(btn => btn.getAttribute('data-year'))
+                .filter(year => year !== 'all');
+
+            // Process all items for filtering and sorting
+            const processedItems = portfolioItems.map(item => {
+                const itemCategories = item.getAttribute('data-categories').split(' ');
+                const itemYear = item.getAttribute('data-year');
+                
+                // Calculate matches for sorting
+                const categoryMatches = activeCategoryFilters.length > 0 ? 
+                    itemCategories.filter(cat => activeCategoryFilters.includes(cat)).length : 0;
+                
+                const yearMatch = activeYearFilters.length === 0 || 
+                    activeYearFilters.includes(itemYear);
+                
+                return {
+                    element: item,
+                    matches: categoryMatches,
+                    yearMatch: yearMatch,
+                    categories: itemCategories,
+                    year: itemYear
+                };
+            });
+
+            // Filter and sort items
+            const filteredItems = processedItems
+                .filter(item => {
+                    return item.yearMatch && 
+                        (activeCategoryFilters.length === 0 || item.matches > 0);
+                })
+                .sort((a, b) => {
+                    // Primary sort by number of matching categories (descending)
+                    if (b.matches !== a.matches) return b.matches - a.matches;
+                    
+                    // Secondary sort by year (newest first)
+                    return b.year - a.year;
+                });
+
+            return {
+                filtered: filteredItems.map(item => item.element),
+                all: portfolioItems
+            };
+        }
+
+        function updateGrid() {
+            const { filtered, all } = applyFiltersAndSort();
+            
+            // Clear existing content
+            portfolioGrid.innerHTML = '';
+            
+            // Add items in sorted order
+            filtered.forEach(item => {
+                portfolioGrid.appendChild(item);
+                item.style.display = 'block';
+            });
+            
+            // Hide non-matching items
+            all.forEach(item => {
+                if (!filtered.includes(item)) {
+                    item.style.display = 'none';
+                }
+            });
+            
+            // Initialize lazy loading for visible items
+            initLazyLoading(filtered);
+        }
+
+        // Initial load
+        updateGrid();
+
+        // Set up filter event listeners
+        document.querySelectorAll('.filter-btn, .year-filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
                 // Toggle active state
                 this.classList.toggle('active');
                 
-                // Get all active filters
-                const activeCategoryFilters = Array.from(document.querySelectorAll('.filter-btn.active'))
-                    .map(btn => btn.getAttribute('data-category'))
-                    .filter(cat => cat !== 'all');
-                
-                const activeYearFilters = Array.from(document.querySelectorAll('.year-filter-btn.active'))
-                    .map(btn => btn.getAttribute('data-year'))
-                    .filter(year => year !== 'all');
-                
-                const items = Array.from(document.querySelectorAll('.portfolio-item'));
-                
-                // First filter items
-                const filteredItems = items.filter(item => {
-                    const itemCategories = item.getAttribute('data-categories').split(' ');
-                    const itemYear = item.getAttribute('data-year');
-                    
-                    // Check if item matches any active year filters (if any are selected)
-                    const yearMatch = activeYearFilters.length === 0 || 
-                        activeYearFilters.includes(itemYear);
-                    
-                    // Check if item matches any active category filters (if any are selected)
-                    const categoryMatch = activeCategoryFilters.length === 0 || 
-                        itemCategories.some(cat => activeCategoryFilters.includes(cat));
-                    
-                    return yearMatch && categoryMatch;
-                });
-                
-                // Then sort by match priority
-                if (activeCategoryFilters.length > 0) {
-                    filteredItems.sort((a, b) => {
-                        const aCategories = a.getAttribute('data-categories').split(' ');
-                        const bCategories = b.getAttribute('data-categories').split(' ');
-                        
-                        // Count how many active filters each item matches
-                        const aMatches = aCategories.filter(cat => 
-                            activeCategoryFilters.includes(cat)).length;
-                        const bMatches = bCategories.filter(cat => 
-                            activeCategoryFilters.includes(cat)).length;
-                        
-                        // Sort by match count (descending)
-                        return bMatches - aMatches;
+                // Handle "all" button behavior
+                if (this.getAttribute('data-category') === 'all' || 
+                    this.getAttribute('data-year') === 'all') {
+                    // Deactivate other buttons in same group
+                    const group = this.classList.contains('filter-btn') ? 
+                        '.filter-btn' : '.year-filter-btn';
+                    document.querySelectorAll(group).forEach(btn => {
+                        if (btn !== this) btn.classList.remove('active');
                     });
+                } else {
+                    // Deactivate "all" button in same group
+                    const group = this.classList.contains('filter-btn') ? 
+                        '.filter-btn[data-category="all"]' : '.year-filter-btn[data-year="all"]';
+                    document.querySelector(group)?.classList.remove('active');
                 }
                 
-                // Rebuild the grid with sorted items
-                const portfolioGrid = document.querySelector('.portfolio-grid');
-                portfolioGrid.innerHTML = '';
-                filteredItems.forEach(item => {
-                    portfolioGrid.appendChild(item);
-                    item.style.display = 'block'; // Ensure filtered items are visible
-                });
-                
-                // Hide non-matching items
-                items.forEach(item => {
-                    if (!filteredItems.includes(item)) {
-                        item.style.display = 'none';
-                    }
-                });
+                // Update the grid
+                updateGrid();
             });
         });
-        
+
         // Animate portfolio title and filters
         const portfolioTitle = document.querySelector('.portfolio-title');
         const portfolioFilters = document.querySelector('.portfolio-filters');
@@ -203,13 +274,12 @@ async function loadPortfolio() {
         setTimeout(() => {
             portfolioFilters.classList.add('fade-in', 'delay-1');
         }, 600);
-        
+
     } catch (error) {
         console.error('Error loading portfolio:', error);
         portfolioGrid.innerHTML = '<p>Не удалось загрузить портфолио. Пожалуйста, попробуйте позже.</p>';
     }
 }
-
 
 function openLightbox(item, allItems) {
     const lightbox = document.querySelector('.lightbox');
