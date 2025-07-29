@@ -128,54 +128,66 @@ async function loadPortfolio() {
         
         filterButtons.forEach(button => {
             button.addEventListener('click', function() {
-                // Determine if this is a category or year filter
-                const isCategoryFilter = this.classList.contains('filter-btn');
-                const isYearFilter = this.classList.contains('year-filter-btn');
-                
-                // Get the appropriate group selector and "all" button
-                const group = isCategoryFilter ? '.filter-btn' : '.year-filter-btn';
-                const allButton = document.querySelector(`${group}[data-${isCategoryFilter ? 'category' : 'year'}="all"]`);
-                
-                // If "all" is clicked, deactivate others in its group
-                if (this.getAttribute(isCategoryFilter ? 'data-category' : 'data-year') === 'all') {
-                    document.querySelectorAll(group).forEach(btn => {
-                        if (btn !== this) btn.classList.remove('active');
-                    });
-                } 
-                // For other buttons, deactivate "all" in its group
-                else {
-                    if (allButton) allButton.classList.remove('active');
-                }
-                
-                // Toggle active state for the clicked button
+                // Toggle active state
                 this.classList.toggle('active');
                 
-                // Check if any filters are active in each group
-                const activeCategories = document.querySelectorAll('.filter-btn.active');
-                const activeYears = document.querySelectorAll('.year-filter-btn.active');
+                // Get all active filters
+                const activeCategoryFilters = Array.from(document.querySelectorAll('.filter-btn.active'))
+                    .map(btn => btn.getAttribute('data-category'))
+                    .filter(cat => cat !== 'all');
                 
-                const items = document.querySelectorAll('.portfolio-item');
+                const activeYearFilters = Array.from(document.querySelectorAll('.year-filter-btn.active'))
+                    .map(btn => btn.getAttribute('data-year'))
+                    .filter(year => year !== 'all');
                 
-                items.forEach(item => {
+                const items = Array.from(document.querySelectorAll('.portfolio-item'));
+                
+                // First filter items
+                const filteredItems = items.filter(item => {
                     const itemCategories = item.getAttribute('data-categories').split(' ');
                     const itemYear = item.getAttribute('data-year');
                     
-                    // Check category filters
-                    let categoryMatch = activeCategories.length === 0 || 
-                        Array.from(activeCategories).some(btn => {
-                            const category = btn.getAttribute('data-category');
-                            return category === 'all' || itemCategories.includes(category);
-                        });
+                    // Check if item matches any active year filters (if any are selected)
+                    const yearMatch = activeYearFilters.length === 0 || 
+                        activeYearFilters.includes(itemYear);
                     
-                    // Check year filters
-                    let yearMatch = activeYears.length === 0 || 
-                        Array.from(activeYears).some(btn => {
-                            const year = btn.getAttribute('data-year');
-                            return year === 'all' || itemYear === year;
-                        });
+                    // Check if item matches any active category filters (if any are selected)
+                    const categoryMatch = activeCategoryFilters.length === 0 || 
+                        itemCategories.some(cat => activeCategoryFilters.includes(cat));
                     
-                    // Show item only if it matches both category and year filters
-                    item.style.display = (categoryMatch && yearMatch) ? 'block' : 'none';
+                    return yearMatch && categoryMatch;
+                });
+                
+                // Then sort by match priority
+                if (activeCategoryFilters.length > 0) {
+                    filteredItems.sort((a, b) => {
+                        const aCategories = a.getAttribute('data-categories').split(' ');
+                        const bCategories = b.getAttribute('data-categories').split(' ');
+                        
+                        // Count how many active filters each item matches
+                        const aMatches = aCategories.filter(cat => 
+                            activeCategoryFilters.includes(cat)).length;
+                        const bMatches = bCategories.filter(cat => 
+                            activeCategoryFilters.includes(cat)).length;
+                        
+                        // Sort by match count (descending)
+                        return bMatches - aMatches;
+                    });
+                }
+                
+                // Rebuild the grid with sorted items
+                const portfolioGrid = document.querySelector('.portfolio-grid');
+                portfolioGrid.innerHTML = '';
+                filteredItems.forEach(item => {
+                    portfolioGrid.appendChild(item);
+                    item.style.display = 'block'; // Ensure filtered items are visible
+                });
+                
+                // Hide non-matching items
+                items.forEach(item => {
+                    if (!filteredItems.includes(item)) {
+                        item.style.display = 'none';
+                    }
                 });
             });
         });
