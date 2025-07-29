@@ -396,7 +396,6 @@ body {
     .lightbox__next {
         right: -30px;
     }
-}
 
     .portfolio-item__overlay {
     display: none; /* Скрываем оверлей на мобильных */
