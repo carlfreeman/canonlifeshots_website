@@ -151,8 +151,21 @@ async function loadPortfolio() {
                 signal: lazyLoadController.signal
             });
 
-            // Observe items in order (priority to higher matches)
-            items.forEach(item => {
+            // Sort items by priority before observing
+            const prioritizedItems = [...items].sort((a, b) => {
+                // Primary: number of matching categories (descending)
+                const aCatMatches = a.getAttribute('data-categories').split(' ').length;
+                const bCatMatches = b.getAttribute('data-categories').split(' ').length;
+                if (bCatMatches !== aCatMatches) return bCatMatches - aCatMatches;
+                
+                // Secondary: year (newest first)
+                const aYear = parseInt(a.getAttribute('data-year'));
+                const bYear = parseInt(b.getAttribute('data-year'));
+                return bYear - aYear;
+            });
+
+            // Observe items in priority order
+            prioritizedItems.forEach(item => {
                 const img = item.querySelector('img');
                 if (img && img.hasAttribute('data-src')) {
                     observer.observe(item);
@@ -229,7 +242,7 @@ async function loadPortfolio() {
                 }
             });
             
-            // Initialize lazy loading for visible items
+            // Initialize lazy loading for visible items with priority
             initLazyLoading(filtered);
         }
 
