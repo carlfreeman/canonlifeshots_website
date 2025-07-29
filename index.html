@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon Lifeshots</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#home" class="nav__link active" data-section="home">Главная</a>
+            <a href="#portfolio" class="nav__link" data-section="portfolio">Портфолио</a>
+            <a href="#blog" class="nav__link" data-section="blog">Блог</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section id="home" class="section active">
+            <div class="hero">
+                <h1 class="hero__title fade-in">Фотография как дополнение реальности</h1>
+                <p class="hero__subtitle fade-in">Чувства, застывшие во времени</p>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="portfolio-header">
+                <h2 class="portfolio-title fade-in">Портфолио</h2>
+                <div class="portfolio-filters fade-in">
+                    <button class="filter-btn active" data-category="all">Все</button>
+                    <button class="filter-btn" data-category="street">Стрит</button>
+                    <button class="filter-btn" data-category="concept">Концепт</button>
+                    <button class="filter-btn" data-category="mono">Моно-ЧБ</button>
+                    <button class="filter-btn" data-category="experiments">Эксперименты</button>
+                    <button class="filter-btn" data-category="philosophy">Философия</button>
+                </div>
+            </div>
+            <div class="portfolio-grid"></div>
+        </section>
+
+        <section id="blog" class="section">
+            <h2 class="blog-title fade-in">Блог</h2>
+            <div class="blog-posts"></div>
+        </section>
+    </main>
+
+    <div class="lightbox">
+        <div class="lightbox__content">
+            <img src="" alt="" class="lightbox__image">
+            <div class="lightbox__caption"></div>
+            <button class="lightbox__close">&times;</button>
+            <!-- 
+            <button class="lightbox__nav lightbox__prev">&larr;</button>
+            <button class="lightbox__nav lightbox__next">&rarr;</button> -->
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

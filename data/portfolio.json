@@ -1,0 +1,883 @@
+[
+    {
+        "id": "41",
+        "title": "41",
+        "categories": [
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "atthewall",
+        "title": "У стены",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "border",
+        "title": "Зрители",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "busstopprincess",
+        "title": "Многомерное восприятие",
+        "categories": [
+            "street",
+            "concept",
+            "experiments",
+            "philosophy"
+        ],
+        "description": "2 дня, 2 кадра. Смешение и наложения создают пеструю картину множества точек зрения на мир."
+    },
+    {
+        "id": "b_plus_w_is_dalmatin",
+        "title": "Д=Ч+Б",
+        "categories": [
+            "street"
+        ],
+        "description": "Далматин у кафе возле театра Шиловского."
+    },
+    {
+        "id": "construct1",
+        "title": "Железное небо",
+        "categories": [
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "construct2",
+        "title": "Рождение технологией",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "construct3",
+        "title": "Сетка",
+        "categories": [
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "construct4",
+        "title": "Поддержка",
+        "categories": [
+            "concept",
+            "philosophy"
+        ],
+        "description": "Стрелы кранов будто тянут друг друга и город вверх."
+    },
+    {
+        "id": "flow1",
+        "title": "Поток",
+        "categories": [
+            "concept",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "flow2",
+        "title": "Поток",
+        "categories": [
+            "concept",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "flow3",
+        "title": "Поток",
+        "categories": [
+            "concept",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "flow4",
+        "title": "Поток ",
+        "categories": [
+            "concept",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "flow5",
+        "title": "Мираж",
+        "categories": [
+            "concept",
+            "experiments"
+        ],
+        "description": "Ночное разложение витрины и уличных огней в отражениях и выдержке."
+    },
+    {
+        "id": "glass",
+        "title": "Отпечаток",
+        "categories": [
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "glassed",
+        "title": "В голубом",
+        "categories": [
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "half",
+        "title": "Половинка",
+        "categories": [
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "his1",
+        "title": "Танец",
+        "categories": [
+            "street",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "his2",
+        "title": "Коллега",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "his3",
+        "title": "Кружит, кружит...",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "history1",
+        "title": "Всем возрастам...",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "history2",
+        "title": "Всем возрастам...",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "history3",
+        "title": "Окошко",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "history4",
+        "title": "Удалой!",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "hustle1",
+        "title": "Ожидание",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": "Хастл опен-эйр"
+    },
+    {
+        "id": "hustle2",
+        "title": "Всем возрастам...",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": "Хастл опен-эйр"
+    },
+    {
+        "id": "hustle3",
+        "title": "В потоке света",
+        "categories": [
+            "street",
+            "mono",
+            "experiments"
+        ],
+        "description": "Хастл опен-эйр"
+    },
+    {
+        "id": "hustle4",
+        "title": "В горошек",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": "Хастл опен-эйр"
+    },
+    {
+        "id": "hustle5",
+        "title": "Всем возрастам...",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": "Хастл опен-эйр"
+    },
+    {
+        "id": "hustle6",
+        "title": "Портрет",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": "Хастл опен-эйр"
+    },
+    {
+        "id": "hustle7",
+        "title": "Точка",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": "Хастл опен-эйр"
+    },
+    {
+        "id": "print_glove_cig",
+        "title": "Отпечатки. Перчатка. Окурок.",
+        "categories": [
+            "street",
+            "concept",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "roof",
+        "title": "Жар",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "rose",
+        "title": "Роза не на своем кусте",
+        "categories": [
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "scooter",
+        "title": "В лучах заката",
+        "categories": [
+            "street",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "smoke",
+        "title": "Размышление. Облачко дыма.",
+        "categories": [
+            "street",
+            "concept",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "sunny1",
+        "title": "Солнечное счастье",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "sunny2",
+        "title": "Солнечное счастье",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "wall1",
+        "title": "Диптих. Простота и тень #1",
+        "categories": [
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "wall2",
+        "title": "Диптих. Простота и тень #2",
+        "categories": [
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "web",
+        "title": "Сверкают нити на столбе",
+        "categories": [
+            "concept",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "whiter",
+        "title": "В белом",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+        {
+        "id": "_MG_0755",
+        "title": "Кольцо",
+        "categories": [
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "_MG_0762",
+        "title": "Листок",
+        "categories": [
+            "concept",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "_MG_0837",
+        "title": "Команда мечты",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "_MG_0933",
+        "title": "Борьба",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "_MG_0978",
+        "title": "Наведение",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "_MG_1003",
+        "title": "Погоня",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "_MG_1012",
+        "title": "Передышка",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "_MG_1016",
+        "title": "Борьба",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "_MG_1035",
+        "title": "Бегом за ним!",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "_MG_1100",
+        "title": "Перехват!.. Очко...",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "_MG_1128",
+        "title": "Напряженный момент",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": "Когда мяч приближается к кольцу по хорошей траектории, все замирает."
+    },
+    {
+        "id": "_MG_1156",
+        "title": "Обводка",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "3",
+        "title": "3 домика",
+        "categories": [
+            "concept",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "3birds",
+        "title": "Тройка",
+        "categories": [
+            "concept",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "arts",
+        "title": "Диковинки",
+        "categories": [
+            "street",
+            "experiments"
+        ],
+        "description": "Золотые фигурки и музыканты на улице"
+    },
+    {
+        "id": "bereza1",
+        "title": "Березка",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "bereza2",
+        "title": "Березка",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "bluestars",
+        "title": "Вспышки",
+        "categories": [
+            "concept",
+            "experiments"
+        ],
+        "description": "Цветы на лужайке"
+    },
+    {
+        "id": "bridge",
+        "title": "Мост",
+        "categories": [
+            "street",
+            "concept",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "edge",
+        "title": "На грани...",
+        "categories": [
+            "street",
+            "concept",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "face",
+        "title": "Плоскости",
+        "categories": [
+            "street",
+            "concept",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "fire",
+        "title": "Огонь",
+        "categories": [
+            "concept",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "flow11",
+        "title": "Поток",
+        "categories": [
+            "concept",
+            "mono",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "flow21",
+        "title": "Поток",
+        "categories": [
+            "concept",
+            "mono",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "flow31",
+        "title": "Дрожь",
+        "categories": [
+            "concept",
+            "mono",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "guitar",
+        "title": "Гитара и цветок",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "heart",
+        "title": "Сердце атмосферы",
+        "categories": [
+            "concept",
+            "mono",
+            "philosophy"
+        ],
+        "description": ""
+    },
+    {
+        "id": "holeabstract",
+        "title": "Абстракция",
+        "categories": [
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "net",
+        "title": "Сеть",
+        "categories": [
+            "concept",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "phoner",
+        "title": "Затормозил",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "pianist",
+        "title": "Маленькая Италия",
+        "categories": [
+            "street",
+            "concept",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "pigeons",
+        "title": "Голуби!",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "reader",
+        "title": "Пусть все подождут!",
+        "categories": [
+            "street",
+            "mono",
+            "philosophy"
+        ],
+        "description": ""
+    },
+    {
+        "id": "up",
+        "title": "Зеркало неба",
+        "categories": [
+            "street",
+            "concept",
+            "mono",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "worldtwist",
+        "title": "Открой окно",
+        "categories": [
+            "street",
+            "concept",
+            "mono",
+            "experiments"
+        ],
+        "description": "Переверни лучше всю землю!"
+    },
+    {
+        "id": "art",
+        "title": "Искусство",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "candle",
+        "title": "Свеча",
+        "categories": [
+            "concept",
+            "experiments"
+        ],
+        "description": "Солнце будто сдуло облака"
+    },
+    {
+        "id": "dog",
+        "title": "Пес",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "flags",
+        "title": "Мир во всем мире!",
+        "categories": [
+            "street",
+            "concept",
+            "experiments",
+            "philosophy"
+        ],
+        "description": "Запад и Восток связаны одним солнцем"
+    },
+    {
+        "id": "floodfire",
+        "title": "Уставшие листья",
+        "categories": [
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "freckels",
+        "title": "Загорела стена",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "halved",
+        "title": "Половинка",
+        "categories": [
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "notarobot",
+        "title": "Я не такой и робот!..",
+        "categories": [
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "razorblades",
+        "title": "Бритвы",
+        "categories": [
+            "street",
+            "concept",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "rewrite",
+        "title": "Переделай... Переделай...",
+        "categories": [
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "rustedembassy",
+        "title": "Ржавое",
+        "categories": [
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "RW",
+        "title": "К+Б",
+        "categories": [
+            "street",
+            "concept",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "spectators",
+        "title": "Наблюдатели",
+        "categories": [
+            "street",
+            "concept",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "stairwayhammer",
+        "title": "Стремянка. Молоток.",
+        "categories": [
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "sunnylantern",
+        "title": "Фонарь",
+        "categories": [
+            "street",
+            "concept",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "swan1",
+        "title": "Лебединая семья",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "swan2",
+        "title": "Лебединая семья",
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "swan3",
+        "title": "Лебединая семья",
+        "categories": [
+            "street"
+        ],
+        "description": "На Патриках пополнение!"
+    },
+    {
+        "id": "triangle",
+        "title": "Треугольники",
+        "categories": [
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "twisted",
+        "title": "Тени",
+        "categories": [
+            "street",
+            "concept",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "writings",
+        "title": "Послания",
+        "categories": [
+            "street",
+            "concept"
+        ],
+        "description": ""
+    }
+]
