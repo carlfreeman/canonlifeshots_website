@@ -426,6 +426,10 @@ body {
     .hero__subtitle {
         font-size: 1.2rem;
     }
+
+    .hero-collage {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
     
     .portfolio-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
