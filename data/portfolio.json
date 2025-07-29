@@ -903,5 +903,89 @@
             "concept"
         ],
         "description": ""
+    },
+    {
+        "id": "bulbs_bridge",
+        "title": "Треугольники",
+        "categories": [
+            "street",
+            "concept",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "in_mirror",
+        "title": "Зеркало?",
+        "categories": [
+            "best",
+            "concept",
+            "experiments"
+        ],
+        "description": "Водная гладь в Нескучном саду"
+    },
+    {
+        "id": "on_the_wall",
+        "title": "Стена",
+        "categories": [
+            "street",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "sparkles",
+        "title": "Свечение",
+        "categories": [
+            "street",
+            "concept",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "touch",
+        "title": "Касание",
+        "categories": [
+            "concept",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "bug",
+        "title": "Мушка",
+        "categories": [
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "exit",
+        "title": "ВЫХОД",
+        "categories": [
+            "best",
+            "concept",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "glass1",
+        "title": "Ночь",
+        "categories": [
+            "concept",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "whites",
+        "title": "Лето скоро",
+        "categories": [
+            "best",
+            "concept"
+        ],
+        "description": ""
     }
 ]
