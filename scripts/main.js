@@ -59,207 +59,88 @@ function animateHero() {
     }, 600);
 }
 
-let currentCategory = 'all';
-let loadingQueue = [];
-let isProcessingQueue = false;
-
 async function loadPortfolio() {
     const portfolioGrid = document.querySelector('.portfolio-grid');
-    const response = await fetch('data/portfolio.json');
-    const portfolioData = await response.json();
+    if (portfolioGrid.innerHTML !== '') return;
     
-    // Очищаем сетку и создаем элементы без изображений
-    portfolioGrid.innerHTML = '';
-    
-    portfolioData.forEach((item, index) => {
-        const portfolioItem = document.createElement('div');
-        portfolioItem.className = `portfolio-item ${item.categories.join(' ')}`;
-        portfolioItem.setAttribute('data-categories', item.categories.join(' '));
-        portfolioItem.setAttribute('data-id', item.id);
+    try {
+        const response = await fetch('data/portfolio.json');
+        const portfolioData = await response.json();
         
-        // Создаем контейнер для изображения
-        portfolioItem.innerHTML = `
-            <div class="image-container"></div>
-            <div class="portfolio-item__overlay">
+        portfolioGrid.innerHTML = '';
+        
+        portfolioData.forEach((item, index) => {
+            const portfolioItem = document.createElement('div');
+            portfolioItem.className = 'portfolio-item';
+            portfolioItem.setAttribute('data-categories', item.categories.join(' '));
+            item.categories.forEach(cat => {
+                portfolioItem.classList.add(cat);
+            });
+            
+            // Use AVIF if supported, otherwise fallback to JPG
+            const imageExt = supportsAVIF() ? 'avif' : 'avif';
+            const thumbSrc = `images/optimized/${item.id}.${imageExt}`;
+            
+            portfolioItem.innerHTML = `
+              <img src="${thumbSrc}" alt="${item.title}" loading="lazy">
+              <div class="portfolio-item__overlay">
                 <h3 class="portfolio-item__title">${item.title}</h3>
                 <p class="portfolio-item__category">${item.categories.map(cat => getCategoryName(cat)).join(', ')}</p>
-            </div>
-            <div class="portfolio-mobile-caption">
+              </div>
+              <div class="portfolio-mobile-caption">
                 <div class="portfolio-mobile-caption__title">${item.title}</div>
                 <div class="portfolio-mobile-caption__categories">
-                    ${item.categories.map(cat => `
-                        <span class="portfolio-mobile-caption__category">${getCategoryName(cat)}</span>
-                    `).join('')}
+                  ${item.categories.map(cat => `
+                    <span class="portfolio-mobile-caption__category">${getCategoryName(cat)}</span>
+                  `).join('')}
                 </div>
-            </div>
-        `;
-        
-        portfolioGrid.appendChild(portfolioItem);
-    });
-    
-    // Инициализируем очередь загрузки
-    initLoadingQueue();
-}
-
-function initLoadingQueue() {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const item = entry.target;
-                const itemId = item.getAttribute('data-id');
-                const categories = item.getAttribute('data-categories').split(' ');
-                
-                if (currentCategory === 'all' || categories.includes(currentCategory)) {
-                    addToLoadingQueue(item, itemId);
-                }
-                observer.unobserve(item);
-            }
+              </div>
+            `;
+            
+            portfolioItem.style.animationDelay = `${index * 0.05}s`;
+            portfolioItem.classList.add('fade-in');
+            
+            portfolioItem.addEventListener('click', () => openLightbox(item, portfolioData));
+            
+            portfolioGrid.appendChild(portfolioItem);
         });
-    }, { threshold: 0.1 });
-    
-    document.querySelectorAll('.portfolio-item').forEach(item => {
-        observer.observe(item);
-    });
-}
-
-function addToLoadingQueue(item, itemId) {
-    loadingQueue.push({ item, itemId });
-    if (!isProcessingQueue) {
-        processLoadingQueue();
-    }
-}
-
-async function processLoadingQueue() {
-    if (loadingQueue.length === 0) {
-        isProcessingQueue = false;
-        return;
-    }
-    
-    isProcessingQueue = true;
-    const { item, itemId } = loadingQueue.shift();
-    
-    // Проверяем видимость элемента перед загрузкой
-    if (isElementInViewport(item)) {
-        const imageContainer = item.querySelector('.image-container');
-        const imageExt = supportsAVIF() ? 'avif' : 'jpg';
-        const img = new Image();
         
-        img.src = `images/optimized/${itemId}_thumb.${imageExt}`;
-        img.alt = item.querySelector('.portfolio-item__title').textContent;
-        img.loading = 'lazy';
-        img.classList.add('fade-in');
-        
-        img.onload = () => {
-            imageContainer.innerHTML = '';
-            imageContainer.appendChild(img);
-            setTimeout(() => {
-                img.style.opacity = 1;
-            }, 100);
-        };
-        
-        img.onerror = () => {
-            if (imageExt === 'avif') {
-                img.src = `images/optimized/${itemId}_thumb.jpg`;
-            }
-        };
-    }
-    
-    // Обрабатываем следующее изображение с небольшой задержкой
-    setTimeout(processLoadingQueue, 300);
-}
-
-function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.bottom >= 0
-    );
-}
-
-// Инициализация фильтров (вызывается при загрузке страницы)
-function initFilters() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Удаляем активный класс у всех кнопок
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            
-            // Добавляем активный класс текущей кнопке
-            this.classList.add('active');
-            
-            // Получаем выбранную категорию
-            const category = this.getAttribute('data-category');
-            
-            // Применяем фильтр с новой логикой
-            applyCategoryFilter(category);
-            
-            // Прокрутка к началу галереи для лучшего UX
-            document.querySelector('#portfolio').scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+        // Фильтрация - исправленная часть:
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                const category = this.getAttribute('data-category');
+                const items = document.querySelectorAll('.portfolio-item');
+                
+                items.forEach(item => {
+                    const itemCategories = item.getAttribute('data-categories').split(' ');
+                    if (category === 'all' || itemCategories.includes(category)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
             });
         });
-    });
-    
-    // Инициализируем фильтр "Все" по умолчанию
-    document.querySelector('.filter-btn[data-category="all"]').click();
-}
-
-// Обновленная функция фильтрации
-function applyCategoryFilter(category) {
-    // Обновляем текущую категорию
-    currentCategory = category;
-    
-    // Очищаем текущую очередь загрузки
-    loadingQueue = [];
-    
-    // Получаем все элементы галереи
-    const portfolioItems = document.querySelectorAll('.portfolio-item');
-    let hasVisibleItems = false;
-    
-    portfolioItems.forEach(item => {
-        const categories = item.getAttribute('data-categories').split(' ');
-        const isVisible = category === 'all' || categories.includes(category);
         
-        // Устанавливаем видимость элемента
-        item.style.display = isVisible ? 'block' : 'none';
+        // Animate portfolio title and filters
+        const portfolioTitle = document.querySelector('.portfolio-title');
+        const portfolioFilters = document.querySelector('.portfolio-filters');
         
-        if (isVisible) {
-            hasVisibleItems = true;
-            
-            // Если элемент видим и в области просмотра - добавляем в очередь загрузки
-            if (isElementInViewport(item)) {
-                const itemId = item.getAttribute('data-id');
-                
-                // Проверяем, не загружено ли уже изображение
-                if (!item.querySelector('img')) {
-                    addToLoadingQueue(item, itemId);
-                }
-            }
-        } else {
-            // Для скрытых элементов можно выгрузить изображения (опционально)
-            const imgContainer = item.querySelector('.image-container');
-            if (imgContainer) imgContainer.innerHTML = '';
-        }
-    });
-    
-    // Если нет видимых элементов - показываем сообщение
-    const emptyMessage = document.querySelector('.portfolio-empty-message');
-    if (!hasVisibleItems) {
-        if (!emptyMessage) {
-            const message = document.createElement('div');
-            message.className = 'portfolio-empty-message';
-            message.textContent = 'В этой категории пока нет работ';
-            document.querySelector('.portfolio-grid').appendChild(message);
-        }
-    } else if (emptyMessage) {
-        emptyMessage.remove();
-    }
-    
-    // Запускаем обработку очереди, если она не активна
-    if (!isProcessingQueue) {
-        processLoadingQueue();
+        setTimeout(() => {
+            portfolioTitle.classList.add('fade-in');
+        }, 300);
+        
+        setTimeout(() => {
+            portfolioFilters.classList.add('fade-in', 'delay-1');
+        }, 600);
+        
+    } catch (error) {
+        console.error('Error loading portfolio:', error);
+        portfolioGrid.innerHTML = '<p>Не удалось загрузить портфолио. Пожалуйста, попробуйте позже.</p>';
     }
 }
 
@@ -474,8 +355,7 @@ async function createHeroCollage() {
 // Вызываем при загрузке страницы
 document.addEventListener('DOMContentLoaded', function() {
     createHeroCollage();
-    loadPortfolio();
-    initFilters();
+    
     // Обновляем при изменении размера окна
     window.addEventListener('resize', function() {
         if (window.innerWidth > 768) {
