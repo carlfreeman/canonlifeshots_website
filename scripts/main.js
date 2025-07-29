@@ -128,63 +128,50 @@ async function loadPortfolio() {
         // Add all items to DOM initially
         portfolioItems.forEach(item => portfolioGrid.appendChild(item));
 
-        // Lazy loading controller with improved performance
-        const lazyLoadController = {
-            observer: null,
-            pending: new Set(),
-            abort() {
-                if (this.observer) {
-                    this.observer.disconnect();
-                    this.observer = null;
-                }
-                this.pending.clear();
-            },
-            observe(items) {
-                this.abort();
-                
-                // Immediate load for first 6 items (above the fold)
-                const immediateLoad = items.slice(0, 6);
-                immediateLoad.forEach(item => {
-                    const img = item.querySelector('img');
-                    if (img && img.dataset.src) {
-                        img.src = img.dataset.src;
-                        img.removeAttribute('data-src');
-                        this.pending.add(img);
+        // Lazy loading controller
+        const lazyLoadController = new AbortController();
+
+        function initLazyLoading(items) {
+            // Cancel any pending lazy loads
+            lazyLoadController.abort();
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target.querySelector('img') || entry.target;
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                            img.removeAttribute('data-src');
+                        }
+                        observer.unobserve(entry.target);
                     }
                 });
+            }, {
+                rootMargin: '200px',
+                signal: lazyLoadController.signal
+            });
 
-                // Lazy load the rest with dynamic priority
-                this.observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            const img = entry.target.querySelector('img') || entry.target;
-                            if (img.dataset.src) {
-                                img.src = img.dataset.src;
-                                img.removeAttribute('data-src');
-                                this.pending.delete(img);
-                            }
-                            this.observer.unobserve(entry.target);
-                        }
-                    });
-                }, {
-                    rootMargin: '300px 0px',
-                    threshold: 0.01
-                });
+            // Sort items by priority before observing
+            const prioritizedItems = [...items].sort((a, b) => {
+                // Primary: number of matching categories (descending)
+                const aCatMatches = a.getAttribute('data-categories').split(' ').length;
+                const bCatMatches = b.getAttribute('data-categories').split(' ').length;
+                if (bCatMatches !== aCatMatches) return bCatMatches - aCatMatches;
+                
+                // Secondary: year (newest first)
+                const aYear = parseInt(a.getAttribute('data-year'));
+                const bYear = parseInt(b.getAttribute('data-year'));
+                return bYear - aYear;
+            });
 
-                // Observe remaining items with viewport proximity priority
-                const remainingItems = items.slice(3);
-                remainingItems.forEach((item, index) => {
-                    // Add slight delay based on position to avoid congestion
-                    setTimeout(() => {
-                        const img = item.querySelector('img');
-                        if (img && img.dataset.src && !this.pending.has(img)) {
-                            this.observer.observe(item);
-                            this.pending.add(img);
-                        }
-                    }, Math.min(index * 50, 100)); // Max 1s delay spread
-                });
-            }
-        };
+            // Observe items in priority order
+            prioritizedItems.forEach(item => {
+                const img = item.querySelector('img');
+                if (img && img.hasAttribute('data-src')) {
+                    observer.observe(item);
+                }
+            });
+        }
 
         function applyFiltersAndSort() {
             const activeCategoryFilters = Array.from(document.querySelectorAll('.filter-btn.active'))
@@ -200,6 +187,7 @@ async function loadPortfolio() {
                 const itemCategories = item.getAttribute('data-categories').split(' ');
                 const itemYear = parseInt(item.getAttribute('data-year'));
                 
+                // Calculate matches for sorting
                 const categoryMatches = activeCategoryFilters.length > 0 ? 
                     itemCategories.filter(cat => activeCategoryFilters.includes(cat)).length : 0;
                 
@@ -211,23 +199,22 @@ async function loadPortfolio() {
                     matches: categoryMatches,
                     yearMatch: yearMatch,
                     categories: itemCategories,
-                    year: itemYear,
-                    // Add viewport proximity score (will be calculated during observation)
-                    proximityScore: 0
+                    year: itemYear
                 };
             });
 
             // Filter and sort items
             const filteredItems = processedItems
-                .filter(item => item.yearMatch && (activeCategoryFilters.length === 0 || item.matches > 0))
+                .filter(item => {
+                    return item.yearMatch && 
+                        (activeCategoryFilters.length === 0 || item.matches > 0);
+                })
                 .sort((a, b) => {
                     // Primary sort by number of matching categories (descending)
                     if (b.matches !== a.matches) return b.matches - a.matches;
+                    
                     // Secondary sort by year (newest first)
-                    if (b.year !== a.year) return b.year - a.year;
-                    // Tertiary sort by original position (stable sort)
-                    return portfolioData.findIndex(x => x.id === b.element.dataset.id) - 
-                           portfolioData.findIndex(x => x.id === a.element.dataset.id);
+                    return b.year - a.year;
                 });
 
             return {
@@ -255,21 +242,23 @@ async function loadPortfolio() {
                 }
             });
             
-            // Initialize optimized lazy loading
-            lazyLoadController.observe(filtered);
+            // Initialize lazy loading for visible items with priority
+            initLazyLoading(filtered);
         }
 
-        // Set up filter event listeners
+        // Set up filter event listeners with automatic toggle logic
         function setupFilterButtons() {
             document.querySelectorAll('.filter-btn, .year-filter-btn').forEach(btn => {
                 btn.addEventListener('click', function() {
                     const isYearFilter = this.classList.contains('year-filter-btn');
                     const isAllButton = this.getAttribute(isYearFilter ? 'data-year' : 'data-category') === 'all';
                     
-                    // Automatic toggle logic for year filters
+                    // For year filters: automatically toggle "all" when selecting specific years
                     if (isYearFilter && !isAllButton) {
-                        document.querySelector('.year-filter-btn[data-year="all"]')
-                            ?.classList.remove('active');
+                        const allYearButton = document.querySelector('.year-filter-btn[data-year="all"]');
+                        if (allYearButton.classList.contains('active')) {
+                            allYearButton.classList.remove('active');
+                        }
                     }
                     
                     // Toggle clicked button
@@ -284,7 +273,7 @@ async function loadPortfolio() {
                         });
                     }
                     
-                    // Update the grid with optimized loading
+                    // Update the grid
                     updateGrid();
                 });
             });
@@ -304,7 +293,7 @@ async function loadPortfolio() {
         
         setTimeout(() => {
             portfolioFilters.classList.add('fade-in', 'delay-1');
-        }, 150);
+        }, 100);
 
     } catch (error) {
         console.error('Error loading portfolio:', error);
