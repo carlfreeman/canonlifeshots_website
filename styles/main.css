@@ -205,6 +205,12 @@ body {
     font-size: 0.9rem;
 }
 
+/* Общие стили для подписи (скрыта на десктопе) */
+.portfolio-caption {
+  display: none;
+}
+
+
 /* Blog section */
 .blog-title {
     font-family: 'Playfair Display', serif;
@@ -390,4 +396,54 @@ body {
     .lightbox__next {
         right: -30px;
     }
+}
+
+    .portfolio-item__overlay {
+    display: none; /* Скрываем оверлей на мобильных */
+    }
+
+    .portfolio-caption {
+    display: block; /* Показываем подпись под изображением */
+    padding: 10px 8px;
+    background: rgba(18, 18, 18, 0.9);
+    }
+
+    .portfolio-caption__title {
+    font-size: 0.9rem;
+    color: var(--ui-light);
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+
+    .portfolio-caption__categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    }
+
+    .portfolio-caption__category {
+    font-size: 0.75rem;
+    color: var(--accent-color);
+    padding: 2px 6px;
+    background: rgba(199, 161, 122, 0.1);
+    border-radius: 4px;
+    }
+}
+
+/* Оптимизация для очень маленьких экранов */
+@media (max-width: 480px) {
+  .portfolio-caption {
+    padding: 8px 6px;
+  }
+  
+  .portfolio-caption__title {
+    font-size: 0.8rem;
+  }
+  
+  .portfolio-caption__category {
+    font-size: 0.7rem;
+    padding: 1px 4px;
+  }
 }

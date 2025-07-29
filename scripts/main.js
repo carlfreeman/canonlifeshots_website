@@ -83,9 +83,21 @@ async function loadPortfolio() {
             
             portfolioItem.innerHTML = `
                 <img src="${thumbSrc}" alt="${item.title}" loading="lazy">
+
+                <!-- Оверлей для десктопа -->
                 <div class="portfolio-item__overlay">
-                    <h3 class="portfolio-item__title">${item.title}</h3>
-                    <p class="portfolio-item__category">${item.categories.map(cat => getCategoryName(cat)).join(', ')}</p>
+                <h3 class="portfolio-item__title">${item.title}</h3>
+                <p class="portfolio-item__category">${item.categories.map(cat => getCategoryName(cat)).join(', ')}</p>
+                </div>
+
+                <!-- Подпись для мобильных (изначально скрыта) -->
+                <div class="portfolio-caption">
+                <div class="portfolio-caption__title">${item.title}</div>
+                <div class="portfolio-caption__categories">
+                    ${item.categories.map(cat => `
+                        <span class="portfolio-caption__category">${getCategoryName(cat)}</span>
+                    `).join('')}
+                </div>
                 </div>
             `;
             
