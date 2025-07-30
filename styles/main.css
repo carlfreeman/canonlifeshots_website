@@ -280,14 +280,12 @@ body {
     aspect-ratio: 1 / 1;
     opacity: 0;
     transform: translateY(20px);
-    transition: all 0.2s ease;
+    transition: var(--transition);
 }
 
 .portfolio-item.fade-in {
     opacity: 1;
     transform: translateY(0);
-    transition: var(--transition);
-
 }
 
 .portfolio-item img {
@@ -299,7 +297,6 @@ body {
 
 .portfolio-item:hover img {
     transform: scale(1.05);
-    transition: var(--transition);
 }
 
 .portfolio-item__overlay {
