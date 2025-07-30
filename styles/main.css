@@ -456,7 +456,7 @@ body {
 
 /* Animations */
 .fade-in {
-    animation: fadeIn 0.25s forwards;
+    animation: fadeIn 0.55s forwards;
 }
 
 @keyframes fadeIn {
