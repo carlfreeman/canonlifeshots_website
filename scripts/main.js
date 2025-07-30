@@ -118,7 +118,7 @@ async function loadPortfolio() {
                 </div>
             `;
 
-            portfolioItem.style.animationDelay = `${index * 0.05}s`;
+            portfolioItem.style.animationDelay = `${index * 0.1}s`;
             portfolioItem.classList.add('fade-in');
 
             portfolioItem.addEventListener('click', () => openLightbox(item, portfolioData));
