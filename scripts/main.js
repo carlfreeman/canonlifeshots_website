@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Navigation
     const navLinks = document.querySelectorAll('.nav__link');
     const sections = document.querySelectorAll('.section');
     
@@ -7,26 +6,21 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             
-            // Remove active class from all links and sections
             navLinks.forEach(l => l.classList.remove('active'));
             sections.forEach(s => s.classList.remove('active'));
             
-            // Add active class to clicked link and corresponding section
             this.classList.add('active');
             const sectionId = this.getAttribute('data-section');
             document.getElementById(sectionId).classList.add('active');
             
-            // Scroll to top
             window.scrollTo(0, 0);
             
-            // Load content if needed
             if (sectionId === 'portfolio') {
                 loadPortfolio();
             }
         });
     });
     
-    // Header scroll effect
     window.addEventListener('scroll', function() {
         const header = document.querySelector('.header');
         if (window.scrollY > 50) {
@@ -36,10 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Initial animations
     animateHero();
     
-    // Load initial content
     loadPortfolio();
     createHeroCollage();
 });
@@ -57,7 +49,6 @@ function animateHero() {
     }, 100);
 }
 
-// Lazy loading controller
 let lazyLoadController = new AbortController();
 
 async function loadPortfolio() {
@@ -68,17 +59,13 @@ async function loadPortfolio() {
         const response = await fetch('data/portfolio.json');
         const portfolioData = await response.json();
 
-        // Clear existing content
         portfolioGrid.innerHTML = '';
 
-        // Extract unique years from portfolio data (sorted descending)
         const years = [...new Set(portfolioData.map(item => item.year))].sort((a, b) => b - a);
         const yearFiltersContainer = document.querySelector('.portfolio-year-filters');
 
-        // Clear existing year filters (except "all")
         document.querySelectorAll('.year-filter-btn:not([data-year="all"])').forEach(btn => btn.remove());
 
-        // Add year filter buttons dynamically (newest first)
         years.forEach(year => {
             const yearBtn = document.createElement('button');
             yearBtn.className = 'year-filter-btn';
@@ -87,19 +74,21 @@ async function loadPortfolio() {
             yearFiltersContainer.insertBefore(yearBtn, yearFiltersContainer.lastElementChild);
         });
 
-        // Create portfolio items
         const portfolioItems = portfolioData.map((item, index) => {
             const portfolioItem = document.createElement('div');
-            portfolioItem.className = 'portfolio-item';
+            portfolioItem.className = 'portfolio-item loading';
             portfolioItem.setAttribute('data-categories', item.categories.join(' '));
             portfolioItem.setAttribute('data-year', item.year);
             portfolioItem.dataset.id = item.id;
+
+            const spinner = document.createElement('div');
+            spinner.className = 'loading-spinner';
+            portfolioItem.appendChild(spinner);
 
             item.categories.forEach(cat => {
                 portfolioItem.classList.add(cat);
             });
 
-            // Use AVIF if supported, otherwise fallback to JPG
             const imageExt = supportsAVIF() ? 'avif' : 'avif';
             const thumbSrc = `images/optimized/${item.id}.${imageExt}`;
 
@@ -126,10 +115,8 @@ async function loadPortfolio() {
             return portfolioItem;
         });
 
-        // Add all items to DOM initially
         portfolioItems.forEach(item => portfolioGrid.appendChild(item));
 
-        // Initialize lazy loading
         initLazyLoading(portfolioItems);
 
         function applyFiltersAndSort() {
@@ -141,12 +128,10 @@ async function loadPortfolio() {
                 .map(btn => btn.getAttribute('data-year'))
                 .filter(year => year !== 'all');
 
-            // Process all items for filtering and sorting
             const processedItems = portfolioItems.map(item => {
                 const itemCategories = item.getAttribute('data-categories').split(' ');
                 const itemYear = parseInt(item.getAttribute('data-year'));
                 
-                // Calculate matches for sorting
                 const categoryMatches = activeCategoryFilters.length > 0 ? 
                     itemCategories.filter(cat => activeCategoryFilters.includes(cat)).length : 0;
                 
@@ -162,7 +147,6 @@ async function loadPortfolio() {
                 };
             });
 
-            // Filter and sort items
             const filteredItems = processedItems
                 .filter(item => {
                     return item.yearMatch && 
@@ -185,30 +169,24 @@ async function loadPortfolio() {
         function updateGrid() {
             const { filtered, all } = applyFiltersAndSort();
             
-            // Clear existing content
             portfolioGrid.innerHTML = '';
             
-            // Add items in sorted order
             filtered.forEach(item => {
-                // Сбрасываем анимацию перед добавлением
                 item.classList.remove('fade-in');
                 item.style.opacity = '0';
                 portfolioGrid.appendChild(item);
                 item.style.display = 'block';
             });
             
-            // Hide non-matching items
             all.forEach(item => {
                 if (!filtered.includes(item)) {
                     item.style.display = 'none';
                 }
             });
             
-            // Инициализируем lazy loading с правильными анимациями
             initLazyLoading(filtered);
         }
 
-        // Set up filter event listeners
         function setupFilterButtons() {
             document.querySelectorAll('.filter-btn, .year-filter-btn').forEach(btn => {
                 btn.addEventListener('click', function() {
@@ -217,43 +195,34 @@ async function loadPortfolio() {
                     const allButton = document.querySelector(`${group}[data-${isYearFilter ? 'year' : 'category'}="all"]`);
                     const isAllButton = this === allButton;
 
-                    // Toggle clicked button
                     this.classList.toggle('active');
 
                     if (isAllButton) {
-                        // If "all" was clicked, deactivate all other buttons in group
                         document.querySelectorAll(`${group}:not([data-${isYearFilter ? 'year' : 'category'}="all"])`).forEach(btn => {
                             btn.classList.remove('active');
                         });
                     } else {
-                        // If specific filter was clicked
-                        // Deactivate "all" button if it was active
                         if (allButton.classList.contains('active')) {
                             allButton.classList.remove('active');
                         }
 
-                        // Check if all specific filters are now selected
                         const specificButtons = document.querySelectorAll(`${group}:not([data-${isYearFilter ? 'year' : 'category'}="all"])`);
                         const allSpecificActive = Array.from(specificButtons).every(btn => btn.classList.contains('active'));
 
                         if (allSpecificActive) {
-                            // If all specific filters are selected, activate "all" and deactivate others
                             specificButtons.forEach(btn => btn.classList.remove('active'));
                             allButton.classList.add('active');
                         }
                     }
 
-                    // Update the grid
                     updateGrid();
                 });
             });
         }
 
-        // Initial setup
         updateGrid();
         setupFilterButtons();
 
-        // Animate portfolio title and filters
         const portfolioTitle = document.querySelector('.portfolio-title');
         const portfolioFilters = document.querySelector('.portfolio-filters');
         
@@ -271,9 +240,7 @@ async function loadPortfolio() {
     }
 }
 
-// Optimized lazy loading function
 function initLazyLoading(items) {
-    // Отменяем предыдущие наблюдения
     lazyLoadController.abort();
     lazyLoadController = new AbortController();
 
@@ -281,7 +248,6 @@ function initLazyLoading(items) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const item = entry.target;
-                // Запускаем анимацию только когда элемент в viewport
                 item.style.animationDelay = '0s';
                 item.classList.add('fade-in');
                 animationObserver.unobserve(item);
@@ -296,16 +262,38 @@ function initLazyLoading(items) {
     const loadObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                const img = entry.target.querySelector('img') || entry.target;
-                if (img.dataset.src) {
+                const item = entry.target;
+                const img = item.querySelector('img');
+                
+                if (img && img.dataset.src) {
+                    item.classList.add('loading');
+                    
+                    if (!item.querySelector('.loading-spinner')) {
+                        const spinner = document.createElement('div');
+                        spinner.className = 'loading-spinner';
+                        item.appendChild(spinner);
+                    }
+                    
+                    img.onload = function() {
+                        item.classList.remove('loading');
+                        const spinner = item.querySelector('.loading-spinner');
+                        if (spinner) spinner.remove();
+                        
+                        img.style.transition = 'opacity 0.3s ease';
+                        img.style.opacity = '0';
+                        setTimeout(() => {
+                            img.style.opacity = '1';
+                        }, 10);
+                    };
+                    
+                    img.onerror = function() {
+                        item.classList.remove('loading');
+                        const spinner = item.querySelector('.loading-spinner');
+                        if (spinner) spinner.remove();
+                    };
+                    
                     img.src = img.dataset.src;
                     img.removeAttribute('data-src');
-                    
-                    img.style.transition = 'opacity 0.3s ease';
-                    img.style.opacity = '0';
-                    setTimeout(() => {
-                        img.style.opacity = '1';
-                    }, 10);
                 }
                 loadObserver.unobserve(entry.target);
             }
@@ -316,14 +304,12 @@ function initLazyLoading(items) {
         signal: lazyLoadController.signal
     });
 
-    // Сначала сбрасываем все анимации
     items.forEach(item => {
         item.classList.remove('fade-in');
         item.style.opacity = '0';
         item.style.animationDelay = '0s';
     });
 
-    // Наблюдаем элементы для анимации и загрузки
     items.forEach(item => {
         animationObserver.observe(item);
         
@@ -339,6 +325,10 @@ function openLightbox(item, allItems) {
     const lightboxContent = document.querySelector('.lightbox__content');
     const lightboxImg = document.querySelector('.lightbox__image');
     const lightboxCaption = document.querySelector('.lightbox__caption');
+
+    const spinner = document.createElement('div');
+    spinner.className = 'loading-spinner';
+    lightboxContent.appendChild(spinner);
     
     const closeBtn = document.querySelector('.lightbox__close');
     
@@ -355,13 +345,13 @@ function openLightbox(item, allItems) {
     lightboxCaption.textContent = 'Загрузка...';
     lightbox.classList.add('active');
     
-    // Load image
     const placeholder = document.createElement('div');
     placeholder.className = 'image-placeholder';
     lightboxContent.appendChild(placeholder);
     const img = new Image();
     img.src = fullSizeSrc;
     img.onload = function() {
+        spinner.remove();
         lightboxContent.removeChild(placeholder);
         lightboxImg.src = fullSizeSrc;
         lightboxImg.style.display = 'block';
@@ -375,6 +365,7 @@ function openLightbox(item, allItems) {
     };
     
     img.onerror = function() {
+        spinner.remove();
         lightboxCaption.textContent = 'Не удалось загрузить изображение';
     };
 
