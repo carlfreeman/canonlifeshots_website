@@ -369,7 +369,6 @@ function openLightbox(item, allItems) {
     lightboxImg.style.display = 'none';
     lightboxCaption.textContent = 'Загрузка...';
     
-    const currentIndex = allItems.findIndex(i => i.id === item.id);
     let touchStartX = 0;
     let touchEndX = 0;
     
