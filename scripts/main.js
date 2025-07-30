@@ -46,6 +46,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // loadBlog();
 });
 
+function getRootMargin() {
+    return window.innerWidth < 768 ? '50px' : '100px';
+}
+
+
 function animateHero() {
     const heroTitle = document.querySelector('.hero__title');
     const heroSubtitle = document.querySelector('.hero__subtitle');
@@ -132,7 +137,7 @@ async function loadPortfolio() {
         const lazyLoadController = new AbortController();
 
         function initLazyLoading(items) {
-            // Cancel any pending lazy loads
+            // Отменяем предыдущие наблюдения
             lazyLoadController.abort();
 
             const observer = new IntersectionObserver((entries) => {
@@ -142,17 +147,35 @@ async function loadPortfolio() {
                         if (img.dataset.src) {
                             img.src = img.dataset.src;
                             img.removeAttribute('data-src');
+                            
+                            // Добавляем плавное появление
+                            img.style.transition = 'opacity 0.3s ease';
+                            img.style.opacity = 0;
+                            setTimeout(() => {
+                                img.style.opacity = 1;
+                            }, 10);
                         }
                         observer.unobserve(entry.target);
                     }
                 });
             }, {
-                rootMargin: '200px',
+                // Более консервативные настройки:
+                rootMargin: getRootMargin(),
+                threshold: 0.01, // Срабатывает даже при 1% видимости
                 signal: lazyLoadController.signal
             });
 
-            // Observe items in order (priority to higher matches)
-            items.forEach(item => {
+            // Наблюдаем только элементы, которые еще не загружены
+            const sortedItems = [...items].sort((a, b) => {
+                // Сортируем по положению относительно viewport
+                const aRect = a.getBoundingClientRect();
+                const bRect = b.getBoundingClientRect();
+                
+                // Приоритет для элементов выше в viewport
+                return aRect.top - bRect.top;
+            });
+
+            sortedItems.forEach(item => {
                 const img = item.querySelector('img');
                 if (img && img.hasAttribute('data-src')) {
                     observer.observe(item);
