@@ -292,6 +292,7 @@ body {
 
 .portfolio-item:hover img {
     transform: scale(1.05);
+    transition: var(--transition);
 }
 
 .portfolio-item__overlay {
