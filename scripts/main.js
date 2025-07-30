@@ -432,7 +432,7 @@ async function createHeroCollage() {
         
         // Создаем 12 случайных элементов коллажа
         const shuffledImages = [...optimizedImages].sort(() => 0.5 - Math.random());
-        const selectedImages = shuffledImages.slice(0, 12);
+        const selectedImages = shuffledImages.slice(0, 8);
         
         selectedImages.forEach((image, index) => {
             const img = document.createElement('img');
@@ -444,7 +444,7 @@ async function createHeroCollage() {
             // Плавное появление с задержкой
             setTimeout(() => {
                 img.style.opacity = 1;
-            }, index * 20);
+            }, index * 30);
             
             
             collageContainer.appendChild(img);
