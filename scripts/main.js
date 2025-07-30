@@ -22,8 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
             // Load content if needed
             if (sectionId === 'portfolio') {
                 loadPortfolio();
-            // } else if (sectionId === 'blog') {
-            //     loadBlog();
             }
         });
     });
@@ -43,13 +41,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Load initial content
     loadPortfolio();
-    // loadBlog();
+    createHeroCollage();
 });
-
-function getRootMargin() {
-    return window.innerWidth < 768 ? '50px' : '100px';
-}
-
 
 function animateHero() {
     const heroTitle = document.querySelector('.hero__title');
@@ -63,6 +56,9 @@ function animateHero() {
         heroSubtitle.classList.add('fade-in', 'delay-1');
     }, 100);
 }
+
+// Lazy loading controller
+let lazyLoadController = new AbortController();
 
 async function loadPortfolio() {
     const portfolioGrid = document.querySelector('.portfolio-grid');
@@ -133,55 +129,8 @@ async function loadPortfolio() {
         // Add all items to DOM initially
         portfolioItems.forEach(item => portfolioGrid.appendChild(item));
 
-        // Lazy loading controller
-        const lazyLoadController = new AbortController();
-
-        function initLazyLoading(items) {
-            // Отменяем предыдущие наблюдения
-            lazyLoadController.abort();
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const img = entry.target.querySelector('img') || entry.target;
-                        if (img.dataset.src) {
-                            img.src = img.dataset.src;
-                            img.removeAttribute('data-src');
-                            
-                            // Добавляем плавное появление
-                            img.style.transition = 'opacity 0.3s ease';
-                            img.style.opacity = 0;
-                            setTimeout(() => {
-                                img.style.opacity = 1;
-                            }, 10);
-                        }
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, {
-                // Более консервативные настройки:
-                rootMargin: getRootMargin(),
-                threshold: 0.01, // Срабатывает даже при 1% видимости
-                signal: lazyLoadController.signal
-            });
-
-            // Наблюдаем только элементы, которые еще не загружены
-            const sortedItems = [...items].sort((a, b) => {
-                // Сортируем по положению относительно viewport
-                const aRect = a.getBoundingClientRect();
-                const bRect = b.getBoundingClientRect();
-                
-                // Приоритет для элементов выше в viewport
-                return aRect.top - bRect.top;
-            });
-
-            sortedItems.forEach(item => {
-                const img = item.querySelector('img');
-                if (img && img.hasAttribute('data-src')) {
-                    observer.observe(item);
-                }
-            });
-        }
+        // Initialize lazy loading
+        initLazyLoading(portfolioItems);
 
         function applyFiltersAndSort() {
             const activeCategoryFilters = Array.from(document.querySelectorAll('.filter-btn.active'))
@@ -252,11 +201,11 @@ async function loadPortfolio() {
                 }
             });
             
-            // Initialize lazy loading for visible items
+            // Reinitialize lazy loading for visible items
             initLazyLoading(filtered);
         }
 
-        // Set up filter event listeners with improved toggle logic
+        // Set up filter event listeners
         function setupFilterButtons() {
             document.querySelectorAll('.filter-btn, .year-filter-btn').forEach(btn => {
                 btn.addEventListener('click', function() {
@@ -319,6 +268,56 @@ async function loadPortfolio() {
     }
 }
 
+// Optimized lazy loading function
+function initLazyLoading(items) {
+    // Cancel any pending lazy loads
+    lazyLoadController.abort();
+    lazyLoadController = new AbortController();
+
+    // Get appropriate root margin based on screen size
+    const rootMargin = window.innerWidth < 768 ? '100px' : '200px';
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target.querySelector('img') || entry.target;
+                if (img.dataset.src) {
+                    // Load the image
+                    img.src = img.dataset.src;
+                    img.removeAttribute('data-src');
+                    
+                    // Add smooth appearance
+                    img.style.transition = 'opacity 0.3s ease';
+                    img.style.opacity = '0';
+                    setTimeout(() => {
+                        img.style.opacity = '1';
+                    }, 10);
+                }
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        rootMargin: rootMargin,
+        threshold: 0.01,
+        signal: lazyLoadController.signal
+    });
+
+    // Sort items by distance to viewport (top to bottom)
+    const sortedItems = [...items].sort((a, b) => {
+        const aRect = a.getBoundingClientRect();
+        const bRect = b.getBoundingClientRect();
+        return aRect.top - bRect.top;
+    });
+
+    // Observe only items with unloaded images
+    sortedItems.forEach(item => {
+        const img = item.querySelector('img');
+        if (img && img.hasAttribute('data-src')) {
+            observer.observe(item);
+        }
+    });
+}
+
 function openLightbox(item, allItems) {
     const lightbox = document.querySelector('.lightbox');
     const lightboxContent = document.querySelector('.lightbox__content');
@@ -370,7 +369,6 @@ function openLightbox(item, allItems) {
         document.removeEventListener('keydown', handleKeyDown);
     }
     
-
     function centerImage(imgElement) {
         const container = lightboxContent;
         const img = imgElement;
@@ -388,7 +386,7 @@ function openLightbox(item, allItems) {
         
         const widthRatio = containerWidth / imgWidth;
         const heightRatio = containerHeight / imgHeight;
-        const scale = Math.min(widthRatio, heightRatio, 1); // Не увеличиваем больше оригинала
+        const scale = Math.min(widthRatio, heightRatio, 1);
         
         img.style.width = `${imgWidth * scale}px`;
         img.style.height = `${imgHeight * scale}px`;
@@ -399,7 +397,6 @@ function openLightbox(item, allItems) {
             centerImage(lightboxImg);
         }
     });
-
     
     document.querySelector('.lightbox__close').addEventListener('click', closeLightbox);
    
@@ -431,29 +428,23 @@ function getCategoryName(category) {
 }
 
 function supportsAVIF() {
-    // Simple feature detection for AVIF support
     return document.createElement('canvas').toDataURL('image/avif').indexOf('data:image/avif') === 0;
 }
 
-// Функция для создания коллажа
 async function createHeroCollage() {
     const collageContainer = document.querySelector('.hero-collage');
     
     try {
-        // Загружаем данные портфолио
         const response = await fetch('data/portfolio.json');
         const portfolioData = await response.json();
         
-        // Фильтруем изображения из папки optimized
         const optimizedImages = portfolioData.map(item => ({
             url: `images/optimized/${item.id}.avif`,
             title: item.title
         }));
         
-        // Очищаем контейнер
         collageContainer.innerHTML = '';
         
-        // Создаем 12 случайных элементов коллажа
         const shuffledImages = [...optimizedImages].sort(() => 0.5 - Math.random());
         const selectedImages = shuffledImages.slice(0, 8);
         
@@ -464,11 +455,9 @@ async function createHeroCollage() {
             img.loading = 'lazy';
             img.style.opacity = 0;
             
-            // Плавное появление с задержкой
             setTimeout(() => {
                 img.style.opacity = 1;
             }, index * 30);
-            
             
             collageContainer.appendChild(img);
         });
@@ -478,15 +467,3 @@ async function createHeroCollage() {
         collageContainer.innerHTML = '';
     }
 }
-
-// Вызываем при загрузке страницы
-document.addEventListener('DOMContentLoaded', function() {
-    createHeroCollage();
-    
-    // Обновляем при изменении размера окна
-    window.addEventListener('resize', function() {
-        if (window.innerWidth > 768) {
-            createHeroCollage();
-        }
-    });
-});
