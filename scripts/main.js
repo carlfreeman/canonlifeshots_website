@@ -444,7 +444,7 @@ async function createHeroCollage() {
             // Плавное появление с задержкой
             setTimeout(() => {
                 img.style.opacity = 1;
-            }, index * 100);
+            }, index * 20);
             
             
             collageContainer.appendChild(img);
