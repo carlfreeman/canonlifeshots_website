@@ -52,11 +52,11 @@ function animateHero() {
     
     setTimeout(() => {
         heroTitle.classList.add('fade-in');
-    }, 300);
+    }, 50);
     
     setTimeout(() => {
         heroSubtitle.classList.add('fade-in', 'delay-1');
-    }, 600);
+    }, 100);
 }
 
 async function loadPortfolio() {

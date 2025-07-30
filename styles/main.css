@@ -280,14 +280,14 @@ body {
     aspect-ratio: 1 / 1;
     opacity: 0;
     transform: translateY(20px);
-    transition: var(--transition);
+    transition: all 0.1s ease;
 }
 
 .portfolio-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: var(--transition);
+    transition: all 0.1s ease;
 }
 
 .portfolio-item:hover img {
@@ -302,7 +302,7 @@ body {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
     padding: 1rem;
     opacity: 0;
-    transition: var(--transition);
+    transition: all 0.1s ease;
 }
 
 .portfolio-item:hover .portfolio-item__overlay {
@@ -439,7 +439,7 @@ body {
     font-size: 2rem;
     cursor: pointer;
     opacity: 0.7;
-    transition: var(--transition);
+    transition: all 0.1s ease;
 }
 
 .lightbox__nav:hover {
@@ -456,7 +456,7 @@ body {
 
 /* Animations */
 .fade-in {
-    animation: fadeIn 0.8s forwards;
+    animation: fadeIn 0.25s forwards;
 }
 
 @keyframes fadeIn {
@@ -467,15 +467,15 @@ body {
 }
 
 .delay-1 {
-    animation-delay: 0.1s;
+    animation-delay: 0.05s;
 }
 
 .delay-2 {
-    animation-delay: 0.2s;
+    animation-delay: 0.1s;
 }
 
 .delay-3 {
-    animation-delay: 0.3s;
+    animation-delay: 0.15s;
 }
 
 /* Responsive */
