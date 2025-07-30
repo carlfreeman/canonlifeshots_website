@@ -1,6 +1,3 @@
-let currentFilteredItems = [];
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav__link');
     const sections = document.querySelectorAll('.section');
@@ -114,13 +111,7 @@ async function loadPortfolio() {
             portfolioItem.style.animationDelay = `${index * 0.1}s`;
             portfolioItem.classList.add('fade-in');
 
-            portfolioItem.addEventListener('click', () => {
-                const items = currentFilteredItems.length > 0 ? currentFilteredItems : allItems;
-                const itemData = items.find(i => i.id === item.id);
-                if (itemData) {
-                    openLightbox(itemData);
-                }
-            });
+            portfolioItem.addEventListener('click', () => openLightbox(item, portfolioData));
             return portfolioItem;
         });
 
@@ -177,9 +168,6 @@ async function loadPortfolio() {
 
         function updateGrid() {
             const { filtered, all } = applyFiltersAndSort();
-            currentFilteredItems = filtered.map(item => {
-                return allItems.find(i => i.id === item.dataset.id);
-            });
             
             portfolioGrid.innerHTML = '';
             
@@ -337,45 +325,34 @@ function openLightbox(item, allItems) {
     const lightboxContent = document.querySelector('.lightbox__content');
     const lightboxImg = document.querySelector('.lightbox__image');
     const lightboxCaption = document.querySelector('.lightbox__caption');
-    
-    const items = currentFilteredItems.length > 0 ? currentFilteredItems : allItems;
-    const currentIndex = items.findIndex(i => i.id === item.id);
 
-    const arrowsHTML = `
-        <div class="lightbox__nav-arrows">
-            <button class="lightbox__arrow lightbox__arrow--prev" aria-label="Previous image" 
-                    ${currentIndex <= 0 ? 'disabled' : ''}>←</button>
-            <button class="lightbox__arrow lightbox__arrow--next" aria-label="Next image" 
-                    ${currentIndex >= items.length - 1 ? 'disabled' : ''}>→</button>
-        </div>
-    `;
-    lightbox.insertAdjacentHTML('beforeend', arrowsHTML);
+    const spinner = document.createElement('div');
+    spinner.className = 'loading-spinner';
+    lightboxContent.appendChild(spinner);
     
     const closeBtn = document.querySelector('.lightbox__close');
-    const prevBtn = document.querySelector('.lightbox__arrow--prev');
-    const nextBtn = document.querySelector('.lightbox__arrow--next');
     
-    prevBtn.disabled && prevBtn.classList.add('disabled');
-    nextBtn.disabled && nextBtn.classList.add('disabled');
-
     closeBtn.replaceWith(closeBtn.cloneNode(true));
-
+    
     lightboxContent.style.display = 'flex';
-    lightbox.classList.add('active');
+    lightboxContent.style.flexDirection = 'column';
+    lightboxContent.style.alignItems = 'center';
     
     const fullSizeSrc = `images/original/${item.id}.webp`;
     
     lightboxImg.src = '';
     lightboxImg.style.display = 'none';
     lightboxCaption.textContent = 'Загрузка...';
+    lightbox.classList.add('active');
     
-    const currentIndex = allItems.findIndex(i => i.id === item.id);
-    let touchStartX = 0;
-    let touchEndX = 0;
-    
+    const placeholder = document.createElement('div');
+    placeholder.className = 'image-placeholder';
+    lightboxContent.appendChild(placeholder);
     const img = new Image();
     img.src = fullSizeSrc;
     img.onload = function() {
+        spinner.remove();
+        lightboxContent.removeChild(placeholder);
         lightboxImg.src = fullSizeSrc;
         lightboxImg.style.display = 'block';
         lightboxCaption.textContent = `${item.title}`;
@@ -388,75 +365,16 @@ function openLightbox(item, allItems) {
     };
     
     img.onerror = function() {
+        spinner.remove();
         lightboxCaption.textContent = 'Не удалось загрузить изображение';
     };
 
-    function navigate(direction) {
-        let newIndex = currentIndex;
-        if (direction === 'prev' && currentIndex > 0) {
-            newIndex = currentIndex - 1;
-        } else if (direction === 'next' && currentIndex < items.length - 1) {
-            newIndex = currentIndex + 1;
-        }
-        
-        if (newIndex !== currentIndex) {
-            openLightbox(items[newIndex]);
-        }
-    }
-
-    // Touch events for mobile swipe
-    lightboxContent.addEventListener('touchstart', (e) => {
-        touchStartX = e.changedTouches[0].screenX;
-    }, { passive: true });
-    
-    lightboxContent.addEventListener('touchend', (e) => {
-        touchEndX = e.changedTouches[0].screenX;
-        handleSwipe();
-    }, { passive: true });
-    
-    function handleSwipe() {
-        const threshold = 50;
-        const difference = touchStartX - touchEndX;
-        
-        if (difference > threshold && currentIndex < items.length - 1) {
-            navigate('next');
-        } else if (difference < -threshold && currentIndex > 0) {
-            navigate('prev');
-        }
-    }
-    
-    prevBtn.addEventListener('click', () => navigate('prev'));
-    nextBtn.addEventListener('click', () => navigate('next'));
-    
-    function handleKeyDown(e) {
-        if (!lightbox.classList.contains('active')) return;
-        
-        switch (e.key) {
-            case 'Escape':
-                closeLightbox();
-                break;
-            case 'ArrowLeft':
-                navigate('prev');
-                break;
-            case 'ArrowRight':
-                navigate('next');
-                break;
-        }
-    }
-    
-    document.addEventListener('keydown', handleKeyDown);
+    const currentIndex = allItems.findIndex(i => i.id === item.id);
     
     function closeLightbox() {
         lightbox.classList.remove('active');
         document.removeEventListener('keydown', handleKeyDown);
-        lightboxContent.removeEventListener('touchstart', handleTouchStart);
-        lightboxContent.removeEventListener('touchend', handleTouchEnd);
-        
-        const arrows = document.querySelector('.lightbox__nav-arrows');
-        if (arrows) arrows.remove();
     }
-    
-    document.querySelector('.lightbox__close').addEventListener('click', closeLightbox);
     
     function centerImage(imgElement) {
         const container = lightboxContent;
@@ -486,8 +404,21 @@ function openLightbox(item, allItems) {
             centerImage(lightboxImg);
         }
     });
+    
+    document.querySelector('.lightbox__close').addEventListener('click', closeLightbox);
+   
+    function handleKeyDown(e) {
+        if (!lightbox.classList.contains('active')) return;
+        
+        switch (e.key) {
+            case 'Escape':
+                closeLightbox();
+                break;
+        }
+    }
+    
+    document.addEventListener('keydown', handleKeyDown);
 }
-
 
 function getCategoryName(category) {
     const categories = {

@@ -195,6 +195,7 @@ body {
     margin-bottom: 3rem;
 }
 
+/* Общие стили (подпись скрыта на десктопе) */
 .portfolio-caption {
   display: none;
 }
@@ -234,6 +235,7 @@ body {
     color: var(--accent-color);
 }
 
+/* Add to your main.css */
 .portfolio-year-filters {
     display: flex;
     flex-wrap: wrap;
@@ -452,63 +454,6 @@ body {
     transition: all 0.2s ease;
 }
 
-.lightbox__nav-arrows {
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  pointer-events: none;
-  z-index: 1001;
-}
-
-.lightbox__arrow {
-  pointer-events: auto;
-  width: 50px;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  border-radius: 50%;
-  color: white;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  margin: 0 20px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.lightbox__arrow.disabled {
-    opacity: 0.3 !important;
-    cursor: not-allowed;
-    pointer-events: none;
-}
-
-.lightbox:hover .lightbox__arrow {
-  opacity: 1;
-}
-
-.lightbox__arrow--prev {
-  left: 0;
-}
-
-.lightbox__arrow--next {
-  right: 0;
-}
-
-@media (max-width: 768px) {
-  .lightbox__arrow {
-    display: none;
-  }
-  
-  .lightbox__content {
-    touch-action: pan-y;
-  }
-}
-
 .lightbox__nav:hover {
     opacity: 1;
 }
@@ -600,7 +545,7 @@ body {
     display: flex;
     flex-direction: column;
     height: auto;
-    aspect-ratio: unset;
+    aspect-ratio: unset; /* Убираем фиксированное соотношение */
   }
 
   .portfolio-item img {
@@ -614,7 +559,7 @@ body {
     display: none;
   }
 
-  /* Mobile caption styles */
+  /* Стили для мобильной подписи */
   .portfolio-mobile-caption {
     display: flex;
     flex-direction: column;
@@ -648,7 +593,7 @@ body {
   }
 }
 
-/* Desktop ver */
+/* Десктопная версия */
 @media (min-width: 769px) {
   .portfolio-mobile-caption {
     display: none;
@@ -659,7 +604,7 @@ body {
   }
 }
 
-/* Tiny screens */
+/* Оптимизация для очень маленьких экранов */
 @media (max-width: 480px) {
   .portfolio-caption {
     padding: 8px 6px;
