@@ -53,8 +53,8 @@ export function openLightbox(item, allItems) {
         setTimeout(() => {
           spinnerContainer.remove();
         }, 2000);
-    };
-
+      };
+    }
 
     const currentIndex = allItems.findIndex(i => i.id === item.id);
     
