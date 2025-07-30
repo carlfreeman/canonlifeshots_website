@@ -286,6 +286,8 @@ body {
 .portfolio-item.fade-in {
     opacity: 1;
     transform: translateY(0);
+    transition: var(--transition);
+
 }
 
 .portfolio-item img {
@@ -297,6 +299,7 @@ body {
 
 .portfolio-item:hover img {
     transform: scale(1.05);
+    transition: var(--transition);
 }
 
 .portfolio-item__overlay {
@@ -307,7 +310,7 @@ body {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
     padding: 1rem;
     opacity: 0;
-    transition: all 0.2s ease;
+    transition: var(--transition);
 }
 
 .portfolio-item:hover .portfolio-item__overlay {
