@@ -4,9 +4,15 @@ export function openLightbox(item, allItems) {
     const lightboxImg = document.querySelector('.lightbox__image');
     const lightboxCaption = document.querySelector('.lightbox__caption');
 
-    const spinner = document.createElement('div');
-    spinner.className = 'loading-spinner';
-    lightboxContent.appendChild(spinner);
+    const spinnerHTML = `
+    <div class="loading-spinner-container active">
+      <div class="loading-spinner"></div>
+      <div class="loading-text">Загрузка</div>
+    </div>
+    `;
+    lightboxContent.insertAdjacentHTML('beforeend', spinnerHTML);
+    const spinnerContainer = lightboxContent.querySelector('.loading-spinner-container');
+
     
     const closeBtn = document.querySelector('.lightbox__close');
     
@@ -29,7 +35,7 @@ export function openLightbox(item, allItems) {
     const img = new Image();
     img.src = fullSizeSrc;
     img.onload = function() {
-        spinner.remove();
+        spinnerContainer.classList.remove('active');
         lightboxContent.removeChild(placeholder);
         lightboxImg.src = fullSizeSrc;
         lightboxImg.style.display = 'block';
@@ -43,9 +49,12 @@ export function openLightbox(item, allItems) {
     };
     
     img.onerror = function() {
-        spinner.remove();
-        lightboxCaption.textContent = 'Не удалось загрузить изображение';
-    };
+        spinnerContainer.querySelector('.loading-text').textContent = 'Ошибка загрузки';
+        setTimeout(() => {
+          spinnerContainer.remove();
+        }, 2000);
+      };
+    }
 
     const currentIndex = allItems.findIndex(i => i.id === item.id);
     

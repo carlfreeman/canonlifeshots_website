@@ -28,24 +28,13 @@ export async function loadPortfolio() {
 
         const portfolioItems = portfolioData.map((item, index) => {
             const portfolioItem = document.createElement('div');
-            portfolioItem.className = 'portfolio-item loading';
-            portfolioItem.setAttribute('data-categories', item.categories.join(' '));
-            portfolioItem.setAttribute('data-year', item.year);
-            portfolioItem.dataset.id = item.id;
-
-            const spinner = document.createElement('div');
-            spinner.className = 'loading-spinner';
-            portfolioItem.appendChild(spinner);
-
-            item.categories.forEach(cat => {
-                portfolioItem.classList.add(cat);
-            });
-
-            const imageExt = supportsAVIF() ? 'avif' : 'avif';
-            const thumbSrc = `images/optimized/${item.id}.${imageExt}`;
-
+            portfolioItem.className = 'portfolio-item';
             portfolioItem.innerHTML = `
-                <img data-src="${thumbSrc}" alt="${item.title}" loading="lazy">
+                <img data-src="images/optimized/${item.id}.avif" alt="${item.title}" loading="lazy">
+                <div class="loading-spinner-container">
+                    <div class="loading-spinner"></div>
+                    <div class="loading-text">Загрузка</div>
+                </div>
                 <div class="portfolio-item__overlay">
                     <h3 class="portfolio-item__title">${item.title}</h3>
                     <p class="portfolio-item__category">${item.categories.map(cat => getCategoryName(cat)).join(', ')}</p>
@@ -209,49 +198,37 @@ function initLazyLoading(items) {
     });
 
     const loadObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const item = entry.target;
-                const img = item.querySelector('img');
-                
-                if (img && img.dataset.src) {
-                    item.classList.add('loading');
-                    
-                    if (!item.querySelector('.loading-spinner')) {
-                        const spinner = document.createElement('div');
-                        spinner.className = 'loading-spinner';
-                        item.appendChild(spinner);
-                    }
-                    
-                    img.onload = function() {
-                        item.classList.remove('loading');
-                        const spinner = item.querySelector('.loading-spinner');
-                        if (spinner) spinner.remove();
-                        
-                        img.style.transition = 'opacity 0.3s ease';
-                        img.style.opacity = '0';
-                        setTimeout(() => {
-                            img.style.opacity = '1';
-                        }, 10);
-                    };
-                    
-                    img.onerror = function() {
-                        item.classList.remove('loading');
-                        const spinner = item.querySelector('.loading-spinner');
-                        if (spinner) spinner.remove();
-                    };
-                    
-                    img.src = img.dataset.src;
-                    img.removeAttribute('data-src');
-                }
-                loadObserver.unobserve(entry.target);
-            }
-        });
-    }, {
-        rootMargin: '200px',
-        threshold: 0.01,
-        signal: lazyLoadController.signal
-    });
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const item = entry.target;
+          const img = item.querySelector('img');
+          const spinnerContainer = item.querySelector('.loading-spinner-container');
+          
+          if (img && img.dataset.src) {
+            spinnerContainer.classList.add('active');
+            
+            img.onload = function() {
+              spinnerContainer.classList.remove('active');
+              img.style.opacity = '0';
+              setTimeout(() => {
+                img.style.opacity = '1';
+              }, 10);
+            };
+            
+            img.onerror = function() {
+              spinnerContainer.querySelector('.loading-text').textContent = 'Ошибка загрузки';
+              setTimeout(() => {
+                spinnerContainer.classList.remove('active');
+              }, 2000);
+            };
+            
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+          }
+          loadObserver.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '200px' });
 
     items.forEach(item => {
         item.classList.remove('fade-in');
