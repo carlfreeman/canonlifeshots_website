@@ -1,5 +1,5 @@
 let currentFilteredItems = [];
-
+let allItems = [];
 
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav__link');
@@ -60,11 +60,11 @@ async function loadPortfolio() {
 
     try {
         const response = await fetch('data/portfolio.json');
-        const portfolioData = await response.json();
+        const allItems = await response.json();
 
         portfolioGrid.innerHTML = '';
 
-        const years = [...new Set(portfolioData.map(item => item.year))].sort((a, b) => b - a);
+        const years = [...new Set(allItems.map(item => item.year))].sort((a, b) => b - a);
         const yearFiltersContainer = document.querySelector('.portfolio-year-filters');
 
         document.querySelectorAll('.year-filter-btn:not([data-year="all"])').forEach(btn => btn.remove());
@@ -77,7 +77,7 @@ async function loadPortfolio() {
             yearFiltersContainer.insertBefore(yearBtn, yearFiltersContainer.lastElementChild);
         });
 
-        const portfolioItems = portfolioData.map((item, index) => {
+        const portfolioItems = allItems.map((item, index) => {
             const portfolioItem = document.createElement('div');
             portfolioItem.className = 'portfolio-item loading';
             portfolioItem.setAttribute('data-categories', item.categories.join(' '));
@@ -115,14 +115,17 @@ async function loadPortfolio() {
             portfolioItem.classList.add('fade-in');
 
             portfolioItem.addEventListener('click', () => {
-                const items = currentFilteredItems.length > 0 ? currentFilteredItems : allItems;
-                const itemData = items.find(i => i.id === item.id);
-                if (itemData) {
-                    openLightbox(itemData);
+                const itemId = item.id;
+                const itemToShow = currentFilteredItems.find(i => i.id === itemId) || 
+                                  allItems.find(i => i.id === itemId);
+                if (itemToShow) {
+                    openLightbox(itemToShow, allItems);
                 }
             });
             return portfolioItem;
         });
+
+        currentFilteredItems = [...allItems];
 
         portfolioItems.forEach(item => portfolioGrid.appendChild(item));
 
@@ -399,7 +402,7 @@ function openLightbox(item, allItems) {
         }
         
         if (newIndex !== currentIndex) {
-            openLightbox(items[newIndex]);
+            openLightbox(items[newIndex], allItems);
         }
     }
 
@@ -511,9 +514,9 @@ async function createHeroCollage() {
     
     try {
         const response = await fetch('data/portfolio.json');
-        const portfolioData = await response.json();
+        const allItems = await response.json();
         
-        const optimizedImages = portfolioData.map(item => ({
+        const optimizedImages = allItems.map(item => ({
             url: `images/optimized/${item.id}.avif`,
             title: item.title
         }));
