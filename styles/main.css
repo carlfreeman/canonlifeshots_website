@@ -283,11 +283,16 @@ body {
     transition: all 0.2s ease;
 }
 
+.portfolio-item.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .portfolio-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: all 0.1s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .portfolio-item:hover img {

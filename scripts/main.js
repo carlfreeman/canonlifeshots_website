@@ -190,6 +190,9 @@ async function loadPortfolio() {
             
             // Add items in sorted order
             filtered.forEach(item => {
+                // Сбрасываем анимацию перед добавлением
+                item.classList.remove('fade-in');
+                item.style.opacity = '0';
                 portfolioGrid.appendChild(item);
                 item.style.display = 'block';
             });
@@ -201,7 +204,7 @@ async function loadPortfolio() {
                 }
             });
             
-            // Reinitialize lazy loading for visible items
+            // Инициализируем lazy loading с правильными анимациями
             initLazyLoading(filtered);
         }
 
@@ -270,50 +273,63 @@ async function loadPortfolio() {
 
 // Optimized lazy loading function
 function initLazyLoading(items) {
-    // Cancel any pending lazy loads
+    // Отменяем предыдущие наблюдения
     lazyLoadController.abort();
     lazyLoadController = new AbortController();
 
-    // Get appropriate root margin based on screen size
-    const rootMargin = window.innerWidth < 768 ? '100px' : '200px';
+    const animationObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const item = entry.target;
+                // Запускаем анимацию только когда элемент в viewport
+                item.style.animationDelay = '0s';
+                item.classList.add('fade-in');
+                animationObserver.unobserve(item);
+            }
+        });
+    }, {
+        rootMargin: '100px',
+        threshold: 0.01,
+        signal: lazyLoadController.signal
+    });
 
-    const observer = new IntersectionObserver((entries) => {
+    const loadObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const img = entry.target.querySelector('img') || entry.target;
                 if (img.dataset.src) {
-                    // Load the image
                     img.src = img.dataset.src;
                     img.removeAttribute('data-src');
                     
-                    // Add smooth appearance
                     img.style.transition = 'opacity 0.3s ease';
                     img.style.opacity = '0';
                     setTimeout(() => {
                         img.style.opacity = '1';
                     }, 10);
                 }
-                observer.unobserve(entry.target);
+                loadObserver.unobserve(entry.target);
             }
         });
     }, {
-        rootMargin: rootMargin,
+        rootMargin: '200px',
         threshold: 0.01,
         signal: lazyLoadController.signal
     });
 
-    // Sort items by distance to viewport (top to bottom)
-    const sortedItems = [...items].sort((a, b) => {
-        const aRect = a.getBoundingClientRect();
-        const bRect = b.getBoundingClientRect();
-        return aRect.top - bRect.top;
+    // Сначала сбрасываем все анимации
+    items.forEach(item => {
+        item.classList.remove('fade-in');
+        item.style.opacity = '0';
+        item.style.animationDelay = '0s';
     });
 
-    // Observe only items with unloaded images
-    sortedItems.forEach(item => {
+    // Наблюдаем элементы для анимации и загрузки
+    items.forEach(item => {
+        animationObserver.observe(item);
+        
         const img = item.querySelector('img');
         if (img && img.hasAttribute('data-src')) {
-            observer.observe(item);
+            loadObserver.observe(item);
         }
     });
 }
