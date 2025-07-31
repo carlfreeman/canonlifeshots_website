@@ -13,7 +13,28 @@ export async function loadPortfolio() {
 
         portfolioGrid.innerHTML = '';
 
-        const years = [...new Set(portfolioData.map(item => item.year))].sort((a, b) => b - a);
+        const years = [...new Set(portfolioData.map(item => item.year))].sort((a, b) => {
+            // Разбиваем год на сезон и год (например "FW26" -> ["FW", 26])
+            const getSeasonAndYear = (str) => {
+                const season = str.substring(0, 2);
+                const year = parseInt(str.substring(4));
+                return { season, year };
+            };
+            
+            const aParts = getSeasonAndYear(a);
+            const bParts = getSeasonAndYear(b);
+            
+            // Сначала сортируем по году (убывание), затем по сезону (FW идет перед SS)
+            if (bParts.year !== aParts.year) {
+                return bParts.year - aParts.year;
+            } else {
+                // FW должен идти перед SS для одного года
+                if (aParts.season === 'FW' && bParts.season === 'SS') return -1;
+                if (aParts.season === 'SS' && bParts.season === 'FW') return 1;
+                return 0;
+            }
+        });
+        
         const yearFiltersContainer = document.querySelector('.portfolio-year-filters');
 
         document.querySelectorAll('.year-filter-btn:not([data-year="all"])').forEach(btn => btn.remove());
@@ -106,7 +127,7 @@ export async function loadPortfolio() {
                 })
                 .sort((a, b) => {
                     if (b.matches !== a.matches) return b.matches - a.matches;
-                    return b.year - a.year;
+                    return parseInt(b.year.slice(3)) - parseInt(a.year.slice(3));
                 });
 
             return {
