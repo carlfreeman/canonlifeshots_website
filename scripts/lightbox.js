@@ -181,21 +181,17 @@ export function openLightbox(item, allItems) {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'Accept': 'application/json'
           },
-          body: JSON.stringify({ itemId, rating })
+          body: JSON.stringify({
+            itemId,
+            rating
+          })
         });
-
-        // First check if response is JSON
-        const contentType = response.headers.get('content-type');
-        if (!contentType?.includes('application/json')) {
-          const text = await response.text();
-          throw new Error(`Expected JSON, got: ${text.slice(0, 50)}...`);
-        }
-
+        
         const data = await response.json();
         
         if (!response.ok) {
+          console.error('Server error:', data.error || 'Unknown error');
           throw new Error(data.error || 'Failed to save vote');
         }
         
@@ -207,13 +203,10 @@ export function openLightbox(item, allItems) {
           rating,
           timestamp: new Date().toISOString()
         });
-        
         return { 
           success: false, 
           error: error.message,
-          userFriendlyError: error.message.includes('Expected JSON') 
-            ? "Server returned unexpected response" 
-            : "Couldn't save your vote. Please try again later."
+          userFriendlyError: "Couldn't save your vote. Please try again later."
         };
       }
     }
