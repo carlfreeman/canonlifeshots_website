@@ -435,7 +435,7 @@
     },
     {
         "id": "glassed",
-        "title": "В голубом",
+        "title": "Холод. Стекло.",
         "year": 2025,
         "categories": [
             "best",
@@ -1542,8 +1542,6 @@
             "mono"
         ],
         "description": ""
-<<<<<<< Updated upstream
-=======
     },
     {
         "id": "0525mirage",
@@ -1569,7 +1567,7 @@
     {
         "id": "0525white",
         "title": "Деревяшки",
-        "year": 2020,
+        "year": 2025,
         "categories": [
             "concept"
         ],
@@ -1808,6 +1806,5 @@
             "nature"
         ],
         "description": ""
->>>>>>> Stashed changes
     }
 ]
