@@ -82,7 +82,7 @@ export async function loadPortfolio() {
 
             const processedItems = portfolioItems.map(item => {
                 const itemCategories = item.getAttribute('data-categories').split(' ');
-                const itemYear = parseInt(item.getAttribute('data-year'));
+                const itemYear = item.getAttribute('data-year');
                 
                 const categoryMatches = activeCategoryFilters.length > 0 ? 
                     itemCategories.filter(cat => activeCategoryFilters.includes(cat)).length : 0;

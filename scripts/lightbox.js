@@ -3,10 +3,6 @@ export function openLightbox(item, allItems) {
     const lightboxContent = document.querySelector('.lightbox__content');
     const lightboxImg = document.querySelector('.lightbox__image');
     const lightboxCaption = document.querySelector('.lightbox__caption');
-
-    const spinner = document.createElement('div');
-    spinner.className = 'loading-spinner';
-    lightboxContent.appendChild(spinner);
     
     const closeBtn = document.querySelector('.lightbox__close');
     
@@ -26,6 +22,9 @@ export function openLightbox(item, allItems) {
     const placeholder = document.createElement('div');
     placeholder.className = 'image-placeholder';
     lightboxContent.appendChild(placeholder);
+    const spinner = document.createElement('div');
+    spinner.className = 'loading-spinner';
+    lightboxContent.appendChild(spinner);
     const img = new Image();
     img.src = fullSizeSrc;
     img.onload = function() {
