@@ -8,6 +8,9 @@ const limiter = rateLimit({
 });
 
 export default async function handler(req, res) {
+  // Set proper headers first
+  res.setHeader('Content-Type', 'application/json');
+  res.setHeader('Access-Control-Allow-Origin', '*');
   await limiter(req, res);
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -22,18 +25,28 @@ export default async function handler(req, res) {
     return res.status(200).end();
   }
 
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
+
   try {
-    const { itemId, rating } = req.body;
-    
-    if (!itemId || !rating || rating < 1 || rating > 5) {
-      return res.status(400).json({ error: 'Invalid request data' });
+    // Validate content type
+    if (!req.headers['content-type']?.includes('application/json')) {
+      return res.status(415).json({ error: 'Unsupported Media Type' });
     }
 
-    // Path to your portfolio.json
-    const filePath = path.join(process.cwd(), '../data/portfolio.json');
+    const { itemId, rating } = req.body;
+    
+    if (!itemId || rating === undefined || rating < 1 || rating > 5) {
+      return res.status(400).json({ 
+        error: 'Invalid request data',
+        required: { itemId: 'string', rating: 'number (1-5)' }
+      });
+    }
+
+    const filePath = path.join(process.cwd(), '../../data/portfolio.json');
     const portfolio = JSON.parse(readFileSync(filePath, 'utf8'));
 
-    // Find and update the item
     const itemIndex = portfolio.findIndex(item => item.id === itemId);
     if (itemIndex === -1) {
       return res.status(404).json({ error: 'Item not found' });
@@ -46,7 +59,6 @@ export default async function handler(req, res) {
     const newCount = count + 1;
     const newAverage = (average * count + rating) / newCount;
 
-    // Update the item
     portfolio[itemIndex] = {
       ...item,
       votes: {
@@ -54,18 +66,21 @@ export default async function handler(req, res) {
         count: newCount
       }
     };
+    
 
-    // Save back to file
     writeFileSync(filePath, JSON.stringify(portfolio, null, 2));
 
     return res.status(200).json({
       success: true,
-      newAverage: newAverage,
-      newCount: newCount
+      newAverage,
+      newCount
     });
 
   } catch (error) {
-    console.error('Error saving vote:', error);
-    return res.status(500).json({ error: 'Internal server error' });
+    console.error('Server error:', error);
+    return res.status(500).json({ 
+      error: 'Internal server error',
+      details: error.message
+    });
   }
 }
