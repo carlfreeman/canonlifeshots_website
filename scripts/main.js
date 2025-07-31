@@ -18,3 +18,17 @@ document.addEventListener('DOMContentLoaded', function() {
     loadPortfolio();
     createHeroCollage();
 });
+
+async function saveVote(itemId, rating) {
+  const response = await fetch('save_vote.php', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      itemId,
+      rating
+    })
+  });
+  return await response.json();
+}
