@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/save-vote",
+      "dest": "/api/save-vote.js",
+      "methods": ["POST"]
+    }
+  ]
+}
