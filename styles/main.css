@@ -294,8 +294,8 @@ body {
     border-radius: 50%;
     border-top-color: var(--accent-color);
     z-index: 2000;
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out, spin 1s ease-in-out infinite !important;
+    opacity: 1;
+    animation: spin 1s ease-in-out infinite !important;
 }
 
 @keyframes fadeIn {
@@ -382,9 +382,9 @@ body {
 }
 
 .lightbox .loading-spinner {
-  position: relative !important;
-  top: 20% !important;
-  left: 20% !important;
+  position: fixed;
+  top: 50%;
+  left: 50%;
   width: 60px;
   height: 60px;
   border-width: 6px;
