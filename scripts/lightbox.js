@@ -168,26 +168,16 @@ export function openLightbox(item, allItems) {
     document.addEventListener('keydown', handleKeyDown);
 
     async function saveVote(itemId, rating) {
-      try {
-        const response = await fetch('/api/save-vote', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            itemId,
-            rating
-          })
+        const response = await fetch('save_vote.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                itemId,
+                rating
+            })
         });
-        
-        if (!response.ok) {
-          throw new Error('Failed to save vote');
-        }
-        
         return await response.json();
-      } catch (error) {
-        console.error('Voting error:', error);
-        return { success: false, error: error.message };
-      }
     }
 }
