@@ -1542,5 +1542,272 @@
             "mono"
         ],
         "description": ""
+<<<<<<< Updated upstream
+=======
+    },
+    {
+        "id": "0525mirage",
+        "title": "Плывущий взгляд",
+        "year": 2025,
+        "categories": [
+            "street",
+            "concept",
+            "experiments"
+        ],
+        "description": ""
+    },
+    {
+        "id": "0525rust",
+        "title": "Надежда",
+        "year": 2025,
+        "categories": [
+            "best",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "0525white",
+        "title": "Деревяшки",
+        "year": 2020,
+        "categories": [
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "0607splash",
+        "title": "Клякса",
+        "year": 2025,
+        "categories": [
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "0607sunset",
+        "title": "Лаванда",
+        "year": 2025,
+        "categories": [
+            "best",
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "0607water",
+        "title": "Дождь",
+        "year": 2025,
+        "categories": [
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "bricksky",
+        "title": "Трещина в небо",
+        "year": 2025,
+        "categories": [
+            "concept",
+            "philosophy"
+        ],
+        "description": "Осколок неба в каменной кладке"
+    },
+    {
+        "id": "crosswalk_sqr",
+        "title": "Что будет сегодня?..",
+        "year": 2025,
+        "categories": [
+            "best",
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "godown",
+        "title": "Вниз",
+        "year": 2025,
+        "categories": [
+            "street",
+            "concept",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "guitar2",
+        "title": "Драйв",
+        "year": 2025,
+        "categories": [
+            "best",
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "healingspot",
+        "title": "Точка лечения",
+        "year": 2025,
+        "categories": [
+            "best",
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "Lines",
+        "title": "Пожар!",
+        "year": 2025,
+        "categories": [
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "look",
+        "title": "На страже обеда",
+        "year": 2025,
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "planetrail",
+        "title": "В новый день",
+        "year": 2025,
+        "categories": [
+            "best",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "skelet_tree",
+        "title": "Скелет",
+        "year": 2025,
+        "categories": [
+            "best",
+            "nature",
+            "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "squad",
+        "title": "Поход домой",
+        "year": 2025,
+        "categories": [
+            "best",
+            "nature",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "taxi",
+        "title": "Скорость",
+        "year": 2025,
+        "categories": [
+            "best",
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "tsoy_boot_sqr",
+        "title": "Остановись и спой",
+        "year": 2025,
+        "categories": [
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "tsoy_duet_sqr",
+        "title": "Наследие",
+        "year": 2025,
+        "categories": [
+            "best",
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "tsoy_smoke_sqr",
+        "title": "Воспоминание",
+        "year": 2025,
+        "categories": [
+            "best",
+            "street"
+        ],
+        "description": ""
+    },
+    {
+        "id": "watersunset",
+        "title": "Огонь и вода",
+        "year": 2025,
+        "categories": [
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "white_legs",
+        "title": "Белый",
+        "year": 2025,
+        "categories": [
+            "best",
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "wire2_sqr",
+        "title": "Ловушка для природы",
+        "year": 2025,
+        "categories": [
+            "nature",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "wounded_sqr",
+        "title": "Раненый ствол",
+        "year": 2025,
+        "categories": [
+            "nature",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "X_sqr",
+        "title": "Х",
+        "year": 2025,
+        "categories": [
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "yellow_field_sqr",
+        "title": "Желтая поляна",
+        "year": 2025,
+        "categories": [
+            "best",
+            "nature"
+        ],
+        "description": ""
+>>>>>>> Stashed changes
     }
 ]
