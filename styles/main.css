@@ -295,7 +295,7 @@ body {
   border-top-color: var(--accent-color);
   z-index: 1;
   opacity: 0;
-  animation: spin 1s ease-in-out infinite, fadeIn 0.3s ease-out 0.1s forwards !important;
+  animation: spin 1s ease-in-out infinite !important, fadeIn 0.3s ease-out 0.1s forwards !important;
 }
 
 @keyframes fadeIn {
