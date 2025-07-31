@@ -483,6 +483,34 @@ body {
     animation-delay: 0.3s;
 }
 
+
+.lightbox__rating {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.stars {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+.stars span {
+  color: var(--ui-light);
+}
+
+.stars span.active,
+.stars span.hover {
+  color: var(--accent-color);
+}
+
+.rating-text {
+  color: var(--ui-light);
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
     .nav {

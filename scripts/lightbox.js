@@ -46,6 +46,77 @@ export function openLightbox(item, allItems) {
         lightboxCaption.textContent = 'Не удалось загрузить изображение';
     };
 
+    // Initialize rating display
+    const starsContainer = lightbox.querySelector('.stars');
+    const ratingText = lightbox.querySelector('.rating-text');
+
+    function updateRatingDisplay(average, count) {
+      // Update stars
+      const stars = starsContainer.querySelectorAll('span');
+      stars.forEach((star, index) => {
+        star.classList.toggle('active', index < Math.round(average));
+      });
+      
+      // Update text
+      ratingText.textContent = count > 0 
+        ? `★${average.toFixed(1)} (${count} votes)` 
+        : "No ratings yet";
+    }
+
+    // Initialize display
+    updateRatingDisplay(item.votes?.average || 0, item.votes?.count || 0);
+
+    // Handle voting
+    starsContainer.addEventListener('click', async (e) => {
+      const star = e.target.closest('[data-rating]');
+      if (!star || !canVote(item.id)) return;
+      
+      const userRating = parseInt(star.dataset.rating);
+      
+      // Visual feedback
+      highlightStars(userRating);
+      markAsVoted(item.id);
+      
+      try {
+        const response = await saveVote(item.id, userRating);
+        if (response.success) {
+          updateRatingDisplay(response.newAverage, response.newCount);
+        }
+      } catch (error) {
+        console.error("Failed to save vote:", error);
+      }
+    });
+
+    // Star hover effect
+    starsContainer.addEventListener('mouseover', (e) => {
+      const star = e.target.closest('[data-rating]');
+      if (star && canVote(item.id)) {
+        highlightStars(parseInt(star.dataset.rating));
+      }
+    });
+
+    starsContainer.addEventListener('mouseout', () => {
+      if (canVote(item.id)) {
+        highlightStars(Math.round(item.votes?.average || 0));
+      }
+    });
+
+    function highlightStars(count) {
+      const stars = starsContainer.querySelectorAll('span');
+      stars.forEach((star, index) => {
+        star.classList.toggle('hover', index < count);
+      });
+    }
+
+    // Voting helpers
+    function canVote(itemId) {
+      return !sessionStorage.getItem(`voted_${itemId}`);
+    }
+
+    function markAsVoted(itemId) {
+      sessionStorage.setItem(`voted_${itemId}`, 'true');
+    }
+
     const currentIndex = allItems.findIndex(i => i.id === item.id);
     
     function closeLightbox() {
