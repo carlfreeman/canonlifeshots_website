@@ -72,26 +72,18 @@ export function openLightbox(item, allItems) {
       if (!star || !canVote(item.id)) return;
       
       const userRating = parseInt(star.dataset.rating);
+      
+      // Visual feedback
       highlightStars(userRating);
+      markAsVoted(item.id);
       
       try {
-        const voteResult = await saveVote(item.id, userRating);
-        
-        if (voteResult.success) {
-          // Success feedback
-          markAsVoted(item.id);
-          updateRatingDisplay(voteResult.newAverage, voteResult.newCount);
-          
-          // Visual confirmation
-          star.classList.add('vote-confirmed');
-          setTimeout(() => star.classList.remove('vote-confirmed'), 1000);
-        } else {
-          // Show error to user
-          lightboxCaption.textContent += ` | ${voteResult.userFriendlyError}`;
+        const response = await saveVote(item.id, userRating);
+        if (response.success) {
+          updateRatingDisplay(response.newAverage, response.newCount);
         }
       } catch (error) {
-        console.error('Vote processing error:', error);
-        lightboxCaption.textContent += ` | Error: ${error.userFriendlyError || error.message}`;
+        console.error("Failed to save vote:", error);
       }
     });
 
@@ -188,26 +180,14 @@ export function openLightbox(item, allItems) {
           })
         });
         
-        const data = await response.json();
-        
         if (!response.ok) {
-          console.error('Server error:', data.error || 'Unknown error');
-          throw new Error(data.error || 'Failed to save vote');
+          throw new Error('Failed to save vote');
         }
         
-        return data;
+        return await response.json();
       } catch (error) {
-        console.error('Voting error:', {
-          error: error.message,
-          itemId,
-          rating,
-          timestamp: new Date().toISOString()
-        });
-        return { 
-          success: false, 
-          error: error.message,
-          userFriendlyError: "Couldn't save your vote. Please try again later."
-        };
+        console.error('Voting error:', error);
+        return { success: false, error: error.message };
       }
     }
 }
