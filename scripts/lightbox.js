@@ -8,10 +8,6 @@ export function openLightbox(item, allItems) {
     
     closeBtn.replaceWith(closeBtn.cloneNode(true));
     
-    lightboxContent.style.display = 'flex';
-    lightboxContent.style.flexDirection = 'column';
-    lightboxContent.style.alignItems = 'center';
-    
     const fullSizeSrc = `images/original/${item.id}.webp`;
     
     lightboxImg.src = '';
@@ -29,16 +25,15 @@ export function openLightbox(item, allItems) {
     img.src = fullSizeSrc;
     img.onload = function() {
         spinner.remove();
+        lightboxImg.classList.add('loaded');
         lightboxContent.removeChild(placeholder);
         lightboxImg.src = fullSizeSrc;
-        lightboxImg.style.display = 'block';
+        lightboxImg.style.display = '';
         lightboxCaption.textContent = `${item.title}`;
         
         if (item.description) {
             lightboxCaption.textContent += `: ${item.description}`;
         }
-        
-        centerImage(lightboxImg);
     };
     
     img.onerror = function() {
@@ -53,34 +48,7 @@ export function openLightbox(item, allItems) {
         document.removeEventListener('keydown', handleKeyDown);
     }
     
-    function centerImage(imgElement) {
-        const container = lightboxContent;
-        const img = imgElement;
-        
-        img.style.maxWidth = 'none';
-        img.style.maxHeight = 'none';
-        img.style.width = 'auto';
-        img.style.height = 'auto';
-        
-        const imgWidth = img.naturalWidth;
-        const imgHeight = img.naturalHeight;
-        
-        const containerWidth = container.clientWidth;
-        const containerHeight = container.clientHeight;
-        
-        const widthRatio = containerWidth / imgWidth;
-        const heightRatio = containerHeight / imgHeight;
-        const scale = Math.min(widthRatio, heightRatio, 1);
-        
-        img.style.width = `${imgWidth * scale}px`;
-        img.style.height = `${imgHeight * scale}px`;
-    }
     
-    window.addEventListener('resize', () => {
-        if (lightbox.classList.contains('active') && lightboxImg.src) {
-            centerImage(lightboxImg);
-        }
-    });
     
     document.querySelector('.lightbox__close').addEventListener('click', closeLightbox);
    

@@ -289,3 +289,41 @@ function initLazyLoading(items) {
         }
     });
 }
+
+// В portfolio.js
+function enhanceFilters() {
+    const filtersContainer = document.querySelector('.portfolio-filters');
+    const activeFilters = new Set(['all']);
+    
+    filtersContainer.addEventListener('click', (e) => {
+        if (e.target.classList.contains('filter-btn')) {
+            const filter = e.target.dataset.category;
+            
+            if (filter === 'all') {
+                activeFilters.clear();
+                activeFilters.add('all');
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                e.target.classList.add('active');
+            } else {
+                document.querySelector('.filter-btn[data-category="all"]').classList.remove('active');
+                
+                if (activeFilters.has(filter)) {
+                    activeFilters.delete(filter);
+                    e.target.classList.remove('active');
+                } else {
+                    activeFilters.add(filter);
+                    e.target.classList.add('active');
+                }
+                
+                if (activeFilters.size === 0) {
+                    activeFilters.add('all');
+                    document.querySelector('.filter-btn[data-category="all"]').classList.add('active');
+                }
+            }
+            
+            updateGrid();
+        }
+    });
+}
