@@ -300,8 +300,11 @@ function setupInfiniteScroll() {
 function initRouter() {
     processHash();
     
-    window.addEventListener('hashchange', processHash);
-
+    window.addEventListener('hashchange', () => {
+        if (document.querySelector('#blog.active')) {
+            processHash();
+        }
+    });
 }
 
 function processHash() {
@@ -310,12 +313,17 @@ function processHash() {
     if (hash.startsWith('#blog/')) {
         const postId = hash.split('/')[1];
         openBlogPost(postId);
-    } 
+    } else {
+        closeBlogPost();
+        
+        document.querySelector('.nav__link[href="#blog"]').click();
+        
+        if (document.querySelectorAll('.blog-card').length === 0) {
+            renderBlogPosts();
+        }
+    }
 }
 async function openBlogPost(postId) {
-    document.querySelector('.blog-header')?.style.display = 'none';
-    document.querySelector('.blog-grid')?.style.display = 'none';
-    
     let postContainer = document.querySelector('.blog-post-container');
     if (!postContainer) {
         postContainer = document.createElement('div');
@@ -339,7 +347,7 @@ async function openBlogPost(postId) {
         
         postContainer.innerHTML = `
             <article class="blog-post">
-                <button class="blog-back-btn">← Все статьи</button>
+                <button class="blog-back-btn">← Назад к блогу</button>
                 
                 <header class="blog-post-header">
                     <h1 class="blog-post-title">${post.title}</h1>
@@ -394,8 +402,10 @@ function closeBlogPost() {
     document.querySelector('.blog-grid').style.display = 'grid';
     
     const postContainer = document.querySelector('.blog-post-container');
-    if (postContainer) {
-        postContainer.remove();
+    if (postContainer) postContainer.remove();
+    
+    if (document.querySelectorAll('.blog-card').length === 0) {
+        renderBlogPosts();
     }
 }
 
