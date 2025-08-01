@@ -6,6 +6,10 @@ export function setupNavigation() {
     
     navLinks.forEach(link => {
         link.addEventListener('click', async function(e) {
+            if (this.getAttribute('href') === '#blog') {
+                // При переходе в блог закрываем открытый пост
+                closeBlogPost();
+            }
             e.preventDefault();
             
             navLinks.forEach(l => l.classList.remove('active'));

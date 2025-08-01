@@ -4,6 +4,9 @@ import { loadPortfolio } from './portfolio.js';
 
 document.addEventListener('DOMContentLoaded', function() {
     setupNavigation();
+    if (!window.location.hash.startsWith('#blog/')) {
+        document.querySelector('.nav__link[href="#home"]').click();
+    }
     
     window.addEventListener('scroll', function() {
         const header = document.querySelector('.header');
