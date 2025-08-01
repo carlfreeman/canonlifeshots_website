@@ -5,23 +5,52 @@ export function setupNavigation() {
     const sections = document.querySelectorAll('.section');
     
     navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', async function(e) {
             e.preventDefault();
             
             navLinks.forEach(l => l.classList.remove('active'));
-            sections.forEach(s => s.classList.remove('active'));
-            
             this.classList.add('active');
-            const sectionId = this.getAttribute('data-section');
-            document.getElementById(sectionId).classList.add('active');
             
-            window.scrollTo(0, 0);
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
             
-            if (sectionId === 'portfolio') {
-                loadPortfolio();
+            const targetSection = document.querySelector(this.getAttribute('href'));
+            if (targetSection) {
+                targetSection.classList.add('active');
+                
+                if (targetSection.id === 'blog') {
+                    try {
+                        const { initBlog, renderBlogPosts } = await import('./blog.js');
+                        
+                        if (!window.blogInitialized) {
+                            await initBlog();
+                            window.blogInitialized = true;
+                        }
+                        
+                        if (document.querySelectorAll('.blog-card').length === 0) {
+                            renderBlogPosts();
+                        }
+                    } catch (error) {
+                        console.error('Ошибка загрузки блога:', error);
+                    }
+                }
             }
         });
     });
+    
+    handleInitialNavigation();
+}
+
+function handleInitialNavigation() {
+    const hash = window.location.hash;
+    const targetLink = hash 
+        ? document.querySelector(`.nav__link[href="${hash}"]`)
+        : document.querySelector('.nav__link[href="#home"]');
+        
+    if (targetLink) {
+        targetLink.click();
+    }
 }
 
 export function smoothSectionTransitions() {

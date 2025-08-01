@@ -46,6 +46,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
+    <link rel="preload" href="data/blog.json" as="fetch" crossorigin>
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -69,8 +71,8 @@
     <header class="header">
         <nav class="nav">
             <a href="#home" class="nav__link active" data-section="home">Главная</a>
-            <a href="/portfolio" class="nav__link" data-section="portfolio">Портфолио</a>
-            <!-- <a href="#blog" class="nav__link" data-section="blog">Блог</a> -->
+            <a href="#portfolio" class="nav__link" data-section="portfolio">Портфолио</a>
+            <a href="#blog" class="nav__link" data-section="blog">Блог</a>
             <a href="#home" class="nav__link" data-section="home">...</a>
         </nav>
     </header>
@@ -125,6 +127,20 @@
                 </div>
             </div>
             <div class="portfolio-grid"></div>
+        </section>
+
+        <section id="blog" class="section">
+            <div class="blog-header">
+                <h2 class="blog-title fade-in">Размышления о свете</h2>
+                <p class="blog-subtitle fade-in">Заметки о фотографии и не только</p>
+                
+                <div class="blog-filters fade-in delay-1">
+                    <button class="blog-filter active" data-tag="all">Все</button>
+                </div>
+            </div>
+
+            <div class="blog-grid"></div>
+            <div class="loading-spinner blog-loader" style="display: none;"></div>
         </section>
     </main>
 

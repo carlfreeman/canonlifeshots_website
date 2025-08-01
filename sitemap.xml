@@ -3,112 +3,112 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/3.webp</image:loc>
-      <image:title>Диптих. Дорога домой #1</image:title>
-      <image:caption>3 окна чердака как дома в пустоте</image:caption>
+      <image:title>Пустота</image:title>
+      <image:caption>Окна чердака стали одинокими домиками</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/3.avif</image:loc>
-      <image:title>Миниатюра: Диптих. Дорога домой #1</image:title>
-      <image:caption>3 окна чердака как дома в пустоте</image:caption>
+      <image:title>Миниатюра: Пустота</image:title>
+      <image:caption>Окна чердака стали одинокими домиками</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/3birds.webp</image:loc>
-      <image:title>Диптих. Дорога домой #2</image:title>
-      <image:caption>3 птицы несутся вперед, огибая тьму</image:caption>
+      <image:title>Лети!</image:title>
+      <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/3birds.avif</image:loc>
-      <image:title>Миниатюра: Диптих. Дорога домой #2</image:title>
-      <image:caption>3 птицы несутся вперед, огибая тьму</image:caption>
+      <image:title>Миниатюра: Лети!</image:title>
+      <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/41.webp</image:loc>
       <image:title>41</image:title>
-      <image:caption>Отражения фонарей, яркий буй и маячок</image:caption>
+      <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/41.avif</image:loc>
       <image:title>Миниатюра: 41</image:title>
-      <image:caption>Отражения фонарей, яркий буй и маячок</image:caption>
+      <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/adjika.webp</image:loc>
-      <image:title>Аджика</image:title>
-      <image:caption>Завтрак 'Old Style'</image:caption>
+      <image:title>Вкус Old Style</image:title>
+      <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/adjika.avif</image:loc>
-      <image:title>Миниатюра: Аджика</image:title>
-      <image:caption>Завтрак 'Old Style'</image:caption>
+      <image:title>Миниатюра: Вкус Old Style</image:title>
+      <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/art.webp</image:loc>
       <image:title>ИСКуство</image:title>
-      <image:caption>Работа идет, городские инсталляции больше радуют в таком виде</image:caption>
+      <image:caption>Некоторые городские инсталляции хороши только во время подготовки</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/art.avif</image:loc>
       <image:title>Миниатюра: ИСКуство</image:title>
-      <image:caption>Работа идет, городские инсталляции больше радуют в таком виде</image:caption>
+      <image:caption>Некоторые городские инсталляции хороши только во время подготовки</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/arts.webp</image:loc>
-      <image:title>Творцы</image:title>
-      <image:caption>Золотые фигурки и чувствующий ударник</image:caption>
+      <image:title>Кружок самоделок</image:title>
+      <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/arts.avif</image:loc>
-      <image:title>Миниатюра: Творцы</image:title>
-      <image:caption>Золотые фигурки и чувствующий ударник</image:caption>
+      <image:title>Миниатюра: Кружок самоделок</image:title>
+      <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/atthewall.webp</image:loc>
-      <image:title>Точка равновесия</image:title>
+      <image:title>У стены</image:title>
       <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/atthewall.avif</image:loc>
-      <image:title>Миниатюра: Точка равновесия</image:title>
+      <image:title>Миниатюра: У стены</image:title>
       <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/bereza1.webp</image:loc>
@@ -123,1657 +123,52 @@
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/bereza2.webp</image:loc>
       <image:title>Березка #2</image:title>
-      <image:caption>Милейший дуэт на Старом Арбате</image:caption>
+      <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/bereza2.avif</image:loc>
       <image:title>Миниатюра: Березка #2</image:title>
-      <image:caption>Милейший дуэт на Старом Арбате</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/bluestars.webp</image:loc>
-      <image:title>Вспышки земли</image:title>
-      <image:caption>Тени создают магию</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/bluestars.avif</image:loc>
-      <image:title>Миниатюра: Вспышки земли</image:title>
-      <image:caption>Тени создают магию</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/border.webp</image:loc>
-      <image:title>Публика</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/border.avif</image:loc>
-      <image:title>Миниатюра: Публика</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/bridge.webp</image:loc>
-      <image:title>Мосты</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/bridge.avif</image:loc>
-      <image:title>Миниатюра: Мосты</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/bug.webp</image:loc>
-      <image:title>ЧБ. Крылья</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/bug.avif</image:loc>
-      <image:title>Миниатюра: ЧБ. Крылья</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/bulbs_bridge.webp</image:loc>
-      <image:title>Треугольность</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/bulbs_bridge.avif</image:loc>
-      <image:title>Миниатюра: Треугольность</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/busstopprincess.webp</image:loc>
-      <image:title>Многомерное восприятие</image:title>
-      <image:caption>2 дня, одно место, разные точки зрения. Кто-то оставляет яркий след</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/busstopprincess.avif</image:loc>
-      <image:title>Миниатюра: Многомерное восприятие</image:title>
-      <image:caption>2 дня, одно место, разные точки зрения. Кто-то оставляет яркий след</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/b_plus_w_is_dalmatin.webp</image:loc>
-      <image:title>Д=Ч+Б</image:title>
-      <image:caption>Далматин у кафе возле театра Шиловского</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/b_plus_w_is_dalmatin.avif</image:loc>
-      <image:title>Миниатюра: Д=Ч+Б</image:title>
-      <image:caption>Далматин у кафе возле театра Шиловского</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/candle.webp</image:loc>
-      <image:title>Свеча</image:title>
-      <image:caption>Свет будто раздувает облака</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/candle.avif</image:loc>
-      <image:title>Миниатюра: Свеча</image:title>
-      <image:caption>Свет будто раздувает облака</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/construct.webp</image:loc>
-      <image:title>Стройка</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/construct.avif</image:loc>
-      <image:title>Миниатюра: Стройка</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/construct1.webp</image:loc>
-      <image:title>Стальное небо</image:title>
-      <image:caption>Безопасный проход на Пречистенке</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/construct1.avif</image:loc>
-      <image:title>Миниатюра: Стальное небо</image:title>
-      <image:caption>Безопасный проход на Пречистенке</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/construct2.webp</image:loc>
-      <image:title>Рождение технологией</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/construct2.avif</image:loc>
-      <image:title>Миниатюра: Рождение технологией</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/construct3.webp</image:loc>
-      <image:title>Сетка. Бетон</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/construct3.avif</image:loc>
-      <image:title>Миниатюра: Сетка. Бетон</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/construct4.webp</image:loc>
-      <image:title>Краны</image:title>
-      <image:caption>Стрелы будто поддерживают друг друга, тянут город ввысь</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/construct4.avif</image:loc>
-      <image:title>Миниатюра: Краны</image:title>
-      <image:caption>Стрелы будто поддерживают друг друга, тянут город ввысь</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/dog.webp</image:loc>
-      <image:title>Друзья</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/dog.avif</image:loc>
-      <image:title>Миниатюра: Друзья</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/edge.webp</image:loc>
-      <image:title>На грани</image:title>
-      <image:caption>Изрисовано, разбито, но все еще стоит на месте</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/edge.avif</image:loc>
-      <image:title>Миниатюра: На грани</image:title>
-      <image:caption>Изрисовано, разбито, но все еще стоит на месте</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/exit.webp</image:loc>
-      <image:title>ВЫХОД</image:title>
-      <image:caption>Отражения создают новые миры</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/exit.avif</image:loc>
-      <image:title>Миниатюра: ВЫХОД</image:title>
-      <image:caption>Отражения создают новые миры</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/face.webp</image:loc>
-      <image:title>Плоскости</image:title>
-      <image:caption>Столько граней... И только на одну опора</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/face.avif</image:loc>
-      <image:title>Миниатюра: Плоскости</image:title>
-      <image:caption>Столько граней... И только на одну опора</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/fire.webp</image:loc>
-      <image:title>Костерок</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/fire.avif</image:loc>
-      <image:title>Миниатюра: Костерок</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/flags.webp</image:loc>
-      <image:title>Мир!</image:title>
-      <image:caption>Солнечное тепло объединяет стороны света</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/flags.avif</image:loc>
-      <image:title>Миниатюра: Мир!</image:title>
-      <image:caption>Солнечное тепло объединяет стороны света</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/floodfire.webp</image:loc>
-      <image:title>Уставшие листья</image:title>
-      <image:caption>Сильная жара после наводнения</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/floodfire.avif</image:loc>
-      <image:title>Миниатюра: Уставшие листья</image:title>
-      <image:caption>Сильная жара после наводнения</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/flow1.webp</image:loc>
-      <image:title>Течение</image:title>
-      <image:caption>Дань Takehiro Misaka (~) и его манере</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/flow1.avif</image:loc>
-      <image:title>Миниатюра: Течение</image:title>
-      <image:caption>Дань Takehiro Misaka (~) и его манере</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/flow11.webp</image:loc>
-      <image:title>Течение пространства</image:title>
-      <image:caption>Дань Takehiro Misaka (~) и его манере</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/flow11.avif</image:loc>
-      <image:title>Миниатюра: Течение пространства</image:title>
-      <image:caption>Дань Takehiro Misaka (~) и его манере</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/flow2.webp</image:loc>
-      <image:title>Дрожь деревьев</image:title>
-      <image:caption>Дань Takehiro Misaka (~) и его манере</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/flow2.avif</image:loc>
-      <image:title>Миниатюра: Дрожь деревьев</image:title>
-      <image:caption>Дань Takehiro Misaka (~) и его манере</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/flow21.webp</image:loc>
-      <image:title>Застывшие</image:title>
-      <image:caption>Фактурная текстура</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/flow21.avif</image:loc>
-      <image:title>Миниатюра: Застывшие</image:title>
-      <image:caption>Фактурная текстура</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/flow3.webp</image:loc>
-      <image:title>Дрожь воздуха</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/flow3.avif</image:loc>
-      <image:title>Миниатюра: Дрожь воздуха</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/flow31.webp</image:loc>
-      <image:title>Просветы</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/flow31.avif</image:loc>
-      <image:title>Миниатюра: Просветы</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/flow4.webp</image:loc>
-      <image:title>Мираж бульвара</image:title>
-      <image:caption>Дань Takehiro Misaka (~) и его манере</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/flow4.avif</image:loc>
-      <image:title>Миниатюра: Мираж бульвара</image:title>
-      <image:caption>Дань Takehiro Misaka (~) и его манере</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/flow5.webp</image:loc>
-      <image:title>Мираж</image:title>
-      <image:caption>Дань Takehiro Misaka (~) и его манере</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/flow5.avif</image:loc>
-      <image:title>Миниатюра: Мираж</image:title>
-      <image:caption>Дань Takehiro Misaka (~) и его манере</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/freckels.webp</image:loc>
-      <image:title>Углеватость</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/freckels.avif</image:loc>
-      <image:title>Миниатюра: Углеватость</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/glass.webp</image:loc>
-      <image:title>Пятна света</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/glass.avif</image:loc>
-      <image:title>Миниатюра: Пятна света</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/glass1.webp</image:loc>
-      <image:title>Ночь</image:title>
-      <image:caption>Отражения</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/glass1.avif</image:loc>
-      <image:title>Миниатюра: Ночь</image:title>
-      <image:caption>Отражения</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/glassed.webp</image:loc>
-      <image:title>В голубом</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/glassed.avif</image:loc>
-      <image:title>Миниатюра: В голубом</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/guitar.webp</image:loc>
-      <image:title>Гитара. Цветы.</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/guitar.avif</image:loc>
-      <image:title>Миниатюра: Гитара. Цветы.</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/half.webp</image:loc>
-      <image:title>Полухвоя</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/half.avif</image:loc>
-      <image:title>Миниатюра: Полухвоя</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/halved.webp</image:loc>
-      <image:title>Лучшая часть</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/halved.avif</image:loc>
-      <image:title>Миниатюра: Лучшая часть</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/heart.webp</image:loc>
-      <image:title>Сердце атмосферы</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/heart.avif</image:loc>
-      <image:title>Миниатюра: Сердце атмосферы</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/his1.webp</image:loc>
-      <image:title>Кружение</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/his1.avif</image:loc>
-      <image:title>Миниатюра: Кружение</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/his2.webp</image:loc>
-      <image:title>Коллега</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/his2.avif</image:loc>
-      <image:title>Миниатюра: Коллега</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/his3.webp</image:loc>
-      <image:title>Кружение</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/his3.avif</image:loc>
-      <image:title>Миниатюра: Кружение</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/history1.webp</image:loc>
-      <image:title>Всем возрастам...</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/history1.avif</image:loc>
-      <image:title>Миниатюра: Всем возрастам...</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/history2.webp</image:loc>
-      <image:title>Всем возрастам...</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/history2.avif</image:loc>
-      <image:title>Миниатюра: Всем возрастам...</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/history3.webp</image:loc>
-      <image:title>Окошко</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/history3.avif</image:loc>
-      <image:title>Миниатюра: Окошко</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/history4.webp</image:loc>
-      <image:title>Молодец-удалец</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/history4.avif</image:loc>
-      <image:title>Миниатюра: Молодец-удалец</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/holeabstract.webp</image:loc>
-      <image:title>Достроим город-сад</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/holeabstract.avif</image:loc>
-      <image:title>Миниатюра: Достроим город-сад</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/hustle1.webp</image:loc>
-      <image:title>Поиски</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/hustle1.avif</image:loc>
-      <image:title>Миниатюра: Поиски</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/hustle2.webp</image:loc>
-      <image:title>Всем возрастам...</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/hustle2.avif</image:loc>
-      <image:title>Миниатюра: Всем возрастам...</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/hustle3.webp</image:loc>
-      <image:title>Световой всплеск</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/hustle3.avif</image:loc>
-      <image:title>Миниатюра: Световой всплеск</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/hustle4.webp</image:loc>
-      <image:title>Горошковая нежность</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/hustle4.avif</image:loc>
-      <image:title>Миниатюра: Горошковая нежность</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/hustle5.webp</image:loc>
-      <image:title>Всем возрастам...</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/hustle5.avif</image:loc>
-      <image:title>Миниатюра: Всем возрастам...</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/hustle6.webp</image:loc>
-      <image:title>Проходя мимо</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/hustle6.avif</image:loc>
-      <image:title>Миниатюра: Проходя мимо</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/hustle7.webp</image:loc>
-      <image:title>Точка</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/hustle7.avif</image:loc>
-      <image:title>Миниатюра: Точка</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/in_mirror.webp</image:loc>
-      <image:title>Отражение?</image:title>
-      <image:caption>Гладь пруда в Нескучном</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/in_mirror.avif</image:loc>
-      <image:title>Миниатюра: Отражение?</image:title>
-      <image:caption>Гладь пруда в Нескучном</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/net.webp</image:loc>
-      <image:title>Сетка</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/net.avif</image:loc>
-      <image:title>Миниатюра: Сетка</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/notarobot.webp</image:loc>
-      <image:title>Я не робот!</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/notarobot.avif</image:loc>
-      <image:title>Миниатюра: Я не робот!</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/on_the_wall.webp</image:loc>
-      <image:title>Ожидание</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/on_the_wall.avif</image:loc>
-      <image:title>Миниатюра: Ожидание</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/phoner.webp</image:loc>
-      <image:title>На связи</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/phoner.avif</image:loc>
-      <image:title>Миниатюра: На связи</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/photograph.webp</image:loc>
-      <image:title>Коллега</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/photograph.avif</image:loc>
-      <image:title>Миниатюра: Коллега</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/pianist.webp</image:loc>
-      <image:title>Маленькая Италия</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/pianist.avif</image:loc>
-      <image:title>Миниатюра: Маленькая Италия</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/pigeons.webp</image:loc>
-      <image:title>Голуби!</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/pigeons.avif</image:loc>
-      <image:title>Миниатюра: Голуби!</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/posters.webp</image:loc>
-      <image:title>Скоро на сцене!</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/posters.avif</image:loc>
-      <image:title>Миниатюра: Скоро на сцене!</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/print_glove_cig.webp</image:loc>
-      <image:title>Следы, перчатка, сигарета</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/print_glove_cig.avif</image:loc>
-      <image:title>Миниатюра: Следы, перчатка, сигарета</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/razorblades.webp</image:loc>
-      <image:title>Бритвы</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/razorblades.avif</image:loc>
-      <image:title>Миниатюра: Бритвы</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/reader.webp</image:loc>
-      <image:title>И мир остановился...</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/reader.avif</image:loc>
-      <image:title>Миниатюра: И мир остановился...</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/rewrite.webp</image:loc>
-      <image:title>Еще... Еще... Еще...</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/rewrite.avif</image:loc>
-      <image:title>Миниатюра: Еще... Еще... Еще...</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/roof.webp</image:loc>
-      <image:title>Жар</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/roof.avif</image:loc>
-      <image:title>Миниатюра: Жар</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/rose.webp</image:loc>
-      <image:title>Не на месте!</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/rose.avif</image:loc>
-      <image:title>Миниатюра: Не на месте!</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/rustedembassy.webp</image:loc>
-      <image:title>Ржавое</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/rustedembassy.avif</image:loc>
-      <image:title>Миниатюра: Ржавое</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/RW.webp</image:loc>
-      <image:title>К+Б</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/RW.avif</image:loc>
-      <image:title>Миниатюра: К+Б</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/scooter.webp</image:loc>
-      <image:title>В лучах заката</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/scooter.avif</image:loc>
-      <image:title>Миниатюра: В лучах заката</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/smoke.webp</image:loc>
-      <image:title>Вода и дым</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/smoke.avif</image:loc>
-      <image:title>Миниатюра: Вода и дым</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/sparkles.webp</image:loc>
-      <image:title>Искры</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/sparkles.avif</image:loc>
-      <image:title>Миниатюра: Искры</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/spectators.webp</image:loc>
-      <image:title>Наблюдатели</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/spectators.avif</image:loc>
-      <image:title>Миниатюра: Наблюдатели</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/stairwayhammer.webp</image:loc>
-      <image:title>Лестница в воздух</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/stairwayhammer.avif</image:loc>
-      <image:title>Миниатюра: Лестница в воздух</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/sunny1.webp</image:loc>
-      <image:title>Солнечное счастье</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/sunny1.avif</image:loc>
-      <image:title>Миниатюра: Солнечное счастье</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/sunny2.webp</image:loc>
-      <image:title>Солнечное счастье</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/sunny2.avif</image:loc>
-      <image:title>Миниатюра: Солнечное счастье</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/sunnylantern.webp</image:loc>
-      <image:title>Фонарь или шляпа</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/sunnylantern.avif</image:loc>
-      <image:title>Миниатюра: Фонарь или шляпа</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/swan1.webp</image:loc>
-      <image:title>Лебединая семья</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/swan1.avif</image:loc>
-      <image:title>Миниатюра: Лебединая семья</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/swan2.webp</image:loc>
-      <image:title>Лебединая семья</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/swan2.avif</image:loc>
-      <image:title>Миниатюра: Лебединая семья</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/swan3.webp</image:loc>
-      <image:title>Лебединая семья</image:title>
-      <image:caption>На Патриках пополнение</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/swan3.avif</image:loc>
-      <image:title>Миниатюра: Лебединая семья</image:title>
-      <image:caption>На Патриках пополнение</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/touch.webp</image:loc>
-      <image:title>Касание</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/touch.avif</image:loc>
-      <image:title>Миниатюра: Касание</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/triangle.webp</image:loc>
-      <image:title>Пещера</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/triangle.avif</image:loc>
-      <image:title>Миниатюра: Пещера</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/twisted.webp</image:loc>
-      <image:title>Лестницы</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/twisted.avif</image:loc>
-      <image:title>Миниатюра: Лестницы</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/up.webp</image:loc>
-      <image:title>Зеркала</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/up.avif</image:loc>
-      <image:title>Миниатюра: Зеркала</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/wall1.webp</image:loc>
-      <image:title>Диптих. Простота и солнце #1</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/wall1.avif</image:loc>
-      <image:title>Миниатюра: Диптих. Простота и солнце #1</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/wall2.webp</image:loc>
-      <image:title>Диптих. Простота и солнце #2</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/wall2.avif</image:loc>
-      <image:title>Миниатюра: Диптих. Простота и солнце #2</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/web.webp</image:loc>
-      <image:title>Паутина</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/web.avif</image:loc>
-      <image:title>Миниатюра: Паутина</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/whiter.webp</image:loc>
-      <image:title>В белом на черном</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/whiter.avif</image:loc>
-      <image:title>Миниатюра: В белом на черном</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/whites.webp</image:loc>
-      <image:title>Скоро лето...</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/whites.avif</image:loc>
-      <image:title>Миниатюра: Скоро лето...</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/worldtwist.webp</image:loc>
-      <image:title>Вращаем Землю</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/worldtwist.avif</image:loc>
-      <image:title>Миниатюра: Вращаем Землю</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/writings.webp</image:loc>
-      <image:title>Письмена</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/writings.avif</image:loc>
-      <image:title>Миниатюра: Письмена</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/yellow_selfie.webp</image:loc>
-      <image:title>Желтое зеркало</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/yellow_selfie.avif</image:loc>
-      <image:title>Миниатюра: Желтое зеркало</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/_MG_0755.webp</image:loc>
-      <image:title>В кольцо</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/_MG_0755.avif</image:loc>
-      <image:title>Миниатюра: В кольцо</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/_MG_0762.webp</image:loc>
-      <image:title>Спорт и жизнь</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/_MG_0762.avif</image:loc>
-      <image:title>Миниатюра: Спорт и жизнь</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/_MG_0837.webp</image:loc>
-      <image:title>Команда мечты</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/_MG_0837.avif</image:loc>
-      <image:title>Миниатюра: Команда мечты</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/_MG_0933.webp</image:loc>
-      <image:title>Борьба</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/_MG_0933.avif</image:loc>
-      <image:title>Миниатюра: Борьба</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/_MG_0978.webp</image:loc>
-      <image:title>Цель</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/_MG_0978.avif</image:loc>
-      <image:title>Миниатюра: Цель</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/_MG_1003.webp</image:loc>
-      <image:title>Погоня</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/_MG_1003.avif</image:loc>
-      <image:title>Миниатюра: Погоня</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/_MG_1012.webp</image:loc>
-      <image:title>Передышка</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/_MG_1012.avif</image:loc>
-      <image:title>Миниатюра: Передышка</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/_MG_1016.webp</image:loc>
-      <image:title>Обход</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/_MG_1016.avif</image:loc>
-      <image:title>Миниатюра: Обход</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/_MG_1035.webp</image:loc>
-      <image:title>Бег</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/_MG_1035.avif</image:loc>
-      <image:title>Миниатюра: Бег</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/_MG_1100.webp</image:loc>
-      <image:title>Схватка до последнего</image:title>
-      <image:caption>Сплелись в прыжке. Очко было взято</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/_MG_1100.avif</image:loc>
-      <image:title>Миниатюра: Схватка до последнего</image:title>
-      <image:caption>Сплелись в прыжке. Очко было взято</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/_MG_1128.webp</image:loc>
-      <image:title>Решающий момент</image:title>
-      <image:caption>Перед кольцом время растягивается</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/_MG_1128.avif</image:loc>
-      <image:title>Миниатюра: Решающий момент</image:title>
-      <image:caption>Перед кольцом время растягивается</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/_MG_1156.webp</image:loc>
-      <image:title>Преследование</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/_MG_1156.avif</image:loc>
-      <image:title>Миниатюра: Преследование</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/100.webp</image:loc>
-      <image:title>Луч солнца золотого</image:title>
-      <image:caption>Разбита рюмка? Хорошо!</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/100.avif</image:loc>
-      <image:title>Миниатюра: Луч солнца золотого</image:title>
-      <image:caption>Разбита рюмка? Хорошо!</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/1304_Bulbs.webp</image:loc>
-      <image:title>Лампы</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/1304_Bulbs.avif</image:loc>
-      <image:title>Миниатюра: Лампы</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/1304_Edge.webp</image:loc>
-      <image:title>Дорога по краю</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/1304_Edge.avif</image:loc>
-      <image:title>Миниатюра: Дорога по краю</image:title>
-      <image:caption></image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/1304_Gentletouch.webp</image:loc>
-      <image:title>Касание</image:title>
-      <image:caption>Ранняя весна</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/1304_Gentletouch.avif</image:loc>
-      <image:title>Миниатюра: Касание</image:title>
-      <image:caption>Ранняя весна</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-        <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/1304_Overdrive.webp</image:loc>
-      <image:title>Перегрузка</image:title>
-      <image:caption></image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/1304_Overdrive.avif</image:loc>
-      <image:title>Миниатюра: Перегрузка</image:title>
       <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/bisyman.webp</image:loc>
-      <image:title>Переход</image:title>
+      <image:title>По делам</image:title>
       <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/bisyman.avif</image:loc>
-      <image:title>Миниатюра: Переход</image:title>
+      <image:title>Миниатюра: По делам</image:title>
       <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/bluestars.webp</image:loc>
+      <image:title>Вспышки</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/bluestars.avif</image:loc>
+      <image:title>Миниатюра: Вспышки</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/blue_window.webp</image:loc>
@@ -1788,7 +183,127 @@
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/border.webp</image:loc>
+      <image:title>Публика</image:title>
+      <image:caption>Наблюдают за социальными танцами</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/border.avif</image:loc>
+      <image:title>Миниатюра: Публика</image:title>
+      <image:caption>Наблюдают за социальными танцами</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/bricksky.webp</image:loc>
+      <image:title>Трещина в границах</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/bricksky.avif</image:loc>
+      <image:title>Миниатюра: Трещина в границах</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/bridge.webp</image:loc>
+      <image:title>Мосты</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/bridge.avif</image:loc>
+      <image:title>Миниатюра: Мосты</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/bug.webp</image:loc>
+      <image:title>Вестник лета</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/bug.avif</image:loc>
+      <image:title>Миниатюра: Вестник лета</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/bulbs_bridge.webp</image:loc>
+      <image:title>Треугольность</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/bulbs_bridge.avif</image:loc>
+      <image:title>Миниатюра: Треугольность</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/busstopprincess.webp</image:loc>
+      <image:title>Арт. Взгляд на вещи</image:title>
+      <image:caption>Многомерное восприятие: 2 дня, одно место, разные точки зрения. Кто-то оставляет яркий след</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/busstopprincess.avif</image:loc>
+      <image:title>Миниатюра: Арт. Взгляд на вещи</image:title>
+      <image:caption>Многомерное восприятие: 2 дня, одно место, разные точки зрения. Кто-то оставляет яркий след</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/b_plus_w_is_dalmatin.webp</image:loc>
+      <image:title>Д=Ч+Б</image:title>
+      <image:caption>Далматин у кафе возле театра Шиловского</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/b_plus_w_is_dalmatin.avif</image:loc>
+      <image:title>Миниатюра: Д=Ч+Б</image:title>
+      <image:caption>Далматин у кафе возле театра Шиловского</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/candle.webp</image:loc>
+      <image:title>Свеча</image:title>
+      <image:caption>Свет будто раздувает облака</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/candle.avif</image:loc>
+      <image:title>Миниатюра: Свеча</image:title>
+      <image:caption>Свет будто раздувает облака</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/cat1.webp</image:loc>
@@ -1803,37 +318,352 @@
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/construct.webp</image:loc>
+      <image:title>Вверх</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/construct.avif</image:loc>
+      <image:title>Миниатюра: Вверх</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/construct1.webp</image:loc>
+      <image:title>Стальное небо</image:title>
+      <image:caption>Безопасный проход на Пречистенке</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/construct1.avif</image:loc>
+      <image:title>Миниатюра: Стальное небо</image:title>
+      <image:caption>Безопасный проход на Пречистенке</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/construct2.webp</image:loc>
+      <image:title>Рождение технологией</image:title>
+      <image:caption>Электрический свет, атмосфера Sci-Fi</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/construct2.avif</image:loc>
+      <image:title>Миниатюра: Рождение технологией</image:title>
+      <image:caption>Электрический свет, атмосфера Sci-Fi</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/construct3.webp</image:loc>
+      <image:title>Сетка</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/construct3.avif</image:loc>
+      <image:title>Миниатюра: Сетка</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/construct4.webp</image:loc>
+      <image:title>Поддержка</image:title>
+      <image:caption>Стрелы кранов тянут друг друга ввысь</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/construct4.avif</image:loc>
+      <image:title>Миниатюра: Поддержка</image:title>
+      <image:caption>Стрелы кранов тянут друг друга ввысь</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/crosswalk_sqr.webp</image:loc>
+      <image:title>Прогулка</image:title>
+      <image:caption>Что день грядущий мне готовит...</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/crosswalk_sqr.avif</image:loc>
+      <image:title>Миниатюра: Прогулка</image:title>
+      <image:caption>Что день грядущий мне готовит...</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/dog.webp</image:loc>
+      <image:title>Друг</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/dog.avif</image:loc>
+      <image:title>Миниатюра: Друг</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/doublerainbow.webp</image:loc>
-      <image:title>Двойня</image:title>
-      <image:caption>Двойная радуга перед концертом в соборе Петра и Павла</image:caption>
+      <image:title>Двойная радуга</image:title>
+      <image:caption>Перед концертом в соборе увидел эту сцену</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/doublerainbow.avif</image:loc>
-      <image:title>Миниатюра: Двойня</image:title>
-      <image:caption>Двойная радуга перед концертом в соборе Петра и Павла</image:caption>
+      <image:title>Миниатюра: Двойная радуга</image:title>
+      <image:caption>Перед концертом в соборе увидел эту сцену</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/edge.webp</image:loc>
+      <image:title>На грани</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/edge.avif</image:loc>
+      <image:title>Миниатюра: На грани</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/exit.webp</image:loc>
+      <image:title>ВЫХОД</image:title>
+      <image:caption>Отражения дополняют действительность</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/exit.avif</image:loc>
+      <image:title>Миниатюра: ВЫХОД</image:title>
+      <image:caption>Отражения дополняют действительность</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/face.webp</image:loc>
+      <image:title>Плоскости</image:title>
+      <image:caption>Столько граней, и лишь на одну опора</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/face.avif</image:loc>
+      <image:title>Миниатюра: Плоскости</image:title>
+      <image:caption>Столько граней, и лишь на одну опора</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/fire.webp</image:loc>
+      <image:title>Пламя</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/fire.avif</image:loc>
+      <image:title>Миниатюра: Пламя</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/flags.webp</image:loc>
+      <image:title>Мира!</image:title>
+      <image:caption>С Востока на Запад катится одно солнце</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/flags.avif</image:loc>
+      <image:title>Миниатюра: Мира!</image:title>
+      <image:caption>С Востока на Запад катится одно солнце</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/floodfire.webp</image:loc>
+      <image:title>Уставшие листья</image:title>
+      <image:caption>После ливня пришла жара</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/floodfire.avif</image:loc>
+      <image:title>Миниатюра: Уставшие листья</image:title>
+      <image:caption>После ливня пришла жара</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/flow1.webp</image:loc>
+      <image:title>Течение</image:title>
+      <image:caption>Дань Takehiro Misaka</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/flow1.avif</image:loc>
+      <image:title>Миниатюра: Течение</image:title>
+      <image:caption>Дань Takehiro Misaka</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/flow11.webp</image:loc>
+      <image:title>Мимолетность</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/flow11.avif</image:loc>
+      <image:title>Миниатюра: Мимолетность</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/flow2.webp</image:loc>
+      <image:title>Течение</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/flow2.avif</image:loc>
+      <image:title>Миниатюра: Течение</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/flow21.webp</image:loc>
+      <image:title>Окаменелость</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/flow21.avif</image:loc>
+      <image:title>Миниатюра: Окаменелость</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/flow3.webp</image:loc>
+      <image:title>Дрожание</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/flow3.avif</image:loc>
+      <image:title>Миниатюра: Дрожание</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/flow31.webp</image:loc>
+      <image:title>Метки</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/flow31.avif</image:loc>
+      <image:title>Миниатюра: Метки</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/flow4.webp</image:loc>
+      <image:title></image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/flow4.avif</image:loc>
+      <image:title>Миниатюра: </image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/flow5.webp</image:loc>
+      <image:title>Течение</image:title>
+      <image:caption>Дань Takehiro Misaka</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/flow5.avif</image:loc>
+      <image:title>Миниатюра: Течение</image:title>
+      <image:caption>Дань Takehiro Misaka</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/fog_spike.webp</image:loc>
-      <image:title>Шпиль</image:title>
-      <image:caption>Дыхание на объектив нагоняет туман</image:caption>
+      <image:title>Молочный туман</image:title>
+      <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/fog_spike.avif</image:loc>
-      <image:title>Миниатюра: Шпиль</image:title>
-      <image:caption>Дыхание на объектив нагоняет туман</image:caption>
+      <image:title>Миниатюра: Молочный туман</image:title>
+      <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/for3_0.webp</image:loc>
@@ -1848,7 +678,1582 @@
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/freckels.webp</image:loc>
+      <image:title>Обгорела</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/freckels.avif</image:loc>
+      <image:title>Миниатюра: Обгорела</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/glass.webp</image:loc>
+      <image:title>Растекшийся свет</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/glass.avif</image:loc>
+      <image:title>Миниатюра: Растекшийся свет</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/glassed.webp</image:loc>
+      <image:title>Холод. Стекло.</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/glassed.avif</image:loc>
+      <image:title>Миниатюра: Холод. Стекло.</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/guitar2.webp</image:loc>
+      <image:title>Драйв</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/guitar2.avif</image:loc>
+      <image:title>Миниатюра: Драйв</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/half.webp</image:loc>
+      <image:title>Половинка</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/half.avif</image:loc>
+      <image:title>Миниатюра: Половинка</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/halved.webp</image:loc>
+      <image:title>Устоим!</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/halved.avif</image:loc>
+      <image:title>Миниатюра: Устоим!</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/heart.webp</image:loc>
+      <image:title>Сердце атмосферы</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/heart.avif</image:loc>
+      <image:title>Миниатюра: Сердце атмосферы</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/his1.webp</image:loc>
+      <image:title>В стремительном вальсе</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/his1.avif</image:loc>
+      <image:title>Миниатюра: В стремительном вальсе</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/his2.webp</image:loc>
+      <image:title>Коллега</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/his2.avif</image:loc>
+      <image:title>Миниатюра: Коллега</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/his3.webp</image:loc>
+      <image:title>Кружение</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/his3.avif</image:loc>
+      <image:title>Миниатюра: Кружение</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/history1.webp</image:loc>
+      <image:title>Всем возрастам</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/history1.avif</image:loc>
+      <image:title>Миниатюра: Всем возрастам</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/history2.webp</image:loc>
+      <image:title>Сплетение</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/history2.avif</image:loc>
+      <image:title>Миниатюра: Сплетение</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/history3.webp</image:loc>
+      <image:title>Воздушность</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/history3.avif</image:loc>
+      <image:title>Миниатюра: Воздушность</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/history4.webp</image:loc>
+      <image:title>Молодец</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/history4.avif</image:loc>
+      <image:title>Миниатюра: Молодец</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/holeabstract.webp</image:loc>
+      <image:title>Достроим город-сад</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/holeabstract.avif</image:loc>
+      <image:title>Миниатюра: Достроим город-сад</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/hustle1.webp</image:loc>
+      <image:title>Выбор</image:title>
+      <image:caption>Хастл опен-эйр</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/hustle1.avif</image:loc>
+      <image:title>Миниатюра: Выбор</image:title>
+      <image:caption>Хастл опен-эйр</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/hustle2.webp</image:loc>
+      <image:title>Всем возрастам</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/hustle2.avif</image:loc>
+      <image:title>Миниатюра: Всем возрастам</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/hustle3.webp</image:loc>
+      <image:title>Вспышка</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/hustle3.avif</image:loc>
+      <image:title>Миниатюра: Вспышка</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/hustle4.webp</image:loc>
+      <image:title>Милая в горошек</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/hustle4.avif</image:loc>
+      <image:title>Миниатюра: Милая в горошек</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/hustle5.webp</image:loc>
+      <image:title>Настроение танца</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/hustle5.avif</image:loc>
+      <image:title>Миниатюра: Настроение танца</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/hustle6.webp</image:loc>
+      <image:title>Проходя мимо</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/hustle6.avif</image:loc>
+      <image:title>Миниатюра: Проходя мимо</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/hustle7.webp</image:loc>
+      <image:title>Точка</image:title>
+      <image:caption>Хастл опен-эйр</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/hustle7.avif</image:loc>
+      <image:title>Миниатюра: Точка</image:title>
+      <image:caption>Хастл опен-эйр</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/in_mirror.webp</image:loc>
+      <image:title>Зеркало?</image:title>
+      <image:caption>Отражение в пруду Нескучного сада</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/in_mirror.avif</image:loc>
+      <image:title>Миниатюра: Зеркало?</image:title>
+      <image:caption>Отражение в пруду Нескучного сада</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/Lines.webp</image:loc>
+      <image:title>Противопожарное</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/Lines.avif</image:loc>
+      <image:title>Миниатюра: Противопожарное</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/look.webp</image:loc>
+      <image:title>На обеденном посту</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/look.avif</image:loc>
+      <image:title>Миниатюра: На обеденном посту</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/net.webp</image:loc>
+      <image:title>Решетка</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/net.avif</image:loc>
+      <image:title>Миниатюра: Решетка</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/notarobot.webp</image:loc>
+      <image:title>z/Not Robot</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/notarobot.avif</image:loc>
+      <image:title>Миниатюра: z/Not Robot</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/on_the_wall.webp</image:loc>
+      <image:title>Ожидание</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/on_the_wall.avif</image:loc>
+      <image:title>Миниатюра: Ожидание</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/phoner.webp</image:loc>
+      <image:title>На связи!</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/phoner.avif</image:loc>
+      <image:title>Миниатюра: На связи!</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/photograph.webp</image:loc>
+      <image:title>Коллега</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/photograph.avif</image:loc>
+      <image:title>Миниатюра: Коллега</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/pianist.webp</image:loc>
+      <image:title>Маленькая Италия</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/pianist.avif</image:loc>
+      <image:title>Миниатюра: Маленькая Италия</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/pigeons.webp</image:loc>
+      <image:title>Голуби</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/pigeons.avif</image:loc>
+      <image:title>Миниатюра: Голуби</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/print_glove_cig.webp</image:loc>
+      <image:title>Следы. Перчатка. Сигарета.</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/print_glove_cig.avif</image:loc>
+      <image:title>Миниатюра: Следы. Перчатка. Сигарета.</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/razorblades.webp</image:loc>
+      <image:title>Бритвы</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/razorblades.avif</image:loc>
+      <image:title>Миниатюра: Бритвы</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/reader.webp</image:loc>
+      <image:title>Остановка времени</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/reader.avif</image:loc>
+      <image:title>Миниатюра: Остановка времени</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/rewrite.webp</image:loc>
+      <image:title>Перерисуем еще разок</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/rewrite.avif</image:loc>
+      <image:title>Миниатюра: Перерисуем еще разок</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/roof.webp</image:loc>
+      <image:title>Жара</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/roof.avif</image:loc>
+      <image:title>Миниатюра: Жара</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/rose.webp</image:loc>
+      <image:title>Не на месте</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/rose.avif</image:loc>
+      <image:title>Миниатюра: Не на месте</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/rustedembassy.webp</image:loc>
+      <image:title>Ржавое</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/rustedembassy.avif</image:loc>
+      <image:title>Миниатюра: Ржавое</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/RW.webp</image:loc>
+      <image:title>К+Б</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/RW.avif</image:loc>
+      <image:title>Миниатюра: К+Б</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/scooter.webp</image:loc>
+      <image:title>В лучах заката</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/scooter.avif</image:loc>
+      <image:title>Миниатюра: В лучах заката</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/skelet_tree.webp</image:loc>
+      <image:title>Скелеты</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/skelet_tree.avif</image:loc>
+      <image:title>Миниатюра: Скелеты</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/smoke.webp</image:loc>
+      <image:title>Размышление</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/smoke.avif</image:loc>
+      <image:title>Миниатюра: Размышление</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/sparkles.webp</image:loc>
+      <image:title>Искры</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/sparkles.avif</image:loc>
+      <image:title>Миниатюра: Искры</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/spectators.webp</image:loc>
+      <image:title>Наблюдатели</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/spectators.avif</image:loc>
+      <image:title>Миниатюра: Наблюдатели</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/squad.webp</image:loc>
+      <image:title>Поход</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/squad.avif</image:loc>
+      <image:title>Миниатюра: Поход</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/stairwayhammer.webp</image:loc>
+      <image:title>Ремонт воздуха</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/stairwayhammer.avif</image:loc>
+      <image:title>Миниатюра: Ремонт воздуха</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/sunny1.webp</image:loc>
+      <image:title>Солнечное счастье</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/sunny1.avif</image:loc>
+      <image:title>Миниатюра: Солнечное счастье</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/sunny2.webp</image:loc>
+      <image:title>Маленький друг</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/sunny2.avif</image:loc>
+      <image:title>Миниатюра: Маленький друг</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/sunnylantern.webp</image:loc>
+      <image:title>Шляпа и сверкающий взгляд</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/sunnylantern.avif</image:loc>
+      <image:title>Миниатюра: Шляпа и сверкающий взгляд</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/swan1.webp</image:loc>
+      <image:title>Семейка</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/swan1.avif</image:loc>
+      <image:title>Миниатюра: Семейка</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/swan2.webp</image:loc>
+      <image:title>Питание</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/swan2.avif</image:loc>
+      <image:title>Миниатюра: Питание</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/swan3.webp</image:loc>
+      <image:title>Общение с фанатами</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/swan3.avif</image:loc>
+      <image:title>Миниатюра: Общение с фанатами</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/triangle.webp</image:loc>
+      <image:title>Пещера</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/triangle.avif</image:loc>
+      <image:title>Миниатюра: Пещера</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/tsoy_boot_sqr.webp</image:loc>
+      <image:title>Остановись. Спой.</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/tsoy_boot_sqr.avif</image:loc>
+      <image:title>Миниатюра: Остановись. Спой.</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/tsoy_duet_sqr.webp</image:loc>
+      <image:title>Наследие</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/tsoy_duet_sqr.avif</image:loc>
+      <image:title>Миниатюра: Наследие</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/tsoy_smoke_sqr.webp</image:loc>
+      <image:title>Воспоминания</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/tsoy_smoke_sqr.avif</image:loc>
+      <image:title>Миниатюра: Воспоминания</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/twisted.webp</image:loc>
+      <image:title>Лестницы</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/twisted.avif</image:loc>
+      <image:title>Миниатюра: Лестницы</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/up.webp</image:loc>
+      <image:title>Вертушка</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/up.avif</image:loc>
+      <image:title>Миниатюра: Вертушка</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/wall1.webp</image:loc>
+      <image:title>Диптих. Простота и солнце #1</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/wall1.avif</image:loc>
+      <image:title>Миниатюра: Диптих. Простота и солнце #1</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/wall2.webp</image:loc>
+      <image:title>Диптих. Простота и солнце #2</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/wall2.avif</image:loc>
+      <image:title>Миниатюра: Диптих. Простота и солнце #2</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/web.webp</image:loc>
+      <image:title>Паутина</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/web.avif</image:loc>
+      <image:title>Миниатюра: Паутина</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/whiter.webp</image:loc>
+      <image:title>Встревожен</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/whiter.avif</image:loc>
+      <image:title>Миниатюра: Встревожен</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/wire2_sqr.webp</image:loc>
+      <image:title>Ловушка</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/wire2_sqr.avif</image:loc>
+      <image:title>Миниатюра: Ловушка</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/wirebird.webp</image:loc>
+      <image:title>Голубь. Городской князь.</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/wirebird.avif</image:loc>
+      <image:title>Миниатюра: Голубь. Городской князь.</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/worldtwist.webp</image:loc>
+      <image:title>Вращаем Землю</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/worldtwist.avif</image:loc>
+      <image:title>Миниатюра: Вращаем Землю</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/wounded_sqr.webp</image:loc>
+      <image:title>Урон...</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/wounded_sqr.avif</image:loc>
+      <image:title>Миниатюра: Урон...</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/writings.webp</image:loc>
+      <image:title>Письмена</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/writings.avif</image:loc>
+      <image:title>Миниатюра: Письмена</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/X_sqr.webp</image:loc>
+      <image:title>X</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/X_sqr.avif</image:loc>
+      <image:title>Миниатюра: X</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/yellow_field_sqr.webp</image:loc>
+      <image:title>Желтая поляна</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/yellow_field_sqr.avif</image:loc>
+      <image:title>Миниатюра: Желтая поляна</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/yellow_selfie.webp</image:loc>
+      <image:title>Желтое зеркало №7</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/yellow_selfie.avif</image:loc>
+      <image:title>Миниатюра: Желтое зеркало №7</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/_MG_0755.webp</image:loc>
+      <image:title>Очко</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/_MG_0755.avif</image:loc>
+      <image:title>Миниатюра: Очко</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/_MG_0762.webp</image:loc>
+      <image:title>Натуральное покрытие</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/_MG_0762.avif</image:loc>
+      <image:title>Миниатюра: Натуральное покрытие</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/_MG_0837.webp</image:loc>
+      <image:title>Команда мечты</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/_MG_0837.avif</image:loc>
+      <image:title>Миниатюра: Команда мечты</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/_MG_0933.webp</image:loc>
+      <image:title>Схватка</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/_MG_0933.avif</image:loc>
+      <image:title>Миниатюра: Схватка</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/_MG_0978.webp</image:loc>
+      <image:title>Наводка на мяч</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/_MG_0978.avif</image:loc>
+      <image:title>Миниатюра: Наводка на мяч</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/_MG_1003.webp</image:loc>
+      <image:title>Почти достал!</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/_MG_1003.avif</image:loc>
+      <image:title>Миниатюра: Почти достал!</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/_MG_1012.webp</image:loc>
+      <image:title>Передышка</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/_MG_1012.avif</image:loc>
+      <image:title>Миниатюра: Передышка</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/_MG_1016.webp</image:loc>
+      <image:title>Перекресток</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/_MG_1016.avif</image:loc>
+      <image:title>Миниатюра: Перекресток</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/_MG_1035.webp</image:loc>
+      <image:title>Погоня</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/_MG_1035.avif</image:loc>
+      <image:title>Миниатюра: Погоня</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/_MG_1100.webp</image:loc>
+      <image:title>Сплетение рук</image:title>
+      <image:caption>Очко было взято, несмотря на блок в прыжке</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/_MG_1100.avif</image:loc>
+      <image:title>Миниатюра: Сплетение рук</image:title>
+      <image:caption>Очко было взято, несмотря на блок в прыжке</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/_MG_1128.webp</image:loc>
+      <image:title>Последний рывок</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/_MG_1128.avif</image:loc>
+      <image:title>Миниатюра: Последний рывок</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/_MG_1156.webp</image:loc>
+      <image:title>Спокойствие</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/_MG_1156.avif</image:loc>
+      <image:title>Миниатюра: Спокойствие</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/0425lifenear.webp</image:loc>
+      <image:title>Зелень за забором</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/0425lifenear.avif</image:loc>
+      <image:title>Миниатюра: Зелень за забором</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/0425wirefence.webp</image:loc>
+      <image:title>Взгляд из-за стены</image:title>
+      <image:caption>Мрачная колючка и глубокое небо</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/0425wirefence.avif</image:loc>
+      <image:title>Миниатюра: Взгляд из-за стены</image:title>
+      <image:caption>Мрачная колючка и глубокое небо</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/0525chillout.webp</image:loc>
+      <image:title>Курильщик</image:title>
+      <image:caption>За углом в старой куртке...</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/0525chillout.avif</image:loc>
+      <image:title>Миниатюра: Курильщик</image:title>
+      <image:caption>За углом в старой куртке...</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/0525melancholy.webp</image:loc>
+      <image:title>Меланхолия</image:title>
+      <image:caption>Недвижимая вода и начало дождя</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/0525melancholy.avif</image:loc>
+      <image:title>Миниатюра: Меланхолия</image:title>
+      <image:caption>Недвижимая вода и начало дождя</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/0525mirage.webp</image:loc>
+      <image:title>Перегрев</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/0525mirage.avif</image:loc>
+      <image:title>Миниатюра: Перегрев</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/0525redvaz.webp</image:loc>
+      <image:title>Форсаж</image:title>
+      <image:caption>На что только не бросают наш автопром!</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/0525redvaz.avif</image:loc>
+      <image:title>Миниатюра: Форсаж</image:title>
+      <image:caption>На что только не бросают наш автопром!</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/0525rust.webp</image:loc>
+      <image:title>Надежда</image:title>
+      <image:caption>Почти забытое, еле освещенное</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/0525rust.avif</image:loc>
+      <image:title>Миниатюра: Надежда</image:title>
+      <image:caption>Почти забытое, еле освещенное</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/0525smileradar.webp</image:loc>
+      <image:title>Smile-radar</image:title>
+      <image:caption>Улыбайтесь чаще!</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/0525smileradar.avif</image:loc>
+      <image:title>Миниатюра: Smile-radar</image:title>
+      <image:caption>Улыбайтесь чаще!</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/0525white.webp</image:loc>
+      <image:title>Задний двор</image:title>
+      <image:caption>Штабеля, доски, деревья выброшены</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/0525white.avif</image:loc>
+      <image:title>Миниатюра: Задний двор</image:title>
+      <image:caption>Штабеля, доски, деревья выброшены</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/0525whitedusted.webp</image:loc>
+      <image:title>Окна</image:title>
+      <image:caption>Что же будет после ремонта?</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/0525whitedusted.avif</image:loc>
+      <image:title>Миниатюра: Окна</image:title>
+      <image:caption>Что же будет после ремонта?</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/0607splash.webp</image:loc>
+      <image:title>Палитра дождя</image:title>
+      <image:caption>Да, никто не знает про молоко</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/0607splash.avif</image:loc>
+      <image:title>Миниатюра: Палитра дождя</image:title>
+      <image:caption>Да, никто не знает про молоко</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/0607sunset.webp</image:loc>
+      <image:title>Лаванда. Закат.</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/0607sunset.avif</image:loc>
+      <image:title>Миниатюра: Лаванда. Закат.</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/0607water.webp</image:loc>
+      <image:title>Водопадик</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/0607water.avif</image:loc>
+      <image:title>Миниатюра: Водопадик</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/0625modernacl.webp</image:loc>
+      <image:title>Пышная глубина</image:title>
+      <image:caption>Модерн, многоуровневые облака, текстура неба</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/0625modernacl.avif</image:loc>
+      <image:title>Миниатюра: Пышная глубина</image:title>
+      <image:caption>Модерн, многоуровневые облака, текстура неба</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/0625sunladderw.webp</image:loc>
+      <image:title>Лестница к солнцу</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/0625sunladderw.avif</image:loc>
+      <image:title>Миниатюра: Лестница к солнцу</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/100.webp</image:loc>
+      <image:title>Луч солнца золотого</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/100.avif</image:loc>
+      <image:title>Миниатюра: Луч солнца золотого</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/1304_Bulbs.webp</image:loc>
+      <image:title>Лампы</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/1304_Bulbs.avif</image:loc>
+      <image:title>Миниатюра: Лампы</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/1304_Edge.webp</image:loc>
+      <image:title>Дорога по краю</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/1304_Edge.avif</image:loc>
+      <image:title>Миниатюра: Дорога по краю</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/1304_Gentletouch.webp</image:loc>
+      <image:title>Весеннее касание</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/1304_Gentletouch.avif</image:loc>
+      <image:title>Миниатюра: Весеннее касание</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/1304_Overdrive.webp</image:loc>
+      <image:title>Перегрузка</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/1304_Overdrive.avif</image:loc>
+      <image:title>Миниатюра: Перегрузка</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/glass1.webp</image:loc>
+      <image:title>Ночь</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/glass1.avif</image:loc>
+      <image:title>Миниатюра: Ночь</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/godown.webp</image:loc>
+      <image:title>Все вниз</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/godown.avif</image:loc>
+      <image:title>Миниатюра: Все вниз</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/greenpin.webp</image:loc>
@@ -1863,82 +2268,112 @@
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/guard1.webp</image:loc>
-      <image:title>Охрана</image:title>
+      <image:title>Охрана территории</image:title>
       <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/guard1.avif</image:loc>
-      <image:title>Миниатюра: Охрана</image:title>
+      <image:title>Миниатюра: Охрана территории</image:title>
       <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/guard2.webp</image:loc>
-      <image:title>Заграждение</image:title>
-      <image:caption>День Победы, 80-летие</image:caption>
+      <image:title>На страже порядка</image:title>
+      <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/guard2.avif</image:loc>
-      <image:title>Миниатюра: Заграждение</image:title>
-      <image:caption>День Победы, 80-летие</image:caption>
+      <image:title>Миниатюра: На страже порядка</image:title>
+      <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/guitar.webp</image:loc>
+      <image:title>Роза. Гитара.</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/guitar.avif</image:loc>
+      <image:title>Миниатюра: Роза. Гитара.</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/healingspot.webp</image:loc>
+      <image:title>Точка лечения</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/healingspot.avif</image:loc>
+      <image:title>Миниатюра: Точка лечения</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/hunter.webp</image:loc>
-      <image:title>Охотник</image:title>
+      <image:title>Озорник</image:title>
       <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/hunter.avif</image:loc>
-      <image:title>Миниатюра: Охотник</image:title>
+      <image:title>Миниатюра: Озорник</image:title>
       <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/IMG_0021.webp</image:loc>
-      <image:title>Скорость</image:title>
+      <image:title>Вращение Земли</image:title>
       <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/IMG_0021.avif</image:loc>
-      <image:title>Миниатюра: Скорость</image:title>
+      <image:title>Миниатюра: Вращение Земли</image:title>
       <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/IMG_0022.webp</image:loc>
       <image:title>Гонщик</image:title>
-      <image:caption>Напросилась аналогия с Williams Racing в F1</image:caption>
+      <image:caption>Пришла в голову аналогия с Williams RT на дождевом этапе</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/IMG_0022.avif</image:loc>
       <image:title>Миниатюра: Гонщик</image:title>
-      <image:caption>Напросилась аналогия с Williams Racing в F1</image:caption>
+      <image:caption>Пришла в голову аналогия с Williams RT на дождевом этапе</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/IMG_0110.webp</image:loc>
@@ -1953,142 +2388,157 @@
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/IMG_0350_final.webp</image:loc>
-      <image:title>Соло</image:title>
-      <image:caption>День Победы 2025</image:caption>
+      <image:title>Соло!</image:title>
+      <image:caption>Послепарадное</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/IMG_0350_final.avif</image:loc>
-      <image:title>Миниатюра: Соло</image:title>
-      <image:caption>День Победы 2025</image:caption>
+      <image:title>Миниатюра: Соло!</image:title>
+      <image:caption>Послепарадное</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/IMG_0448.webp</image:loc>
-      <image:title>После</image:title>
+      <image:title>Отгремели барабаны</image:title>
       <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/IMG_0448.avif</image:loc>
-      <image:title>Миниатюра: После</image:title>
+      <image:title>Миниатюра: Отгремели барабаны</image:title>
       <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/IMG_0488.webp</image:loc>
       <image:title>СТОП</image:title>
-      <image:caption>Столько ограничителей передвижения...</image:caption>
+      <image:caption>Столько сдерживающих факторов!</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/IMG_0488.avif</image:loc>
       <image:title>Миниатюра: СТОП</image:title>
-      <image:caption>Столько ограничителей передвижения...</image:caption>
+      <image:caption>Столько сдерживающих факторов!</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/IMG_0498.webp</image:loc>
       <image:title>Капсула времени</image:title>
-      <image:caption>Заправка на Кропоткинской, дыхание прошлого</image:caption>
+      <image:caption>Заправка с духом прошлого</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/IMG_0498.avif</image:loc>
       <image:title>Миниатюра: Капсула времени</image:title>
-      <image:caption>Заправка на Кропоткинской, дыхание прошлого</image:caption>
+      <image:caption>Заправка с духом прошлого</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/lost_patrol.webp</image:loc>
       <image:title>Отряд не заметил...</image:title>
-      <image:caption>После дождя нашлись в траве</image:caption>
+      <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/lost_patrol.avif</image:loc>
       <image:title>Миниатюра: Отряд не заметил...</image:title>
-      <image:caption>После дождя нашлись в траве</image:caption>
+      <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/mirror.webp</image:loc>
-      <image:title>Зеркало</image:title>
-      <image:caption>Зеркальные стенки дополняют реальность</image:caption>
+      <image:title>Слияние</image:title>
+      <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/mirror.avif</image:loc>
-      <image:title>Миниатюра: Зеркало</image:title>
-      <image:caption>Зеркальные стенки дополняют реальность</image:caption>
+      <image:title>Миниатюра: Слияние</image:title>
+      <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/motokebab.webp</image:loc>
-      <image:title>Мото</image:title>
+      <image:title>Rock-n-Roll</image:title>
       <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/motokebab.avif</image:loc>
-      <image:title>Миниатюра: Мото</image:title>
+      <image:title>Миниатюра: Rock-n-Roll</image:title>
       <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/paper.webp</image:loc>
-      <image:title>Утренний блик</image:title>
+      <image:title>Утренние блики</image:title>
       <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/paper.avif</image:loc>
-      <image:title>Миниатюра: Утренний блик</image:title>
+      <image:title>Миниатюра: Утренние блики</image:title>
       <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/pepsiskate.webp</image:loc>
-      <image:title>Pepsi</image:title>
+      <image:title>PEPSI</image:title>
       <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/pepsiskate.avif</image:loc>
-      <image:title>Миниатюра: Pepsi</image:title>
+      <image:title>Миниатюра: PEPSI</image:title>
       <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/planetrail.webp</image:loc>
+      <image:title>Полет мысли</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/planetrail.avif</image:loc>
+      <image:title>Миниатюра: Полет мысли</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/plate.webp</image:loc>
@@ -2103,22 +2553,37 @@
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/polarized.webp</image:loc>
-      <image:title>Преломление</image:title>
+      <image:title>Спектр</image:title>
       <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/polarized.avif</image:loc>
-      <image:title>Миниатюра: Преломление</image:title>
+      <image:title>Миниатюра: Спектр</image:title>
       <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/posters.webp</image:loc>
+      <image:title>Афиши</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/posters.avif</image:loc>
+      <image:title>Миниатюра: Афиши</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/red.webp</image:loc>
@@ -2133,7 +2598,7 @@
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/redagain.webp</image:loc>
@@ -2148,76 +2613,136 @@
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/roofnet.webp</image:loc>
-      <image:title>Крыши</image:title>
+      <image:title>Лапчатая тень</image:title>
       <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/roofnet.avif</image:loc>
-      <image:title>Миниатюра: Крыши</image:title>
+      <image:title>Миниатюра: Лапчатая тень</image:title>
       <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/stripes.webp</image:loc>
       <image:title>Синие полосы</image:title>
-      <image:caption></image:caption>
+      <image:caption>Всего-то приоткрытая дверь...</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/stripes.avif</image:loc>
       <image:title>Миниатюра: Синие полосы</image:title>
+      <image:caption>Всего-то приоткрытая дверь...</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/taxi.webp</image:loc>
+      <image:title>Ритм города</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/taxi.avif</image:loc>
+      <image:title>Миниатюра: Ритм города</image:title>
       <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/teabag_dream.webp</image:loc>
-      <image:title>Арт. Чай</image:title>
+      <image:title>Арт. Пакетики вдохновения</image:title>
       <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/teabag_dream.avif</image:loc>
-      <image:title>Миниатюра: Арт. Чай</image:title>
+      <image:title>Миниатюра: Арт. Пакетики вдохновения</image:title>
       <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/touch.webp</image:loc>
+      <image:title>Касание</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/touch.avif</image:loc>
+      <image:title>Миниатюра: Касание</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
       <image:loc>https://little-can.vercel.app/images/original/two_in_pines.webp</image:loc>
       <image:title>Хвойная нежность</image:title>
-      <image:caption>Случайный момент, один быстрый кадр</image:caption>
+      <image:caption></image:caption>
     </image:image>
     <image:image>
       <image:loc>https://little-can.vercel.app/images/optimized/two_in_pines.avif</image:loc>
       <image:title>Миниатюра: Хвойная нежность</image:title>
-      <image:caption>Случайный момент, один быстрый кадр</image:caption>
+      <image:caption></image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://little-can.vercel.app/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>weekly</changefreq>
         <image:image>
-      <image:loc>https://little-can.vercel.app/images/original/wirebird.webp</image:loc>
-      <image:title>После дождя</image:title>
+      <image:loc>https://little-can.vercel.app/images/original/watersunset.webp</image:loc>
+      <image:title>Небесный огонь</image:title>
       <image:caption></image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://little-can.vercel.app/images/optimized/wirebird.avif</image:loc>
-      <image:title>Миниатюра: После дождя</image:title>
+      <image:loc>https://little-can.vercel.app/images/optimized/watersunset.avif</image:loc>
+      <image:title>Миниатюра: Небесный огонь</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/whites.webp</image:loc>
+      <image:title>Направление на лето</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/whites.avif</image:loc>
+      <image:title>Миниатюра: Направление на лето</image:title>
+      <image:caption></image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://little-can.vercel.app/</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+        <image:image>
+      <image:loc>https://little-can.vercel.app/images/original/white_legs.webp</image:loc>
+      <image:title>В белом</image:title>
+      <image:caption></image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://little-can.vercel.app/images/optimized/white_legs.avif</image:loc>
+      <image:title>Миниатюра: В белом</image:title>
       <image:caption></image:caption>
     </image:image>
   </url>

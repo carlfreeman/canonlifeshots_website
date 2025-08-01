@@ -290,7 +290,6 @@ function initLazyLoading(items) {
     });
 }
 
-// В portfolio.js
 function enhanceFilters() {
     const filtersContainer = document.querySelector('.portfolio-filters');
     const activeFilters = new Set(['all']);
