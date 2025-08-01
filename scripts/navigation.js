@@ -47,6 +47,13 @@ function handleInitialNavigation() {
     const targetLink = hash 
         ? document.querySelector(`.nav__link[href="${hash}"]`)
         : document.querySelector('.nav__link[href="#home"]');
+
+    if (hash.startsWith('#portfolio')) {
+        document.querySelector('.nav__link[href="#portfolio"]').click();
+    } else if (hash.startsWith('#blog/')) {
+        const postId = hash.split('/')[1];
+        document.querySelector('.nav__link[href="#blog"]').click();
+    }
         
     if (targetLink) {
         targetLink.click();
