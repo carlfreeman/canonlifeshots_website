@@ -473,7 +473,7 @@ function loadRecommendations(currentPost) {
 }
 
 function updatePostSEO(post) {
-    document.title = `${post.title} | Блог | Little Can`;
+    document.title = `${post.title} | Блог | LC`;
     
     let metaDesc = document.querySelector('meta[name="description"]');
     if (!metaDesc) {
