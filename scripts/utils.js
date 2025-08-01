@@ -6,7 +6,7 @@ export function getCategoryName(category) {
         'concept': 'Концепт',
         'mono': 'Моно-ЧБ',
         'experiments': 'Эксперименты',
-        'philosophy': 'Философия'
+        'arch': 'Архитектура'
     };
     
     return categories[category] || category;

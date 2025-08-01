@@ -168,7 +168,7 @@
             "best",
             "concept",
             "mono",
-            "philosophy"
+            "arch"
         ],
         "description": ""
     },
@@ -219,7 +219,7 @@
         "title": "Вверх",
         "year": "SS '25",
         "categories": [
-            "philosophy"
+            "arch"
         ],
         "description": ""
     },
@@ -230,7 +230,7 @@
         "categories": [
             "best",
             "concept",
-            "philosophy"
+            "arch"
         ],
         "description": "Безопасный проход на Пречистенке"
     },
@@ -240,7 +240,7 @@
         "year": "SS '25",
         "categories": [
             "best",
-            "philosophy"
+            "arch"
         ],
         "description": "Электрический свет, атмосфера Sci-Fi"
     },
@@ -249,7 +249,7 @@
         "title": "Сетка",
         "year": "SS '25",
         "categories": [
-            "philosophy"
+            "arch"
         ],
         "description": ""
     },
@@ -261,7 +261,7 @@
             "best",
             "street",
             "concept",
-            "philosophy"
+            "arch"
         ],
         "description": "Стрелы кранов тянут друг друга ввысь"
     },
@@ -474,7 +474,7 @@
         "year": "SS '25",
         "categories": [
             "concept",
-            "philosophy"
+            "arch"
         ],
         "description": ""
     },
@@ -847,7 +847,7 @@
         "year": "SS '25",
         "categories": [
             "concept",
-            "philosophy"
+            "arch"
         ],
         "description": ""
     },
@@ -933,7 +933,7 @@
         "categories": [
             "concept",
             "experiments",
-            "philosophy"
+            "arch"
         ],
         "description": ""
     },
@@ -1072,7 +1072,7 @@
             "best",
             "concept",
             "mono",
-            "philosophy"
+            "arch"
         ],
         "description": ""
     },
@@ -1176,7 +1176,7 @@
         "categories": [
             "best",
             "concept",
-            "philosophy"
+            "arch"
         ],
         "description": ""
     },
@@ -1474,7 +1474,7 @@
         "categories": [
             "best",
             "concept",
-            "philosophy"
+            "arch"
         ],
         "description": ""
     },
@@ -1792,7 +1792,7 @@
         "year": "FW '24",
         "categories": [
             "concept",
-            "philosophy"
+            "arch"
         ],
         "description": ""
     },
