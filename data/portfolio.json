@@ -195,6 +195,17 @@
         "description": "Далматин у кафе возле театра Шиловского"
     },
     {
+        "id": "0728_dipwall",
+        "title": "Диптих. Простота и солнце",
+        "year": "SS '25",
+        "categories": [
+            "best",
+            "street",
+            "concept"
+        ],
+        "description": "В центре города есть места с... натуральной атмосферой."
+    },
+    {
         "id": "candle",
         "title": "Свеча",
         "year": "SS '25",
@@ -1073,27 +1084,6 @@
             "concept",
             "mono",
             "arch"
-        ],
-        "description": ""
-    },
-    {
-        "id": "wall1",
-        "title": "Диптих. Простота и солнце #1",
-        "year": "SS '25",
-        "categories": [
-            "best",
-            "street",
-            "concept"
-        ],
-        "description": ""
-    },
-    {
-        "id": "wall2",
-        "title": "Диптих. Простота и солнце #2",
-        "year": "SS '25",
-        "categories": [
-            "street",
-            "concept"
         ],
         "description": ""
     },
