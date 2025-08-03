@@ -104,17 +104,6 @@
         "description": "Многомерное восприятие: 2 дня, одно место, разные точки зрения. Кто-то оставляет яркий след"
     },
     {
-        "id": "healingspot",
-        "title": "Точка лечения",
-        "year": "FW '24",
-        "categories": [
-            "best",
-            "street",
-            "concept"
-        ],
-        "description": ""
-    },
-    {
         "id": "flow5",
         "title": "Течение",
         "year": "SS '25",
@@ -337,6 +326,17 @@
             "best",
             "concept",
             "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "healingspot",
+        "title": "Точка лечения",
+        "year": "FW '24",
+        "categories": [
+            "best",
+            "street",
+            "concept"
         ],
         "description": ""
     },
