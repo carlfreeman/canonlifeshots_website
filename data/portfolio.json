@@ -58,7 +58,6 @@
         "title": "Кружок самоделок",
         "year": "SS '25",
         "categories": [
-            "best",
             "street"
         ],
         "description": ""
@@ -91,6 +90,30 @@
             "street"
         ],
         "description": ""
+    },
+    {
+        "id": "busstopprincess",
+        "title": "Арт. Взгляд на вещи",
+        "year": "SS '25",
+        "categories": [
+            "best",
+            "street",
+            "concept",
+            "experiments"
+        ],
+        "description": "Многомерное восприятие: 2 дня, одно место, разные точки зрения. Кто-то оставляет яркий след"
+    },
+    {
+        "id": "flow5",
+        "title": "Течение",
+        "year": "SS '25",
+        "categories": [
+            "best",
+            "street",
+            "concept",
+            "experiments"
+        ],
+        "description": "Дань Takehiro Misaka"
     },
     {
         "id": "bisyman",
@@ -173,18 +196,6 @@
         "description": ""
     },
     {
-        "id": "busstopprincess",
-        "title": "Арт. Взгляд на вещи",
-        "year": "SS '25",
-        "categories": [
-            "best",
-            "street",
-            "concept",
-            "experiments"
-        ],
-        "description": "Многомерное восприятие: 2 дня, одно место, разные точки зрения. Кто-то оставляет яркий след"
-    },
-    {
         "id": "b_plus_w_is_dalmatin",
         "title": "Д=Ч+Б",
         "year": "SS '25",
@@ -193,6 +204,17 @@
             "mono"
         ],
         "description": "Далматин у кафе возле театра Шиловского"
+    },
+    {
+        "id": "0728_dipwall",
+        "title": "Диптих. Простота и солнце",
+        "year": "SS '25",
+        "categories": [
+            "best",
+            "street",
+            "concept"
+        ],
+        "description": "В центре города есть места с... натуральной атмосферой."
     },
     {
         "id": "candle",
@@ -304,6 +326,17 @@
             "best",
             "concept",
             "mono"
+        ],
+        "description": ""
+    },
+    {
+        "id": "healingspot",
+        "title": "Точка лечения",
+        "year": "FW '24",
+        "categories": [
+            "best",
+            "street",
+            "concept"
         ],
         "description": ""
     },
@@ -434,18 +467,6 @@
         "year": "SS '25",
         "categories": [],
         "description": ""
-    },
-    {
-        "id": "flow5",
-        "title": "Течение",
-        "year": "SS '25",
-        "categories": [
-            "best",
-            "street",
-            "concept",
-            "experiments"
-        ],
-        "description": "Дань Takehiro Misaka"
     },
     {
         "id": "fog_spike",
@@ -1077,27 +1098,6 @@
         "description": ""
     },
     {
-        "id": "wall1",
-        "title": "Диптих. Простота и солнце #1",
-        "year": "SS '25",
-        "categories": [
-            "best",
-            "street",
-            "concept"
-        ],
-        "description": ""
-    },
-    {
-        "id": "wall2",
-        "title": "Диптих. Простота и солнце #2",
-        "year": "SS '25",
-        "categories": [
-            "street",
-            "concept"
-        ],
-        "description": ""
-    },
-    {
         "id": "web",
         "title": "Паутина",
         "year": "SS '25",
@@ -1584,17 +1584,6 @@
         "categories": [
             "street",
             "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "healingspot",
-        "title": "Точка лечения",
-        "year": "FW '24",
-        "categories": [
-            "best",
-            "street",
-            "concept"
         ],
         "description": ""
     },
