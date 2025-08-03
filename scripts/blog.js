@@ -298,13 +298,6 @@ function setupInfiniteScroll() {
 }
 
 function initRouter() {
-    // Редирект, если открыт /blog/ без хэша
-    if (window.location.pathname.startsWith('/blog/') && !window.location.hash.startsWith('#blog/')) {
-        const postId = window.location.pathname.split('/blog/')[1];
-        window.location.href = `/#blog/${postId}`;
-        return; // Прерываем, чтобы не вызывать processHash до редиректа
-    }
-    
     processHash();
     
     window.addEventListener('hashchange', () => {
