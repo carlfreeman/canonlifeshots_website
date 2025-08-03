@@ -2,12 +2,12 @@
   "routes": [
     {
       "src": "/blog/(.*)",
-      "dest": "/?blog=$1",  // Перенаправляем на главную с параметром
+      "dest": "/?blog=$1",
       "status": 301
     },
     {
       "src": "/",
-      "dest": "/index.html"  // Всегда отдаём index.html для SPA
+      "dest": "/index.html"
     }
   ]
 }
