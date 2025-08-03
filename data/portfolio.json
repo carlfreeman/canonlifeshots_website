@@ -58,7 +58,6 @@
         "title": "Кружок самоделок",
         "year": "SS '25",
         "categories": [
-            "best",
             "street"
         ],
         "description": ""
@@ -91,6 +90,41 @@
             "street"
         ],
         "description": ""
+    },
+    {
+        "id": "busstopprincess",
+        "title": "Арт. Взгляд на вещи",
+        "year": "SS '25",
+        "categories": [
+            "best",
+            "street",
+            "concept",
+            "experiments"
+        ],
+        "description": "Многомерное восприятие: 2 дня, одно место, разные точки зрения. Кто-то оставляет яркий след"
+    },
+    {
+        "id": "healingspot",
+        "title": "Точка лечения",
+        "year": "FW '24",
+        "categories": [
+            "best",
+            "street",
+            "concept"
+        ],
+        "description": ""
+    },
+    {
+        "id": "flow5",
+        "title": "Течение",
+        "year": "SS '25",
+        "categories": [
+            "best",
+            "street",
+            "concept",
+            "experiments"
+        ],
+        "description": "Дань Takehiro Misaka"
     },
     {
         "id": "bisyman",
@@ -171,18 +205,6 @@
             "arch"
         ],
         "description": ""
-    },
-    {
-        "id": "busstopprincess",
-        "title": "Арт. Взгляд на вещи",
-        "year": "SS '25",
-        "categories": [
-            "best",
-            "street",
-            "concept",
-            "experiments"
-        ],
-        "description": "Многомерное восприятие: 2 дня, одно место, разные точки зрения. Кто-то оставляет яркий след"
     },
     {
         "id": "b_plus_w_is_dalmatin",
@@ -445,18 +467,6 @@
         "year": "SS '25",
         "categories": [],
         "description": ""
-    },
-    {
-        "id": "flow5",
-        "title": "Течение",
-        "year": "SS '25",
-        "categories": [
-            "best",
-            "street",
-            "concept",
-            "experiments"
-        ],
-        "description": "Дань Takehiro Misaka"
     },
     {
         "id": "fog_spike",
@@ -1574,17 +1584,6 @@
         "categories": [
             "street",
             "mono"
-        ],
-        "description": ""
-    },
-    {
-        "id": "healingspot",
-        "title": "Точка лечения",
-        "year": "FW '24",
-        "categories": [
-            "best",
-            "street",
-            "concept"
         ],
         "description": ""
     },
