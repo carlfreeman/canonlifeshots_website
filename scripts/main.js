@@ -4,7 +4,7 @@ import { loadPortfolio } from './portfolio.js';
 
 if (window.location.search.includes('blog=')) {
     const postId = new URLSearchParams(window.location.search).get('blog');
-    window.location.href = `/blog/${postId}`;
+    window.location.href = `/#blog/${postId}`;
 }
 
 document.addEventListener('DOMContentLoaded', function() {
