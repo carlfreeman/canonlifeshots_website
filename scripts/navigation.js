@@ -50,7 +50,7 @@ function handleInitialNavigation() {
 
     if (hash.startsWith('/portfolio')) {
         document.querySelector('.nav__link[href="portfolio"]').click();
-    } else if (hash.startsWith('/blog/')) {
+    } else if (hash.startsWith('blog/')) {
         const postId = hash.split('/')[1];
         document.querySelector('.nav__link[href="blog"]').click();
     }
