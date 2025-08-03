@@ -262,7 +262,7 @@ function createPostElement(post) {
             </div>
             <h3 class="blog-card__title">${post.title}</h3>
             <p class="blog-card__excerpt">${post.excerpt}</p>
-            <a href="#blog/${post.id}" class="blog-card__link">Читать →</a>
+            <a href="/blog/${post.id}" class="blog-card__link">Читать →</a>
         </div>
     `;
     
@@ -301,7 +301,7 @@ function initRouter() {
     processHash();
     
     window.addEventListener('hashchange', () => {
-        if (document.querySelector('#blog.active')) {
+        if (document.querySelector('/blog.active')) {
             processHash();
         }
     });
@@ -310,13 +310,13 @@ function initRouter() {
 function processHash() {
     const hash = window.location.hash;
     
-    if (hash.startsWith('#blog/')) {
+    if (hash.startsWith('/blog/')) {
         const postId = hash.split('/')[1];
         openBlogPost(postId);
     } else {
         closeBlogPost();
         
-        document.querySelector('.nav__link[href="#blog"]').click();
+        document.querySelector('.nav__link[href="/blog"]').click();
         
         if (document.querySelectorAll('.blog-card').length === 0) {
             renderBlogPosts();
@@ -328,7 +328,7 @@ async function openBlogPost(postId) {
     if (!postContainer) {
         postContainer = document.createElement('div');
         postContainer.className = 'blog-post-container';
-        document.querySelector('#blog').appendChild(postContainer);
+        document.querySelector('/blog').appendChild(postContainer);
     }
     
     try {
@@ -377,7 +377,7 @@ async function openBlogPost(postId) {
         `;
         
         document.querySelector('.blog-back-btn').addEventListener('click', () => {
-            window.location.hash = '#blog';
+            window.location.hash = '/blog';
         });
         loadRecommendations(post);
         updatePostSEO(post);
@@ -391,7 +391,7 @@ async function openBlogPost(postId) {
                 </div>
             `;
             document.querySelector('.blog-back-btn').addEventListener('click', () => {
-                window.location.hash = '#blog';
+                window.location.hash = '/blog';
             });
         }
     }
@@ -456,7 +456,7 @@ function loadRecommendations(currentPost) {
             
             const card = document.createElement('a');
             card.className = 'blog-recommendation';
-            card.href = `#blog/${post.id}`;
+            card.href = `/blog/${post.id}`;
             card.innerHTML = `
                 <img src="${post.image}" alt="${post.title}">
                 <div>
