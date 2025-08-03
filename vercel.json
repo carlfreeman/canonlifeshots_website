@@ -1,0 +1,13 @@
+{
+  "routes": [
+    {
+      "src": "/blog/(.*)",
+      "dest": "/?blog=$1",
+      "status": 301
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+    }
+  ]
+}

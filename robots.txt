@@ -1,4 +1,4 @@
 Sitemap: https://little-can.vercel.app/sitemap.xml
 User-agent: *
 Allow: /
-Disallow: /data/
+Disallow: /images/index.html

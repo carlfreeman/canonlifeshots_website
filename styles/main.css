@@ -864,10 +864,20 @@ body {
     font-size: 1.1rem;
     max-width: 700px;
     margin: 0 auto 3rem;
+    text-align:justify;
 }
 
 .blog-post-content p {
     margin-bottom: 1.5rem;
+}
+
+.blog-post-content strong {
+    font-weight: 100;
+}
+
+.blog-post-content h2, h3, h4 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .blog-post-content img {
@@ -876,6 +886,15 @@ body {
     display: block;
     margin: 1.5rem auto;
     border-radius: 4px;
+}
+
+.blog-post-content table {
+    display: flex;
+    justify-content: center;
+}
+
+.blog-post-content td {
+    padding-right: 20px;
 }
 
 .image-caption {
