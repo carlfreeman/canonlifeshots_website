@@ -15,7 +15,7 @@ export function setupNavigation() {
                 section.classList.remove('active');
             });
             
-            const targetSection = document.querySelector(this.getAttribute('href').substring(1));
+            const targetSection = document.querySelector("#" + this.getAttribute('href').substring(1));
             if (targetSection) {
                 targetSection.classList.add('active');
                 
